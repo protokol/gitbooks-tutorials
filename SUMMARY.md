@@ -5,9 +5,9 @@
 ## NonFungible Tokens <a id="nft"></a>
 
 * [Introduction](nft/untitled.md)
-* [ENDPOINTS](nft/endpoints/README.md)
-  * [BASE API](nft/endpoints/base-api.md)
-  * [EXCHANGE API](nft/endpoints/exchange-api.md)
+* [Endpoints](nft/endpoints/README.md)
+  * [Base NFT](nft/endpoints/base-api.md)
+  * [Exchange NFT](nft/endpoints/exchange-api.md)
 
 ## Identity
 
