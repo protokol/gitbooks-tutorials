@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Initial page](README.md)
+* [NFT-Base-Api](nft-base-api/README.md)
+  * [Assets](nft-base-api/assets.md)
+  * [Configurations](nft-base-api/configurations.md)
 
 ## NonFungible Tokens <a id="nft"></a>
 
