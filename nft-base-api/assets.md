@@ -19,12 +19,12 @@ GET /assets
 | page | int | The number of the page that will be returned. | No |
 | limit | int  | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
-| transaform | boolean | If returns modified or raw data. | No |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
 ```text
-curl http://127.0.0.1:4003/api/nft/assets
+curl http://nft.protokol.com:4003/api/nft/assets
 ```
 
 ### Response
@@ -102,7 +102,7 @@ GET /assets/{id}
 ### Example
 
 ```bash
-curl http://127.0.0.1:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c
+curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c
 ```
 
 ### Response
@@ -141,7 +141,7 @@ GET /assets/{id}/wallets
 ### Example
 
 ```bash
-curl http://127.0.0.1:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c/wallets
+curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c/wallets
 ```
 
 ### Response
@@ -209,13 +209,13 @@ POST /assets/search
 | page | int | The number of the page that will be returned. | No |
 | limit | int  | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
-| transaform | boolean | If returns modified or raw data. | No |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
 ```bash
 curl --request POST \
-  --url http://127.0.0.1:4003/api/nft/assets/search \
+  --url http://nft.protokol.com:4003/api/nft/assets/search \
   --header 'content-type: application/json' \
   --data '{
 	"sales": 1300
