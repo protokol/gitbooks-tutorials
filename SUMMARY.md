@@ -9,6 +9,8 @@
   * [Transfers](nft-base-api/transfers.md)
 * [NFT-Exchange-Api](nft-exchange-api/README.md)
   * [Auctions](nft-exchange-api/auctions.md)
+  * [Bids](nft-exchange-api/bids.md)
+  * [Configurations](nft-exchange-api/configurations.md)
 
 ## NonFungible Tokens <a id="nft"></a>
 
