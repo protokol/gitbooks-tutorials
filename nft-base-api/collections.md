@@ -191,6 +191,55 @@ GET /collections/wallets/{id}
 ### Example
 
 ```bash
+curl http://nft.protokol.com:4003/api/nft/collections/18f7ba659b5c87737f5db131e15ad682e2e37fdf8259ec227b5bc9e5e9d9c28b/wallets
+```
 
+### Response
+
+```javascript
+{
+  "data": {
+    "address": "AV6GP5qhhsZG6MHb4gShy22doUnVjEKHcN",
+    "publicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+    "nft": {
+      "collections": {
+        "18f7ba659b5c87737f5db131e15ad682e2e37fdf8259ec227b5bc9e5e9d9c28b": {
+          "currentSupply": 1,
+          "nftCollectionAsset": {
+            "name": "FIFA-20-PLAYERS",
+            "description": "FIFA 2020 Players",
+            "maximumSupply": 100200,
+            "jsonSchema": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "pac": {
+                  "type": "number"
+                },
+                "sho": {
+                  "type": "number"
+                },
+                "pas": {
+                  "type": "number"
+                },
+                "dri": {
+                  "type": "number"
+                },
+                "def": {
+                  "type": "number"
+                },
+                "phy": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      },
+      "assetsIds": []
+    }
+  }
+}
 ```
 
