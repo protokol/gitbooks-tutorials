@@ -192,7 +192,6 @@ POST /auctions/search
 | page | int | The number of the page that will be returned. | No |
 | limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
-| transform | boolean | If returns modified or raw data. | No |
 
 ### Body Parameters <a id="body-parameters"></a>
 
@@ -200,7 +199,7 @@ POST /auctions/search
 | :--- | :--- | :--- | :--- |
 | senderPublicKey | string | Public key of a sender. | No |
 | nftId | string | Id of nft. | No |
-| startAmount | string | Start amount of acutions. | No |
+| startAmount | string | Start amount of auctions. | No |
 | expiration: {blockHeight} | number | BlockHeight expiration | No |
 
 ### Example

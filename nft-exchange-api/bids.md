@@ -236,3 +236,86 @@ curl --request POST \
 }
 ```
 
+## Return all canceled bids
+
+### Endpoint
+
+```bash
+GET /bids/canceled
+```
+
+### **Query parameters** <a id="query-parameters"></a>
+
+| **Name** | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| page | int | The number of the page that will be returned. | No |
+| limit | int | The number of resources per page. | No |
+| orderBy | string | Type by which should order resources. | No |
+
+### Example
+
+```bash
+curl http://nft.protokol.com:4003/api/nft/exchange/bids/canceled
+```
+
+### Response
+
+```javascript
+{
+  "meta": {
+    "totalCountIsEstimate": true,
+    "count": 1,
+    "pageCount": 1,
+    "totalCount": 1,
+    "next": null,
+    "previous": null,
+    "self": "/nft/exchange/bids/canceled?page=1&limit=100",
+    "first": "/nft/exchange/bids/canceled?page=1&limit=100",
+    "last": "/nft/exchange/bids/canceled?page=1&limit=100"
+  },
+  "data": [
+    {
+      "id": "88bda3c46f75d0ca2372825b2cded17987355ea8dc64f2c11e3855b869bb7935",
+      "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "nftBidCancel": {
+        "bidId": "b7cb70737ea5ae78fd348fb58c02e799dfd296e2ae7d54ac83f95f3e8bf8594b"
+      }
+    }
+  ]
+}
+```
+
+## Return canceled bid by id
+
+### Endpoint
+
+```bash
+GET /bids/canceled/{id}
+```
+
+### Path parameters <a id="path-parameters"></a>
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| id | string | The identifier of the bid to be retrieved. | Yes |
+
+### Example
+
+```bash
+curl http://nft.protokol.com:4003/api/nft/exchange/bids/canceled/88bda3c46f75d0ca2372825b2cded17987355ea8dc64f2c11e3855b869bb7935
+```
+
+### Response
+
+```javascript
+{
+  "data": {
+    "id": "88bda3c46f75d0ca2372825b2cded17987355ea8dc64f2c11e3855b869bb7935",
+    "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+    "nftBidCancel": {
+      "bidId": "b7cb70737ea5ae78fd348fb58c02e799dfd296e2ae7d54ac83f95f3e8bf8594b"
+    }
+  }
+}
+```
+
