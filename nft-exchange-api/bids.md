@@ -4,7 +4,7 @@ description: Api endpoints for Bids.
 
 # Bids
 
-## Return all bids
+## GET - Return all bids
 
 ### Endpoint
 
@@ -55,7 +55,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids
 }
 ```
 
-## Return bid by id
+## GET - Return bid by id
 
 ### Endpoint
 
@@ -90,7 +90,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/b7cb70737ea5ae78fd348fb5
 }
 ```
 
-## Return bids wallet
+## GET - Return bids wallet
 
 ### Endpoint
 
@@ -173,7 +173,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/b7cb70737ea5ae78fd348fb5
 }
 ```
 
-## Search bids
+## POST - Search bids
 
 ### Endpoint
 
@@ -236,7 +236,7 @@ curl --request POST \
 }
 ```
 
-## Return all canceled bids
+## GET - Return all canceled bids
 
 ### Endpoint
 
@@ -285,7 +285,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/canceled
 }
 ```
 
-## Return canceled bid by id
+## GET - Return canceled bid by id
 
 ### Endpoint
 

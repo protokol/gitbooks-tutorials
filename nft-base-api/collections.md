@@ -4,7 +4,7 @@ description: Api endpoints for collections.
 
 # Collections
 
-## Return all collections
+## GET - Return all collections
 
 ### Endpoint
 
@@ -73,7 +73,7 @@ curl http://nft.protokol.com:4003/api/nft/collections
 }
 ```
 
-## Get specific collection by id
+## GET - Specific collection by id
 
 ### Endpoint
 
@@ -126,7 +126,7 @@ curl http://nft.protokol.com:4003/api/nft/collections/a0b5af0fb67f45d8ab090537f5
 }
 ```
 
-## Get schema of specific collection
+## GET -  Schema of specific collection
 
 ### Endpoint
 
@@ -174,7 +174,7 @@ curl http://nft.protokol.com:4003/api/nft/collections/a0b5af0fb67f45d8ab090537f5
 }
 ```
 
-## Get collections wallet --TODO 
+## GET - Collections wallet
 
 ### Endpoint
 

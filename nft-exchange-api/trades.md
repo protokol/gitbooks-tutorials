@@ -4,7 +4,7 @@ description: Api endpoints for trades.
 
 # Trades
 
-## Return all trades
+## GET - Return all trades
 
 ### Endpoint
 
@@ -55,7 +55,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/trades
 }
 ```
 
-## Return trade by id
+## GET - Return trade by id
 
 ### Endpoint
 
@@ -101,7 +101,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/trades/993faf758740972af07b67
 }
 ```
 
-## Search trades
+## POST - Search trades
 
 ### Endpoint
 

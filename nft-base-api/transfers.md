@@ -4,7 +4,7 @@ description: Api endpoints for Transfers.
 
 # Transfers
 
-## Return all Transfers
+## GET - Return all Transfers
 
 ### Endpoint
 
@@ -57,7 +57,7 @@ curl http://nft.protokol.com:4003/api/nft/transfers
 }
 ```
 
-## Return transfer by id
+## GET - Return transfer by id
 
 ### Endpoint
 

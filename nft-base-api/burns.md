@@ -4,7 +4,7 @@ description: Api endpoints for burns.
 
 # Burns
 
-## Return all burns
+## GET - Return all burns
 
 ### Endpoint
 
@@ -54,7 +54,7 @@ curl http://nft.protokol.com:4003/api/nft/burns
 }
 ```
 
-## Return specific burn by id
+## GET - Return burn by id
 
 ### Endpoint
 

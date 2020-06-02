@@ -4,7 +4,7 @@ description: Api endpoints for configurations.
 
 # Configurations
 
-### Configurations <a id="configurations"></a>
+### GET - Configurations <a id="configurations"></a>
 
 **Endpoint:**
 

@@ -4,7 +4,7 @@ description: Api endpoints for Auctions.
 
 # Auctions
 
-## Return all auctions
+## GET - Return all auctions
 
 ### Endpoint <a id="endpoint"></a>
 
@@ -58,7 +58,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions
 }
 ```
 
-## Return auction by id
+## GET - Return auction by id
 
 ### Endpoint
 
@@ -96,7 +96,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/ab1303eb497ab290318c
 }
 ```
 
-## Return auctions wallet
+## GET - Return auctions wallet
 
 ### Endpoint
 
@@ -177,7 +177,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/ab1303eb497ab290318c
 }
 ```
 
-## Search auctions
+## POST - Search auctions
 
 ### Endpoint
 
@@ -244,7 +244,7 @@ curl --request POST \
 }
 ```
 
-## Return all canceled auctions
+## GET - Return all canceled auctions
 
 ### Endpoint
 
@@ -293,7 +293,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/cancled
 }
 ```
 
-## Return canceled auction by id
+## GET - Return canceled auction by id
 
 ### Endpoint
 

@@ -4,7 +4,7 @@ description: Api endpoints for assets.
 
 # Assets
 
-## Return assets
+## GET - Return assets
 
 ### Endpoint
 
@@ -85,7 +85,7 @@ curl http://nft.protokol.com:4003/api/nft/assets
 
 
 
-## Return asset by id
+## GET - Return asset by id
 
 ### Endpoint
 
@@ -124,7 +124,7 @@ curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d
 }
 ```
 
-## Return assets wallet
+## GET - Return assets wallet
 
 ### Endpoint
 
@@ -194,7 +194,7 @@ curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d
 }
 ```
 
-## Search assets
+## POST - Search assets
 
 ### Endpoint
 
@@ -210,6 +210,12 @@ POST /assets/search
 | limit | int  | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
+
+### Body parameters
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| attributeName | object | Attribute to search by. | Yes |
 
 ### Example
 
