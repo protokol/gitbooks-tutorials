@@ -1,5 +1,5 @@
 ---
-description: Api endpoints for Bids.
+description: API endpoints for Bids.
 ---
 
 # Bids
