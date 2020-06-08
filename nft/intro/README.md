@@ -12,11 +12,11 @@ The biggest differentiator of Non-Fungible tokens is that each one is tied to a 
 The ARK Core way of doing [smart-contracts===smart-transactions ](https://learn.ark.dev/application-development/how-to-write-custom-transactions-types)enabled us to build a flexible and dynamic **Protokol NFT** solution to run on top of existing ARK Core functionality. 
 {% endhint %}
 
-![](../../.gitbook/assets/nft-protokol.png)
+![](../../.gitbook/assets/nft-protokol%20%282%29.png)
 
 {% hint style="warning" %}
 This functionality is currently only operational on the develop branch of the new ARK Core v3 version.
 {% endhint %}
 
-We developed a set of plugins to fully support NFT functionality from the creation process to the interaction/trading part that most of the owners of digital assets are interested off. In the next sections, we are going to explain the flow of digital asset creation \(NFT Creation\) to the basic trading functionalities support by our NFT Exchange Platform.
+We developed a set of plugins to fully support NFT functionality from the creation and ownership process to the interaction and trading part for the owners of digital assets. In the next sections, we are going to explain the flow of digital asset creation \(NFT Creation\) to the basic trading functionalities support by our NFT Exchange Platform.
 
