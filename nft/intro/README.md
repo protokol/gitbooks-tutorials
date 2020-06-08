@@ -20,10 +20,3 @@ This functionality is currently only operational on the develop branch of the ne
 
 We developed a set of plugins to fully support NFT functionality from the creation process to the interaction/trading part that most of the owners of digital assets are interested off. In the next sections, we are going to explain the flow of digital asset creation \(NFT Creation\) to the basic trading functionalities support by our NFT Exchange Platform.
 
-
-
-#### References
-
-1. [https://education.district0x.io/general-topics/understanding-ethereum/erc-721-tokens/](https://education.district0x.io/general-topics/understanding-ethereum/erc-721-tokens/)
-2. [http://erc721.org/](http://erc721.org/)
-
