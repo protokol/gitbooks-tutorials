@@ -1,24 +1,21 @@
 # Table of contents
 
 * [Initial page](README.md)
-* [NFT-Base-Api](nft-base-api/README.md)
-  * [Assets](nft-base-api/assets.md)
-  * [Burns](nft-base-api/burns.md)
-  * [Collections](nft-base-api/collections.md)
-  * [Configurations](nft-base-api/configurations.md)
-  * [Transfers](nft-base-api/transfers.md)
-* [NFT-Exchange-Api](nft-exchange-api/README.md)
-  * [Auctions](nft-exchange-api/auctions.md)
-  * [Bids](nft-exchange-api/bids.md)
-  * [Configurations](nft-exchange-api/configurations.md)
-  * [Trades](nft-exchange-api/trades.md)
 
 ## NonFungible Tokens <a id="nft"></a>
 
 * [Introduction](nft/untitled.md)
-* [Endpoints](nft/endpoints/README.md)
-  * [Base NFT](nft/endpoints/base-api.md)
-  * [Exchange NFT](nft/endpoints/exchange-api.md)
+* [Base-API](nft/nft-base-api/README.md)
+  * [Assets](nft/nft-base-api/assets.md)
+  * [Burns](nft/nft-base-api/burns.md)
+  * [Collections](nft/nft-base-api/collections.md)
+  * [Configurations](nft/nft-base-api/configurations.md)
+  * [Transfers](nft/nft-base-api/transfers.md)
+* [Exchange-API](nft/nft-exchange-api/README.md)
+  * [Auctions](nft/nft-exchange-api/auctions.md)
+  * [Bids](nft/nft-exchange-api/bids.md)
+  * [Configurations](nft/nft-exchange-api/configurations.md)
+  * [Trades](nft/nft-exchange-api/trades.md)
 
 ## Identity
 
