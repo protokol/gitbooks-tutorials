@@ -5,9 +5,9 @@
 ## NonFungible Tokens <a id="nft"></a>
 
 * [Getting Started](nft/intro/README.md)
-  * [How To Exchange Digital Assets?](nft/intro/how-to-exchange-digital-assets.md)
-  * [How Are Digital Assets Transfered?](nft/intro/how-are-digital-assets-transfered.md)
   * [How Are Digital Assets Created](nft/intro/how-are-digital-assets-created.md)
+  * [How Are Digital Assets Transfered?](nft/intro/how-are-digital-assets-transfered.md)
+  * [How To Exchange Digital Assets?](nft/intro/how-to-exchange-digital-assets.md)
 * [Base-API](nft/nft-base-api/README.md)
   * [Assets](nft/nft-base-api/assets.md)
   * [Burns](nft/nft-base-api/burns.md)
