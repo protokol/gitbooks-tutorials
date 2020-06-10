@@ -1,5 +1,5 @@
 ---
-description: Api endpoints for configurations.
+description: API Endpoints For Viewing dApp Configurations
 ---
 
 # Configurations

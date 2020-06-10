@@ -1,5 +1,5 @@
 ---
-description: API Endpoints For Managing Assets.
+description: API Endpoints For Managing Assets
 ---
 
 # Assets

@@ -1,5 +1,5 @@
 ---
-description: API endpoints for Auctions.
+description: API Endpoints For Auctions
 ---
 
 # Auctions

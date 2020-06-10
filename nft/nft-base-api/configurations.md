@@ -1,5 +1,5 @@
 ---
-description: Api endpoints for configurations.
+description: Api endpoints for configurations
 ---
 
 # Configurations

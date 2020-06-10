@@ -1,5 +1,5 @@
 ---
-description: API endpoints for trades.
+description: API Endpoints For Trades
 ---
 
 # Trades

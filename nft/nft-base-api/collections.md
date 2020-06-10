@@ -1,5 +1,5 @@
 ---
-description: Api endpoints for collections.
+description: API Endpoints For Token Collections
 ---
 
 # Collections
