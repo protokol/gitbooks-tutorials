@@ -1,13 +1,10 @@
 # Table of contents
 
-* [Initial page](README.md)
-
-## NonFungible Tokens <a id="nft"></a>
-
-* [Getting Started](nft/intro/README.md)
-  * [How Are Digital Assets Created](nft/intro/how-are-digital-assets-created.md)
-  * [How Are Digital Assets Transfered?](nft/intro/how-are-digital-assets-transfered.md)
-  * [How To Exchange Digital Assets?](nft/intro/how-to-exchange-digital-assets.md)
+* [Introduction To Digital Assets \(NFTs\)](README.md)
+* [Tutorials](intro/README.md)
+  * [How To Create Digital Assets](intro/how-are-digital-assets-created.md)
+  * [How To Transfer Digital Assets?](intro/how-are-digital-assets-transfered.md)
+  * [How To Trade Your Digital Assets?](intro/how-to-exchange-digital-assets.md)
 
 ## API
 
