@@ -2,5 +2,5 @@
 description: Managing Digital Asset Collections
 ---
 
-# Base-API
+# Base
 
