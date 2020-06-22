@@ -46,26 +46,32 @@ curl http://nft.protokol.com:4003/api/nft/collections
   },
   "data": [
     {
-      "id": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
-      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "name": "protokol card",
-      "description": "A card from proto game",
-      "maximumSupply": 100,
+      "id": "8eeaf8899d5230b22e6979805e9a8865eb7093ccae028b46a972f80fd60c790b",
+      "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "name": "FIFA-20-PLAYERS",
+      "description": "FIFA 2020 Players",
+      "maximumSupply": 1,
       "jsonSchema": {
         "properties": {
-          "sales": {
+          "name": {
+            "type": "string"
+          },
+          "pac": {
             "type": "number"
           },
-          "connections": {
+          "sho": {
             "type": "number"
           },
-          "survival": {
+          "pas": {
             "type": "number"
           },
-          "skin": {
+          "dri": {
             "type": "number"
           },
-          "damage": {
+          "def": {
+            "type": "number"
+          },
+          "phy": {
             "type": "number"
           }
         }
@@ -92,7 +98,7 @@ GET /collections/{id}
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/collections/a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6
+curl http://nft.protokol.com:4003/api/nft/collections/8eeaf8899d5230b22e6979805e9a8865eb7093ccae028b46a972f80fd60c790b
 ```
 
 ### Response
@@ -100,26 +106,32 @@ curl http://nft.protokol.com:4003/api/nft/collections/a0b5af0fb67f45d8ab090537f5
 ```javascript
 {
   "data": {
-    "id": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
-    "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-    "name": "protokol card",
-    "description": "A card from proto game",
-    "maximumSupply": 100,
+    "id": "8eeaf8899d5230b22e6979805e9a8865eb7093ccae028b46a972f80fd60c790b",
+    "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+    "name": "FIFA-20-PLAYERS",
+    "description": "FIFA 2020 Players",
+    "maximumSupply": 1,
     "jsonSchema": {
       "properties": {
-        "sales": {
+        "name": {
+          "type": "string"
+        },
+        "pac": {
           "type": "number"
         },
-        "connections": {
+        "sho": {
           "type": "number"
         },
-        "survival": {
+        "pas": {
           "type": "number"
         },
-        "skin": {
+        "dri": {
           "type": "number"
         },
-        "damage": {
+        "def": {
+          "type": "number"
+        },
+        "phy": {
           "type": "number"
         }
       }
@@ -147,7 +159,7 @@ GET /collections/{id}/schema
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/collections/a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6/schema
+curl http://nft.protokol.com:4003/api/nft/collections/8eeaf8899d5230b22e6979805e9a8865eb7093ccae028b46a972f80fd60c790b/schema
 ```
 
 ### Response
@@ -155,22 +167,28 @@ curl http://nft.protokol.com:4003/api/nft/collections/a0b5af0fb67f45d8ab090537f5
 ```javascript
 {
   "data": {
-    "id": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
-    "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    "id": "8eeaf8899d5230b22e6979805e9a8865eb7093ccae028b46a972f80fd60c790b",
+    "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
     "properties": {
-      "sales": {
+      "name": {
+        "type": "string"
+      },
+      "pac": {
         "type": "number"
       },
-      "connections": {
+      "sho": {
         "type": "number"
       },
-      "survival": {
+      "pas": {
         "type": "number"
       },
-      "skin": {
+      "dri": {
         "type": "number"
       },
-      "damage": {
+      "def": {
+        "type": "number"
+      },
+      "phy": {
         "type": "number"
       }
     }
