@@ -6,7 +6,7 @@ description: Examples Showing How To Create Digital Assets (NFTs)
 
 ## **STEP 1. Register A New Collection Of Digital Assets**
 
-NFTRegisterCollection transaction enables us to register a new type of digitial assets by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create \(mine\) tokens with the help of NFTCreate transaction type. We need to define:
+NFTRegisterCollection transaction enables us to register a new type of digital assets by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create \(mine\) tokens with the help of NFTCreate transaction type. We need to define:
 
 * asset name
 * asset description
@@ -14,7 +14,7 @@ NFTRegisterCollection transaction enables us to register a new type of digitial 
 * jsonSchema - structure of the digital asset
 * allowedIssuers - if empty anyone can create/mine a new asset
 
-### How To Use NFTRegisterCollection Example:
+### How To Use NFTRegisterCollection:
 
 #### Initialization
 
@@ -67,7 +67,7 @@ We can create \(mine\) new digital assets from the genesis wallet \(the wallet t
 * collection id
 * token attributes \(need to comply with the registered JSONSchema from collection id\)
 
-After token is created it lives inside the genesis wallet, until it is transfered to a trading address, or to a new owner. 
+After token is created it lives inside the genesis wallet, until it is transferred to a trading address, or to a new owner. 
 
 ### How To Use NFTCreate Transaction:
 
@@ -108,7 +108,7 @@ new Builders.NFTTransferBuilder()
 
 ## STEP 4. Burn Digital Assets \(optional\)
 
-Our NFT plugin set also enables burning capability for digital assets. This is usefull with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owners can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
+Our NFT plugin set also enables burning capability for digital assets. This is useful with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owners can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
 
 ### How To Use NFTBurn Transaction:
 

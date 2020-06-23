@@ -4,6 +4,16 @@ description: A light typescript client supporting NFT and public ARK REST API
 
 # NFT Client
 
+## Prerequisites <a id="prerequisites"></a>
+
+Before we get started we need to make sure that all of the required dependencies are installed.
+
+### [yarn](https://classic.yarnpkg.com/lang/en/)
+
+```text
+yarn add @protokol/nft-client
+```
+
 ## Initialization
 
 ```typescript
