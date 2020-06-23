@@ -23,5 +23,6 @@
 ## SDK
 
 * [TypeScript](sdk/typescript/README.md)
+  * [Crypto Examples](sdk/typescript/crypto-examples.md)
   * [Complementary Examples](sdk/typescript/complementary-examples.md)
 
