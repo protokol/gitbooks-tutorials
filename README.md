@@ -24,9 +24,9 @@ All of the mentioned functionalities and content is licensed under [Creative Com
 * Peer-to-peer, secure trading enabled by blockchain technology 
 * NFT can be sold for fan tokens, and traded / exchanged back into Fiat
 
-## Overview Of Digital Asset  Management Process 
+## Overview Of Digital Asset Management Process 
 
-We developed a set of plugins to fully support NFT functionality from the creation and ownership process to the interaction and trading part for the owners of digital assets. The diagram below shows the actors and top-level processes associated with Digital Asset management functionalities. 
+We developed a set of ARK Core plugins and SKDs that fully support Digital Asset management process,  from the creation and ownership to the interaction and trading part of digital assets. The diagram below shows the actors and top-level processes associated with Digital Asset management functionalities. 
 
 ![](.gitbook/assets/nft-3-.svg)
 
