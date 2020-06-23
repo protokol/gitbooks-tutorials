@@ -1,12 +1,8 @@
----
-description: >-
-  Complementary Examples of NFT Base Crypto SDK and NFT Exchange Crypto SDK with
-  the NFT Client SDK to get your transactions out to the network and verified.
----
-
 # Examples
 
-## Prerequisites <a id="prerequisites"></a>
+Complementary Examples of NFT Base Crypto SDK and NFT Exchange Crypto SDK with the NFT Client SDK to get your transactions out to the network and verified.
+
+### Prerequisites
 
 Before we get started we need to make sure that all of the required dependencies are installed.
 
@@ -33,10 +29,6 @@ npm install @protokol/nft-base-crypto
 npm install @protokol/nft-exchange-crypto
 npm install @protokol/nft-client
 ```
-
-## Troubleshooting
-
-For troubleshooting see [this section from ARK Core Official SDK Documentation.](https://sdk.ark.dev/typescript/complementary-examples#troubleshooting)
 
 ## How To Create And Broadcast NFT Base Transactions
 
@@ -424,4 +416,8 @@ export const NFTAcceptTrade = async () => {
 };
 
 ```
+
+## Troubleshooting
+
+For troubleshooting see [this section from ARK Core Official SDK Documentation.](https://sdk.ark.dev/typescript/complementary-examples#troubleshooting)
 
