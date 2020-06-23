@@ -9,8 +9,10 @@ Non-Fungible tokens \(NFTs\) enable new types of collectible digital assets as w
 The biggest differentiator of Non-Fungible tokens is that each one is tied to a different identifier, **making each token unique to its owner**. For example on Ethereum blockchain [ERC721](http://erc721.org/) is a standard interface for Non-Fungible tokens, meaning ERC721 tokens are simply a subset of Ethereum tokens.
 
 {% hint style="success" %}
-The ARK Core way of doing [smart-contracts===smart-transactions ](https://learn.ark.dev/application-development/how-to-write-custom-transactions-types)enabled us to build a flexible and dynamic **Protokol NFT** solution to run on top of existing ARK Core functionality. 
+The ARK Core way of doing [smart-transactions ](https://learn.ark.dev/application-development/how-to-write-custom-transactions-types)enabled us to build a flexible and dynamic **Protokol NFT** solution to run on top of existing ARK Core functionality. 
 {% endhint %}
+
+![](../.gitbook/assets/nft-3-.svg)
 
 ![](../.gitbook/assets/nft-protokol%20%282%29.png)
 

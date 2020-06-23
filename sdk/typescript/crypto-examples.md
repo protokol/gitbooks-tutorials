@@ -1,4 +1,17 @@
-# Crypto Examples
+---
+description: Examples Showing How To Build NFT Base And Exchange Transaction Types
+---
+
+# How To Build NFT Base Transaction Types
+
+NFT Base Transaction Types enable you to:
+
+1. Register a new collection of digital assets
+2. Create \(mine\) digital Assets based on the registered collection
+3. Transfer digital assets to new owners \(give away option\)
+4. Burn digital assets 
+
+See below for specific transaction type creation examples.
 
 ## NFT Base Builders
 

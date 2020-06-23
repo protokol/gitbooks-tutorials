@@ -1,12 +1,13 @@
 # Table of contents
 
 * [Introduction To Digital Assets \(NFTs\)](README.md)
+* [Understaning Digitial Assets On Blockhain](understaning-digitial-assets-on-blockhain.md)
 * [Tutorials](intro/README.md)
   * [How To Create Digital Assets](intro/how-are-digital-assets-created.md)
   * [How To Transfer Digital Assets?](intro/how-are-digital-assets-transfered.md)
   * [How To Trade Your Digital Assets?](intro/how-to-exchange-digital-assets.md)
 
-## API
+## API ENDPOINTS <a id="api"></a>
 
 * [Base](api/nft-base-api/README.md)
   * [Collections](api/nft-base-api/collections.md)
@@ -23,6 +24,6 @@
 ## SDK
 
 * [TypeScript](sdk/typescript/README.md)
-  * [Crypto Examples](sdk/typescript/crypto-examples.md)
+  * [How To Build NFT Base Transaction Types](sdk/typescript/crypto-examples.md)
   * [Complementary Examples](sdk/typescript/complementary-examples.md)
 

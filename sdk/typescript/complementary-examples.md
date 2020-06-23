@@ -32,7 +32,7 @@ npm install @protokol/nft-exchange-crypto
 npm install @protokol/nft-client
 ```
 
-## NFT Base Transactions
+## How To Create And Broadcast NFT Base Transactions
 
 ### NFTRegisterCollection - Creating and Broadcasting
 
@@ -221,7 +221,7 @@ export const NFTBurn = async () => {
 
 ```
 
-## NFT Exchange Transactions
+## How To Create And Broadcast NFT Exchange Transactions
 
 ### NFTAuction - Creating and Broadcasting
 
