@@ -10,13 +10,13 @@
 
 ## API ENDPOINTS <a id="api"></a>
 
-* [Creation](api/nft-base-api/README.md)
+* [Creation \(Base\)](api/nft-base-api/README.md)
   * [Collections](api/nft-base-api/collections.md)
   * [Assets](api/nft-base-api/assets.md)
   * [Transfers](api/nft-base-api/transfers.md)
   * [Burns](api/nft-base-api/burns.md)
   * [Configurations](api/nft-base-api/configurations.md)
-* [Trade/Exchange](api/nft-exchange-api/README.md)
+* [Trade \(Exchange\)](api/nft-exchange-api/README.md)
   * [Auctions](api/nft-exchange-api/auctions.md)
   * [Bids](api/nft-exchange-api/bids.md)
   * [Trades](api/nft-exchange-api/trades.md)

@@ -2,5 +2,5 @@
 description: Managing Exchange Functionality For All Digital Assets
 ---
 
-# Trade/Exchange
+# Trade \(Exchange\)
 
