@@ -4,6 +4,15 @@ description: API Endpoints For Managing Assets
 
 # Assets
 
+## List of Asset Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/assets](https://docs.protokol.com/nft/api/nft-base-api/assets#get-return-all-assets) | return all assets | GET |
+| [/assets/:id](https://docs.protokol.com/nft/api/nft-base-api/assets#get-return-asset-by-id) | return asset by :id | GET |
+| [/assets/:id/wallets](https://docs.protokol.com/nft/api/nft-base-api/assets#get-return-assets-wallet) | return the wallet owning an asset | GET |
+| [/assets/search](https://docs.protokol.com/nft/api/nft-base-api/assets#post-search-assets-by-attributes) | search assets | POST |
+
 ## GET - Return All Assets
 
 Returns assets in a paginated manner.

@@ -4,6 +4,17 @@ description: API Endpoints For Token Collections
 
 # Collections
 
+## List of Collection Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/collections](https://docs.protokol.com/nft/api/nft-base-api/collections#get-return-all-collections) | return all collections | GET |
+| [/collections/:id](https://docs.protokol.com/nft/api/nft-base-api/collections#get-specific-collection-by-id) | return collection by :id | GET |
+| [/collections/:id/schema](https://docs.protokol.com/nft/api/nft-base-api/collections#get-collection-schema) | return the schema of a collection | GET |
+| [/collections/:id/wallets](https://docs.protokol.com/nft/api/nft-base-api/collections#get-collections-wallet) | return the wallet owning a collection | GET |
+| [/collections/search](https://docs.protokol.com/nft/api/nft-base-api/collections#post-collections-search) | search collections | POST |
+| [/collections/:id/assets](https://docs.protokol.com/nft/api/nft-base-api/collections#get-return-all-collection-assets) | return the assets of a collection | GET |
+
 ## GET - Return All Collections
 
 Return all registered asset collection types. 
