@@ -13,18 +13,18 @@
 * [NFT Client](sdk/nft-client.md)
 * [Examples](sdk/complementary-examples.md)
 
-## BASE-API ENDPOINTS <a id="api"></a>
+## BASE-API ENDPOINTS <a id="nft-base-api"></a>
 
-* [Collections](api/collections.md)
-* [Assets](api/assets.md)
-* [Transfers](api/transfers.md)
-* [Burns](api/burns.md)
-* [Configurations](api/configurations.md)
+* [Collections](nft-base-api/collections.md)
+* [Assets](nft-base-api/assets.md)
+* [Transfers](nft-base-api/transfers.md)
+* [Burns](nft-base-api/burns.md)
+* [Configurations](nft-base-api/configurations.md)
 
-## EXCHANGE-API ENDPOINTS
+## EXCHANGE-API ENDPOINTS <a id="nft-exchange-api"></a>
 
-* [Auctions](exchange-api-endpoints/auctions.md)
-* [Bids](exchange-api-endpoints/bids.md)
-* [Trades](exchange-api-endpoints/trades.md)
-* [Configurations](exchange-api-endpoints/configurations.md)
+* [Auctions](nft-exchange-api/auctions.md)
+* [Bids](nft-exchange-api/bids.md)
+* [Trades](nft-exchange-api/trades.md)
+* [Configurations](nft-exchange-api/configurations.md)
 

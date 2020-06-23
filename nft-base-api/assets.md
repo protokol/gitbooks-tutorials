@@ -1,10 +1,21 @@
 ---
-description: Api endpoints for assets.
+description: API Endpoints For Managing Assets
 ---
 
 # Assets
 
-## GET - Return assets
+## List of Asset Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/assets](https://docs.protokol.com/nft/api/nft-base-api/assets#get-return-all-assets) | return all assets | GET |
+| [/assets/:id](https://docs.protokol.com/nft/api/nft-base-api/assets#get-return-asset-by-id) | return asset by :id | GET |
+| [/assets/:id/wallets](https://docs.protokol.com/nft/api/nft-base-api/assets#get-return-assets-wallet) | return the wallet owning an asset | GET |
+| [/assets/search](https://docs.protokol.com/nft/api/nft-base-api/assets#post-search-assets-by-attributes) | search assets | POST |
+
+## GET - Return All Assets
+
+Returns assets in a paginated manner.
 
 ### Endpoint
 
@@ -12,7 +23,7 @@ description: Api endpoints for assets.
 GET /assets
 ```
 
-### **Query parameters**
+### **Query Parameters**
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -32,10 +43,10 @@ curl http://nft.protokol.com:4003/api/nft/assets
 ```javascript
 {
   "meta": {
-    "totalCountIsEstimate": false,
-    "count": 3,
+    "totalCountIsEstimate": true,
+    "count": 2,
     "pageCount": 1,
-    "totalCount": 3,
+    "totalCount": 2,
     "next": null,
     "previous": null,
     "self": "/nft/assets?page=1&limit=100&transform=true",
@@ -44,39 +55,31 @@ curl http://nft.protokol.com:4003/api/nft/assets
   },
   "data": [
     {
-      "id": "95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c",
-      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "collectionId": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
+      "id": "efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59",
+      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
       "attributes": {
-        "sales": 1300,
-        "connection": 1300,
-        "survival": 1300,
-        "skin": 80,
-        "damage": 5
+        "name": "Antonio Caracciolo",
+        "pac": 78,
+        "sho": 65,
+        "pas": 23,
+        "dri": 32,
+        "def": 21,
+        "phy": 12
       }
     },
     {
-      "id": "099f664716ed062a494a7ca41bda699783f3d16bae9e61b1658ea981ccaa1a6c",
-      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "collectionId": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
+      "id": "194a9b4768faf5e85441c2c900eb0be6ac8e8a80074e6ee78f7ef9295b1f50a5",
+      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
       "attributes": {
-        "sales": 1300,
-        "connection": 1300,
-        "survival": 1300,
-        "skin": 80,
-        "damage": 5
-      }
-    },
-    {
-      "id": "37ad059074ae6cec2bff69800b8dd55723848c6a73299369f1cf5d33222899cd",
-      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "collectionId": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
-      "attributes": {
-        "sales": 1300,
-        "connection": 1300,
-        "survival": 1300,
-        "skin": 80,
-        "damage": 5
+        "name": "Antonio Caracciolo",
+        "pac": 78,
+        "sho": 65,
+        "pas": 23,
+        "dri": 32,
+        "def": 21,
+        "phy": 12
       }
     }
   ]
@@ -85,7 +88,9 @@ curl http://nft.protokol.com:4003/api/nft/assets
 
 
 
-## GET - Return asset by id
+## GET - Return Asset By ID
+
+Returns a specific asset and its properties, based on the specified asset id.
 
 ### Endpoint
 
@@ -102,7 +107,7 @@ GET /assets/{id}
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c
+curl http://nft.protokol.com:4003/api/nft/assets/efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59
 ```
 
 ### Response
@@ -110,21 +115,25 @@ curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d
 ```javascript
 {
   "data": {
-    "id": "95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c",
-    "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-    "collectionId": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
+    "id": "efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59",
+    "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+    "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
     "attributes": {
-      "sales": 1300,
-      "connection": 1300,
-      "survival": 1300,
-      "skin": 80,
-      "damage": 5
+      "name": "Antonio Caracciolo",
+      "pac": 78,
+      "sho": 65,
+      "pas": 23,
+      "dri": 32,
+      "def": 21,
+      "phy": 12
     }
   }
 }
 ```
 
-## GET - Return assets wallet
+## GET - Return Assets Wallet
+
+Returns a specific assets owner wallet information.
 
 ### Endpoint
 
@@ -141,7 +150,7 @@ GET /assets/{id}/wallets
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c/wallets
+curl http://nft.protokol.com:4003/api/nft/assets/efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59/wallets
 ```
 
 ### Response
@@ -149,52 +158,56 @@ curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d
 ```javascript
 {
   "data": {
-    "address": "ANBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo",
-    "publicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    "address": "AV6GP5qhhsZG6MHb4gShy22doUnVjEKHcN",
+    "publicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
     "nft": {
-      "base": {
-        "nftCollections": [
-          {
-            "collectionId": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
-            "currentSupply": 3,
-            "nftCollectionAsset": {
-              "name": "protokol card",
-              "description": "A card from proto game",
-              "maximumSupply": 100,
-              "jsonSchema": {
-                "properties": {
-                  "sales": {
-                    "type": "number"
-                  },
-                  "connections": {
-                    "type": "number"
-                  },
-                  "survival": {
-                    "type": "number"
-                  },
-                  "skin": {
-                    "type": "number"
-                  },
-                  "damage": {
-                    "type": "number"
-                  }
+      "collections": {
+        "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55": {
+          "currentSupply": 2,
+          "nftCollectionAsset": {
+            "name": "FIFA-20-PLAYERS",
+            "description": "FIFA 2020 Players",
+            "maximumSupply": 100,
+            "jsonSchema": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "pac": {
+                  "type": "number"
+                },
+                "sho": {
+                  "type": "number"
+                },
+                "pas": {
+                  "type": "number"
+                },
+                "dri": {
+                  "type": "number"
+                },
+                "def": {
+                  "type": "number"
+                },
+                "phy": {
+                  "type": "number"
                 }
               }
             }
           }
-        ],
-        "nftIds": [
-          "95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c",
-          "099f664716ed062a494a7ca41bda699783f3d16bae9e61b1658ea981ccaa1a6c",
-          "37ad059074ae6cec2bff69800b8dd55723848c6a73299369f1cf5d33222899cd"
-        ]
-      }
+        }
+      },
+      "assetsIds": [
+        "efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59",
+        "194a9b4768faf5e85441c2c900eb0be6ac8e8a80074e6ee78f7ef9295b1f50a5"
+      ]
     }
   }
 }
 ```
 
-## POST - Search assets
+## POST - Search Assets By Attributes
+
+Search assets by their JSON attributes. All attributes can be searched.
 
 ### Endpoint
 
@@ -202,7 +215,7 @@ curl http://nft.protokol.com:4003/api/nft/assets/95aa99984e1fbc5af94742a59ab5e5d
 POST /assets/search
 ```
 
-### **Query parameters**
+### **Query Parameters**
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -211,7 +224,7 @@ POST /assets/search
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
 
-### Body parameters
+### Body Parameters
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -224,7 +237,7 @@ curl --request POST \
   --url http://nft.protokol.com:4003/api/nft/assets/search \
   --header 'content-type: application/json' \
   --data '{
-	"sales": 1300
+	  "name": "Antonio Caracciolo"
 }'
 
 ```
@@ -234,10 +247,10 @@ curl --request POST \
 ```javascript
 {
   "meta": {
-    "totalCountIsEstimate": false,
-    "count": 3,
+    "totalCountIsEstimate": true,
+    "count": 2,
     "pageCount": 1,
-    "totalCount": 3,
+    "totalCount": 2,
     "next": null,
     "previous": null,
     "self": "/nft/assets/search?page=1&limit=100&transform=true",
@@ -246,39 +259,31 @@ curl --request POST \
   },
   "data": [
     {
-      "id": "95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c",
-      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "collectionId": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
+      "id": "efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59",
+      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
       "attributes": {
-        "sales": 1300,
-        "connection": 1300,
-        "survival": 1300,
-        "skin": 80,
-        "damage": 5
+        "name": "Antonio Caracciolo",
+        "pac": 78,
+        "sho": 65,
+        "pas": 23,
+        "dri": 32,
+        "def": 21,
+        "phy": 12
       }
     },
     {
-      "id": "099f664716ed062a494a7ca41bda699783f3d16bae9e61b1658ea981ccaa1a6c",
-      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "collectionId": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
+      "id": "194a9b4768faf5e85441c2c900eb0be6ac8e8a80074e6ee78f7ef9295b1f50a5",
+      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
       "attributes": {
-        "sales": 1300,
-        "connection": 1300,
-        "survival": 1300,
-        "skin": 80,
-        "damage": 5
-      }
-    },
-    {
-      "id": "37ad059074ae6cec2bff69800b8dd55723848c6a73299369f1cf5d33222899cd",
-      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "collectionId": "a0b5af0fb67f45d8ab090537f5bb80650bb73de6c36934e334b07683ba305db6",
-      "attributes": {
-        "sales": 1300,
-        "connection": 1300,
-        "survival": 1300,
-        "skin": 80,
-        "damage": 5
+        "name": "Antonio Caracciolo",
+        "pac": 78,
+        "sho": 65,
+        "pas": 23,
+        "dri": 32,
+        "def": 21,
+        "phy": 12
       }
     }
   ]

@@ -1,8 +1,15 @@
 ---
-description: Api endpoints for Transfers.
+description: API Endpoints For NFT Transfers
 ---
 
 # Transfers
+
+## List of Transfer Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/transfers](https://docs.protokol.com/nft/api/nft-base-api/transfers#get-return-all-transfers) | return all transfers | GET |
+| [/transfers/:id](https://docs.protokol.com/nft/api/nft-base-api/transfers#get-return-transfer-by-id) | return transfer by :id | GET |
 
 ## GET - Return all Transfers
 

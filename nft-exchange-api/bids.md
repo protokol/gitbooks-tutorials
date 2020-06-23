@@ -1,10 +1,21 @@
 ---
-description: Api endpoints for Bids.
+description: API Endpoints For Bids
 ---
 
 # Bids
 
-## GET - Return all bids
+## List of Bid Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/bids](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-all-bids) | return all bids | GET |
+| [/bids/:id](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-bid-by-id) | return bid by :id | GET |
+| [/bids/:id/wallets](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-bids-wallet) | return the wallet owning a bid | GET |
+| [/bids/search](https://docs.protokol.com/nft/api/nft-exchange-api/bids#post-search-bids) | search bids | POST |
+| [/bids/canceled](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-all-canceled-bids) | return all canceled bids | GET |
+| [/bids/canceled/:id](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-canceled-bid-by-id) | return canceled bid by :id | GET |
+
+## GET - Return All Bids
 
 ### Endpoint
 
@@ -12,7 +23,7 @@ description: Api endpoints for Bids.
 GET /bids
 ```
 
-### **Query parameters** <a id="query-parameters"></a>
+### **Query Parameters** <a id="query-parameters"></a>
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -55,7 +66,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids
 }
 ```
 
-## GET - Return bid by id
+## GET - Return Bid By Id
 
 ### Endpoint
 
@@ -63,7 +74,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids
 GET /bids/{id}
 ```
 
-### Path parameters <a id="path-parameters"></a>
+### Path Parameters <a id="path-parameters"></a>
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -90,7 +101,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/b7cb70737ea5ae78fd348fb5
 }
 ```
 
-## GET - Return bids wallet
+## GET - Return Bids Wallet
 
 ### Endpoint
 
@@ -98,7 +109,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/b7cb70737ea5ae78fd348fb5
 GET /bids/{id}/wallets
 ```
 
-### Path parameters <a id="path-parameters-1"></a>
+### Path Parameters <a id="path-parameters-1"></a>
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -173,7 +184,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/b7cb70737ea5ae78fd348fb5
 }
 ```
 
-## POST - Search bids
+## POST - Search Bids
 
 ### Endpoint
 
@@ -181,7 +192,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/b7cb70737ea5ae78fd348fb5
 POST /bids/search
 ```
 
-### **Query parameters** <a id="query-parameters-1"></a>
+### **Query Parameters** <a id="query-parameters-1"></a>
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -236,7 +247,7 @@ curl --request POST \
 }
 ```
 
-## GET - Return all canceled bids
+## GET - Return All Canceled Bids
 
 ### Endpoint
 
@@ -244,7 +255,7 @@ curl --request POST \
 GET /bids/canceled
 ```
 
-### **Query parameters** <a id="query-parameters"></a>
+### **Query Parameters** <a id="query-parameters"></a>
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -285,7 +296,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/canceled
 }
 ```
 
-## GET - Return canceled bid by id
+## GET - Return Canceled Bid By Id
 
 ### Endpoint
 
@@ -293,7 +304,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/canceled
 GET /bids/canceled/{id}
 ```
 
-### Path parameters <a id="path-parameters"></a>
+### Path Parameters <a id="path-parameters"></a>
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |

@@ -1,10 +1,21 @@
 ---
-description: Api endpoints for Auctions.
+description: API Endpoints For Auctions
 ---
 
 # Auctions
 
-## GET - Return all auctions
+## List of Auction Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/auctions](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-all-auctions) | return all auctions | GET |
+| [/auctions/:id](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-an-auction-by-id) | return auction by :id | GET |
+| [/auctions/:id/wallets](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-auctions-wallet) | return the wallet owning an auction | GET |
+| [/auctions/search](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#post-search-auctions) | search auctions | POST |
+| [/auctions/canceled](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-all-canceled-auctions) | return all canceled auctions | GET |
+| [/auctions/canceled/:id](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-canceled-auction-by-id) | return canceled auction by :id | GET |
+
+## GET - Return All Auctions
 
 ### Endpoint <a id="endpoint"></a>
 
@@ -12,7 +23,7 @@ description: Api endpoints for Auctions.
 GET /auctions
 ```
 
-### **Query parameters** <a id="query-parameters"></a>
+### **Query Parameters** <a id="query-parameters"></a>
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -58,7 +69,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions
 }
 ```
 
-## GET - Return auction by id
+## GET - Return An Auction By Id
 
 ### Endpoint
 
@@ -66,7 +77,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions
 GET /auctions/{id}
 ```
 
-### Path parameters <a id="path-parameters"></a>
+### Path Parameters <a id="path-parameters"></a>
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -96,7 +107,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/ab1303eb497ab290318c
 }
 ```
 
-## GET - Return auctions wallet
+## GET - Return Auctions Wallet
 
 ### Endpoint
 
@@ -104,7 +115,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/ab1303eb497ab290318c
 GET /auctions/{id}/wallets
 ```
 
-### Path parameters <a id="path-parameters-1"></a>
+### Path Parameters <a id="path-parameters-1"></a>
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -177,7 +188,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/ab1303eb497ab290318c
 }
 ```
 
-## POST - Search auctions
+## POST - Search Auctions
 
 ### Endpoint
 
@@ -244,7 +255,7 @@ curl --request POST \
 }
 ```
 
-## GET - Return all canceled auctions
+## GET - Return All Canceled Auctions
 
 ### Endpoint
 
@@ -293,7 +304,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/cancled
 }
 ```
 
-## GET - Return canceled auction by id
+## GET - Return Canceled Auction By Id
 
 ### Endpoint
 
@@ -301,7 +312,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/cancled
 GET /auctions/canceled/{id}
 ```
 
-### Path parameters <a id="path-parameters"></a>
+### Path Parameters <a id="path-parameters"></a>
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |

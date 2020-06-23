@@ -1,31 +1,38 @@
 ---
-description: Api endpoints for configurations.
+description: Api endpoints for configurations
 ---
 
 # Configurations
 
-### GET - Configurations
+## List of **Configuration** Endpoints
 
-**Endpoint:**
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/configurations](https://docs.protokol.com/nft/api/nft-base-api/configurations#get-configurations) | return all configurations | GET |
+
+## GET - Configurations
+
+### **Endpoint**
 
 ```text
 GET /configurations
 ```
 
-**Example:**
+### **Example**
 
 ```bash
 curl http://nft.protokol.com:4003/api/nft/configurations
 ```
 
-**Result**
+### **Result**
 
 ```javascript
 {
   "data": {
     "package": {
       "name": "@protokol/nft-base-api",
-      "version": "0.1.0"
+      "currentVersion": "1.0.0-beta.2",
+      "latestVersion": "1.0.0-beta.0"
     },
     "crypto": {
       "defaults": {
@@ -38,7 +45,7 @@ curl http://nft.protokol.com:4003/api/nft/configurations
           "minLength": 5,
           "maxLength": 80
         },
-        "nftCollectionAllowedSchemaIssuers": {
+        "nftCollectionAllowedIssuers": {
           "minItems": 1,
           "maxItems": 10
         },

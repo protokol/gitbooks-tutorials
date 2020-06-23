@@ -1,10 +1,18 @@
 ---
-description: Api endpoints for trades.
+description: API Endpoints For Trades
 ---
 
 # Trades
 
-## GET - Return all trades
+## List of Trade Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/trades](https://docs.protokol.com/nft/api/nft-exchange-api/trades#get-return-all-trades) | return all trades | GET |
+| [/trades/:id](https://docs.protokol.com/nft/api/nft-exchange-api/trades#get-return-trade-by-id) | return trade by :id | GET |
+| [/trades/search](https://docs.protokol.com/nft/api/nft-exchange-api/trades#post-search-trades) | search trades | POST |
+
+## GET - Return All Trades
 
 ### Endpoint
 
@@ -12,7 +20,7 @@ description: Api endpoints for trades.
 GET /trades
 ```
 
-### **Query parameters** <a id="query-parameters"></a>
+### **Query Parameters** <a id="query-parameters"></a>
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -55,7 +63,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/trades
 }
 ```
 
-## GET - Return trade by id
+## GET - Return Trade By Id
 
 ### Endpoint
 
@@ -63,7 +71,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/trades
 GET /trades/{id}
 ```
 
-### Path parameters <a id="path-parameters"></a>
+### Path Parameters <a id="path-parameters"></a>
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -101,7 +109,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/trades/993faf758740972af07b67
 }
 ```
 
-## POST - Search trades
+## POST - Search Trades
 
 ### Endpoint
 
@@ -109,7 +117,7 @@ curl http://nft.protokol.com:4003/api/nft/exchange/trades/993faf758740972af07b67
 POST /trades/search
 ```
 
-### **Query parameters** <a id="query-parameters"></a>
+### **Query Parameters** <a id="query-parameters"></a>
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |

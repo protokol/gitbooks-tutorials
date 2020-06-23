@@ -1,10 +1,19 @@
 ---
-description: Api endpoints for burns.
+description: API Endpoints for managing NFT Burn Transactions
 ---
 
 # Burns
 
-## GET - Return all burns
+## List of Burn Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/burns](https://docs.protokol.com/nft/api/nft-base-api/burns#get-return-all-burns) | return all burns | GET |
+| [/burns/:id](https://docs.protokol.com/nft/api/nft-base-api/burns#get-return-burn-by-id) | return burn by :id | GET |
+
+## GET - Return All Burns
+
+Return all NFTBurn transactions
 
 ### Endpoint
 
@@ -12,7 +21,7 @@ description: Api endpoints for burns.
 GET /burns
 ```
 
-### **Query parameters**
+### **Query Parameters**
 
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -54,7 +63,9 @@ curl http://nft.protokol.com:4003/api/nft/burns
 }
 ```
 
-## GET - Return burn by id
+## GET - Return Burn By ID
+
+Return a NFTBurn transaction by specified id
 
 ### Endpoint
 
@@ -62,7 +73,7 @@ curl http://nft.protokol.com:4003/api/nft/burns
 GET /burns/{id}
 ```
 
-### Path parameters
+### Path Parameters
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
