@@ -25,5 +25,6 @@
 
 ## SDK
 
-* [TypeScript](sdk/typescript.md)
+* [TypeScript](sdk/typescript/README.md)
+  * [Client Examples](sdk/typescript/client-examples.md)
 
