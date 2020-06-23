@@ -1,6 +1,10 @@
-# Introduction To Digital Assets \(NFTs\)
+---
+description: Digital Assets (NFTs) and Blockchain - A Perfect Match
+---
 
-Digital Assets represent anything that can be saved on the blockchain and backed with a traceable and uniquie identifier. This in practice translates to many use-cases that can bee seen in different industries \(identity management, supply chain,  digital trading cards and collectibles, loyalty cards and fan tokens, proof of completion/ownership/authenticy and many more\).    
+# Introduction To Digital Assets
+
+Digital Assets represent anything that can be saved or tagged on the blockchain supported with a traceable and **unique** identifier. This in practice translates to many use-cases that can be seen in different industries \(identity management, supply chain,  digital trading cards and collectibles, loyalty cards and fan tokens, proof of completion/ownership/authenticy and many more\).    
   
 To support different industries and their use-cases we have developed a set of NFT-Core plugins and applications that enable us to quickly adopt and scale in related industry verticals. 
 
