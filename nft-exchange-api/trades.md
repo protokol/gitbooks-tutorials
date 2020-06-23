@@ -8,9 +8,9 @@ description: API Endpoints For Trades
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| [/trades](https://docs.protokol.com/nft/api/nft-exchange-api/trades#get-return-all-trades) | return all trades | GET |
-| [/trades/:id](https://docs.protokol.com/nft/api/nft-exchange-api/trades#get-return-trade-by-id) | return trade by :id | GET |
-| [/trades/search](https://docs.protokol.com/nft/api/nft-exchange-api/trades#post-search-trades) | search trades | POST |
+| [/trades](https://docs.protokol.com/nft/nft-exchange-api/trades#get-return-all-trades) | return all trades | GET |
+| [/trades/:id](https://docs.protokol.com/nft/nft-exchange-api/trades#get-return-trade-by-id) | return trade by :id | GET |
+| [/trades/search](https://docs.protokol.com/nft/nft-exchange-api/trades#post-search-trades) | search trades | POST |
 
 ## GET - Return All Trades
 

@@ -8,8 +8,8 @@ description: API Endpoints for managing NFT Burn Transactions
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| [/burns](https://docs.protokol.com/nft/api/nft-base-api/burns#get-return-all-burns) | return all burns | GET |
-| [/burns/:id](https://docs.protokol.com/nft/api/nft-base-api/burns#get-return-burn-by-id) | return burn by :id | GET |
+| [/burns](https://docs.protokol.com/nft/nft-base-api/burns#get-return-all-burns) | return all burns | GET |
+| [/burns/:id](https://docs.protokol.com/nft/nft-base-api/burns#get-return-burn-by-id) | return burn by :id | GET |
 
 ## GET - Return All Burns
 

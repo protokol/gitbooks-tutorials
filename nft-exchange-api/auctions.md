@@ -8,12 +8,12 @@ description: API Endpoints For Auctions
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| [/auctions](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-all-auctions) | return all auctions | GET |
-| [/auctions/:id](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-an-auction-by-id) | return auction by :id | GET |
-| [/auctions/:id/wallets](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-auctions-wallet) | return the wallet owning an auction | GET |
-| [/auctions/search](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#post-search-auctions) | search auctions | POST |
-| [/auctions/canceled](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-all-canceled-auctions) | return all canceled auctions | GET |
-| [/auctions/canceled/:id](https://docs.protokol.com/nft/api/nft-exchange-api/auctions#get-return-canceled-auction-by-id) | return canceled auction by :id | GET |
+| [/auctions](https://docs.protokol.com/nft/nft-exchange-api/auctions#get-return-all-auctions) | return all auctions | GET |
+| [/auctions/:id](https://docs.protokol.com/nft/nft-exchange-api/auctions#get-return-an-auction-by-id) | return auction by :id | GET |
+| [/auctions/:id/wallets](https://docs.protokol.com/nft/nft-exchange-api/auctions#get-return-auctions-wallet) | return the wallet owning an auction | GET |
+| [/auctions/search](https://docs.protokol.com/nft/nft-exchange-api/auctions#post-search-auctions) | search auctions | POST |
+| [/auctions/canceled](https://docs.protokol.com/nft/nft-exchange-api/auctions#get-return-all-canceled-auctions) | return all canceled auctions | GET |
+| [/auctions/canceled/:id](https://docs.protokol.com/nft/nft-exchange-api/auctions#get-return-canceled-auction-by-id) | return canceled auction by :id | GET |
 
 ## GET - Return All Auctions
 

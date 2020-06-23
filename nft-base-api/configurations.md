@@ -8,7 +8,7 @@ description: Api endpoints for configurations
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| [/configurations](https://docs.protokol.com/nft/api/nft-base-api/configurations#get-configurations) | return all configurations | GET |
+| [/configurations](https://docs.protokol.com/nft/nft-base-api/configurations#get-configurations) | return all configurations | GET |
 
 ## GET - Configurations
 

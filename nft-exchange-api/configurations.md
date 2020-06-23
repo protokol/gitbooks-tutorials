@@ -8,7 +8,7 @@ description: API Endpoints For Viewing dApp Configurations
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| [/configurations](https://docs.protokol.com/nft/api/nft-exchange-api/configurations#configurations) | return all configurations | GET |
+| [/configurations](https://docs.protokol.com/nft/nft-exchange-api/configurations#configurations) | return all configurations | GET |
 
 ## GET - Configurations
 
