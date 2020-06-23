@@ -2,7 +2,7 @@
 
 Digital Assets represent anything that can be saved on the blockchain and backed with a traceable and uniquie identifier. This in practice translates to many use-cases that can bee seen in different industries, like:
 
-* identitiy mangement  \(eId, Self-Soverign Identity\)
+* identitiy mangement  \(eId, Self-sovereign identity\)
 * supply chain managment \(tracking of supplied items and their ownership\)
 * digital trading cards & collectibles \(covering a wide area of use from e-sports to trading card games to specific local trade collectors\)
 * loyalty cards
@@ -10,7 +10,7 @@ Digital Assets represent anything that can be saved on the blockchain and backed
 * education certifications
 * proof of ownership and authenticy 
 * eHealth and eRecord goverment
-* ... and many many more... 
+* IoT and many many more... 
 
 ### Why use blockchain technology together with Digital Asset \(NFTs\) Management? 
 
@@ -20,7 +20,7 @@ Digital Assets represent anything that can be saved on the blockchain and backed
 * Peer-to-peer, secure trading enabled by blockchain technology 
 * NFT can be sold for fan tokens, and traded / exchanged back into Fiat
 
-## Next Steps:
+## Next Steps
 
 Learn how to create and trade digital items here:
 
