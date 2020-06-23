@@ -4,7 +4,7 @@ description: >-
   the NFT Client SDK to get your transactions out to the network and verified.
 ---
 
-# Transaction Creation Examples
+# Examples
 
 ## Prerequisites <a id="prerequisites"></a>
 

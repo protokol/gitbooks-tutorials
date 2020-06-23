@@ -1,3 +1,7 @@
+---
+description: A light typescript client supporting NFT and public ARK REST API
+---
+
 # NFT Client
 
 ## Initialization

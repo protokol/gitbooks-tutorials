@@ -24,6 +24,6 @@
 
 ## SDK-USAGE <a id="sdk"></a>
 
-* [Transaction Creation Examples](sdk/complementary-examples.md)
 * [NFT Client](sdk/nft-client.md)
+* [Examples](sdk/complementary-examples.md)
 
