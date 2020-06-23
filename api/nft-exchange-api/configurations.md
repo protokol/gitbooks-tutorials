@@ -4,21 +4,27 @@ description: API Endpoints For Viewing dApp Configurations
 
 # Configurations
 
-### GET - Configurations <a id="configurations"></a>
+## List of **Configuration** Endpoints
 
-**Endpoint:**
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/configurations](https://docs.protokol.com/nft/api/nft-exchange-api/configurations#configurations) | return all configurations | GET |
+
+## GET - Configurations
+
+### **Endpoint**
 
 ```bash
 GET /configurations
 ```
 
-#### Example:
+### Example
 
 ```bash
 curl http://nft.protokol.com:4003/api/nft/exchange/configurations
 ```
 
-#### Response
+### Response
 
 ```javascript
 {
