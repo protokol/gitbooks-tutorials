@@ -1,10 +1,10 @@
 ---
-description: Examples Showing How To Create Digital Assets (NFTs)
+description: Examples Showing How To Create Digital Assets (NFTs) On Blockchain
 ---
 
 # How To Create Digital Assets
 
-## **STEP 1. Register A New Collection Of Digital Assets**
+## **STEP 1. Register A New Digital Asset Collection**
 
 NFTRegisterCollection transaction enables us to register a new type of digital assets by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create \(mine\) tokens with the help of NFTCreate transaction type. We need to define:
 
