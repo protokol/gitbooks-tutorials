@@ -24,11 +24,13 @@ Learn how to create and trade digital items here:
 
 Check our REST API Documentation in relation to trade or digital asset creation activities here:
 
-{% page-ref page="api/nft-base-api/" %}
+All of the above functionality is nicely implementd in our Client-SDK implementations. For more information check the following links:
 
-{% page-ref page="api/nft-exchange-api/" %}
+{% page-ref page="sdk/nft-client.md" %}
 
-All of the above functionality is nicely implementd in our Client-SDK implementations. Fill
+{% page-ref page="sdk/complementary-examples.md" %}
+
+
 
 
 

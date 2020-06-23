@@ -8,19 +8,20 @@
 * [How To Create Digital Assets](tutorials/crypto-examples.md)
 * [How To Trade Digital Assets](tutorials/how-to-trade-digital-assets.md)
 
-## API ENDPOINTS <a id="api"></a>
+## BASE-API ENDPOINTS <a id="api"></a>
 
-* [Creation \(Base\)](api/nft-base-api/README.md)
-  * [Collections](api/nft-base-api/collections.md)
-  * [Assets](api/nft-base-api/assets.md)
-  * [Transfers](api/nft-base-api/transfers.md)
-  * [Burns](api/nft-base-api/burns.md)
-  * [Configurations](api/nft-base-api/configurations.md)
-* [Trade \(Exchange\)](api/nft-exchange-api/README.md)
-  * [Auctions](api/nft-exchange-api/auctions.md)
-  * [Bids](api/nft-exchange-api/bids.md)
-  * [Trades](api/nft-exchange-api/trades.md)
-  * [Configurations](api/nft-exchange-api/configurations.md)
+* [Collections](api/collections.md)
+* [Assets](api/assets.md)
+* [Transfers](api/transfers.md)
+* [Burns](api/burns.md)
+* [Configurations](api/configurations.md)
+
+## EXCHANGE-API ENDPOINTS
+
+* [Configurations](exchange-api-endpoints/configurations.md)
+* [Trades](exchange-api-endpoints/trades.md)
+* [Bids](exchange-api-endpoints/bids.md)
+* [Auctions](exchange-api-endpoints/auctions.md)
 
 ## SDK-USAGE <a id="sdk"></a>
 
