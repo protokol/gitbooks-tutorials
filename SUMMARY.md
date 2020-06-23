@@ -23,8 +23,8 @@
 
 ## EXCHANGE-API ENDPOINTS
 
-* [Configurations](exchange-api-endpoints/configurations.md)
-* [Trades](exchange-api-endpoints/trades.md)
-* [Bids](exchange-api-endpoints/bids.md)
 * [Auctions](exchange-api-endpoints/auctions.md)
+* [Bids](exchange-api-endpoints/bids.md)
+* [Trades](exchange-api-endpoints/trades.md)
+* [Configurations](exchange-api-endpoints/configurations.md)
 
