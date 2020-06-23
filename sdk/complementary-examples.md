@@ -1,6 +1,10 @@
+---
+description: Scenarios Showing Transaction Creation And Broadcasting Best Practices
+---
+
 # Examples
 
-Complementary Examples of NFT Base Crypto SDK and NFT Exchange Crypto SDK with the NFT Client SDK to get your transactions out to the network and verified.
+Complementary Examples of NFTBase and NFTExchangeCrypto SDK used in conjuction with the NFTClient to get your transactions out to the network and verified.
 
 ### Prerequisites
 
