@@ -6,12 +6,12 @@ description: Examples Showing How To Create Digital Assets (NFTs)
 
 ## **STEP 1. Register A New Collection Of Digital Assets**
 
-NFTRegisterCollection Transaction Types enables us to define a new type of digitial assets by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create\(mine\) tokens with the help of NFTCreate transaction type. We need to define:
+NFTRegisterCollection transaction enables us to register a new type of digitial assets by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create \(mine\) tokens with the help of NFTCreate transaction type. We need to define:
 
 * asset name
 * asset description
 * maximum supply \(optional\)
-* jsonSchema
+* jsonSchema - structure of the digital asset
 * allowedIssuers - if empty anyone can create/mine a new asset
 
 ### How To Use NFTRegisterCollection Example:
@@ -62,7 +62,7 @@ new Builders.NFTRegisterCollectionBuilder()
 
 ## STEP 2. Create New Digital Assets
 
-We can create \(mine\) new digital assets from the genesis wallet \(the wallet that registered the new collection in STEP 1. To create a digital asset we need its asset type, that is the collection id we registered with NFTRegisterCollection transaction. We need to specify:
+We can create \(mine\) new digital assets from the genesis wallet \(the wallet that registered the new collection in STEP 1. To create a digital asset we need its asset type, that is the collection we registered with NFTRegisterCollection transaction. We need to specify:
 
 * collection id
 * token attributes \(need to comply with the registered JSONSchema from collection id\)
@@ -76,13 +76,13 @@ new Builders.NFTCreateBuilder()
         .NFTCreateToken({
             collectionId: "c23b4a9e07329861422df43631d7aa72153cabcca3067941b94a69016ae8723b",
             attributes: {
-                name: "Antonio Caracciolo",
+                name: "Kalvin Phillips",
                 pac: 90,
-                sho: 90,
-                pas: 90,
-                dri: 90,
-                def: 90,
-                phy: 90,
+                sho: 89,
+                pas: 60,
+                dri: 57,
+                def: 75,
+                phy: 87,
             },
         })
         .nonce("1")
@@ -108,7 +108,7 @@ new Builders.NFTTransferBuilder()
 
 ## STEP 4. Burn Digital Assets \(optional\)
 
-Our NFT plugin set also enables burning capability for digital assets. This is usefull with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owner can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
+Our NFT plugin set also enables burning capability for digital assets. This is usefull with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owners can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
 
 ### How To Use NFTBurn Transaction:
 
