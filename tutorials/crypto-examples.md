@@ -106,7 +106,7 @@ new Builders.NFTTransferBuilder()
 
 ```
 
-## STEP 4. Burn Digital Assets
+## STEP 4. Burn Digital Assets \(optional\)
 
 Our NFT plugin set also enables burning capability for digital assets. This is usefull with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owner can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
 
