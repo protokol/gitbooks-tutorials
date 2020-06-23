@@ -4,6 +4,17 @@ description: API Endpoints For Bids
 
 # Bids
 
+## List of Bid Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| [/bids](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-all-bids) | return all bids | GET |
+| [/bids/:id](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-bid-by-id) | return bid by :id | GET |
+| [/bids/:id/wallets](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-bids-wallet) | return the wallet owning a bid | GET |
+| [/bids/search](https://docs.protokol.com/nft/api/nft-exchange-api/bids#post-search-bids) | search bids | POST |
+| [/bids/canceled](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-all-canceled-bids) | return all canceled bids | GET |
+| [/bids/canceled/:id](https://docs.protokol.com/nft/api/nft-exchange-api/bids#get-return-canceled-bid-by-id) | return canceled bid by :id | GET |
+
 ## GET - Return All Bids
 
 ### Endpoint
