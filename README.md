@@ -4,14 +4,12 @@ Digital Assets represent anything that can be saved on the blockchain and backed
 
 * identitiy mangement  \(eId, Self-Soverign Identity\)
 * supply chain managment \(tracking of supplied items and their ownership\)
-* digital trading cards \(covering a wide area of use from e-sports, to trading card games to specific local trade collectors\)
+* digital trading cards & collectibles \(covering a wide area of use from e-sports, to trading card games to specific local trade collectors\)
 * loyalty cards
 * fan tokens
 * education certifications
 * proof of ownership and authenticy 
 * ... and many many more... 
-
-
 
 ### Why use blockchain technology together with Digital Asset \(NFTs\) Management? 
 
@@ -21,12 +19,21 @@ Digital Assets represent anything that can be saved on the blockchain and backed
 * Peer-to-peer, secure trading enabled by blockchain technology 
 * NFT can be sold for fan tokens, and traded / exchanged back into Fiat
 
-### Digital Trading Cards
+Learn how to create and trade digital items here:
 
-* A digital edition of a popular revenue stream for sports teams
-* Issue special editions per season, match or signing \(e.g. your home opener game\) to compliment and expand existing marketing initiatives.
-* Issue common, rare or unique cards \(with provable scarcity\), backed by blockchain technology•Enable digital trading cards to be purchased in exchange for fan tokens
-* Cards are interoperable assets that can be used in future applications or games \(e.g. possibilities to diversify revenues even further in the future\)
+{% page-ref page="tutorials/crypto-examples.md" %}
+
+{% page-ref page="tutorials/how-to-trade-digital-assets.md" %}
+
+Check our REST API Documentation in relation to trade or digital asset creation activities here:
+
+{% page-ref page="api/nft-base-api/" %}
+
+{% page-ref page="api/nft-exchange-api/" %}
+
+
+
+
 
 
 
