@@ -4,6 +4,17 @@ description: API Endpoints For Auctions
 
 # Auctions
 
+## List of Auction Endpoints
+
+| Endpoint | Description | Type |
+| :--- | :--- | :--- |
+| /auctions | return all auctions | GET |
+| /auctions/id | return auction by :id | GET |
+| /auctions/:id/wallet | return the wallet owning an auction | GET |
+| /auctions/ | search auctions | POST |
+| /auctions/canceled | return all canceled auctions | GET |
+| /auctions/canceled/:id | return canceled auction by :id | GET |
+
 ## GET - Return All Auctions
 
 ### Endpoint <a id="endpoint"></a>
