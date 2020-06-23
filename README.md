@@ -6,7 +6,7 @@ To support different industries and their use-cases we have developed a set of N
 
 All of the mentioned functionalities and content is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-### Why use blockchain technology together with Digital Asset \(NFTs\) Management? 
+### Why use blockchain together with Digital Asset \(NFTs\) Management? 
 
 * Digital Assets \(NFTs\) enable the creation of rare & unique items that can’t be destroyed, replicated or forged 
 * NFTs can be tracked on the blockchain, providing an immutable history of the assets 
