@@ -14,5 +14,9 @@ To use the following endpoints you need to have **@protokol/nft-exchange-api** i
 
 {% page-ref page="trades.md" %}
 
+{% page-ref page="configurations.md" %}
+
+
+
 
 

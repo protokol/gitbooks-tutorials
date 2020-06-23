@@ -17,7 +17,6 @@
   * [Burns](api/nft-base-api/burns.md)
   * [Configurations](api/nft-base-api/configurations.md)
 * [Trade \(Exchange\)](api/nft-exchange-api/README.md)
-  * [Untitled](api/nft-exchange-api/untitled.md)
   * [Auctions](api/nft-exchange-api/auctions.md)
   * [Bids](api/nft-exchange-api/bids.md)
   * [Trades](api/nft-exchange-api/trades.md)

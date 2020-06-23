@@ -16,5 +16,7 @@ To use the following endpoints you need to have **@protokol/nft-base-api** insta
 
 {% page-ref page="burns.md" %}
 
+{% page-ref page="configurations.md" %}
+
 
 

@@ -4,17 +4,17 @@ description: Simple Examples Showing How To Trade Digital Assets
 
 # How To Trade Digital Assets
 
-Protokol NFT plugin set comes with full trading capabilites build in and tracked on blockchain. In the following section we are going to explain a basic trading process supported with code examples. 
+Protokol NFT set comes with full trading capabilites build-in and tracked on the digital ledger. In the following section we are going to explain the basic trading process supported with code examples. 
 
-## STEP 1. Auction Creation/Cancelation
+## STEP 1. Auction Creation And Cancelation
 
 We can open a new auction by using the NFTAuction Transaction Type. Auction can set the following fields:
 
-* start amount - minimal starting amount
-* expiration time - set in block height \(when we stop accepting bid for our items\)
+* startAmount - minimal starting amount
+* expiration - set in block height \(when we stop accepting bid for our items\)
 * nftIds - list of owned items we want to auction
 
-Only an auction owner can cancel its own auction.
+Only an auction owner can cancel an auction.
 
 ### How To Create An Auction:
 
