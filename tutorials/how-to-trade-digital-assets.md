@@ -16,7 +16,7 @@ We can open a new auction by using the NFTAuction Transaction Type. Auction can 
 
 Only an auction owner can cancel its own auction.
 
-### How To Create An Auction Using NFTAuction Transaction Type:
+### How To Create An Auction:
 
 #### Initialization
 
@@ -39,6 +39,10 @@ new Builders.NFTAuctionBuilder()
         .sign("SENDER_PASSPHRASE");
 ```
 
+### How To Cancel An Auction:
+
+To cancel an auction we need to specify auctionId and be owners of the specific auction.
+
 #### NFTAuctionCancel - Builder
 
 ```typescript
@@ -51,9 +55,20 @@ new Builders.NFTAuctionCancelBuilder()
 
 ```
 
-## STEP 1. Auction Creation/Cancelation
+## STEP 2. Biding On Auction Items
 
-### NFTBid - Builder
+We can create bid for nft items being available for sale via NFTAuctions \(Step 1\). To bid on a specific auction we need to define the following fields:
+
+* bidAmount \(our bidAmount\) - needs to be higher that auction start Amount
+* auctionId - id of auction we are bidding for.
+
+{% hint style="info" %}
+When a bid is issued, users balance is locked for the duration of this bid. User can always check is locked balance on the wallet endpoint via exchange endpoints. 
+{% endhint %}
+
+### How To Create A Bid:
+
+#### NFTBid - Builder
 
 ```typescript
 new Builders.NFTBidBuilder()
@@ -65,7 +80,11 @@ new Builders.NFTBidBuilder()
         .sign("SENDER_PASSPHRASE");
 ```
 
-### NFTBidCancel - Builder
+### How To Cancel A Bid:
+
+To cancel a bit we need to specify bidId and be owners of a specific bid.
+
+#### NFTBidCancel - Builder
 
 ```typescript
 new Builders.NFTBidCancelBuilder()
@@ -76,7 +95,20 @@ new Builders.NFTBidCancelBuilder()
         .sign("SENDER_PASSPHRASE");
 ```
 
-### NFTAcceptTrade - Builder
+## STEP 3. Accepting A Trade
+
+We can accept a trade by specifying the sub-transactions related to closing a specific trade. This transactions are:
+
+* auctionId - id of a NFTAuction Transaction \(Step 1\)
+* bidId - id of a NFTBid Transaction \(Step 2\)
+
+Both IDs correspond with the seller request and bidder offerings. The seller is responsible for which bid he is willing to accept. 
+
+{% hint style="info" %}
+When a trade is accepted all other bids are canceled and locked balances are return to the bidders.
+{% endhint %}
+
+### How to Accept A Trade:
 
 ```typescript
 new Builders.NftAcceptTradeBuilder()
