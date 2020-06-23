@@ -22,8 +22,8 @@
   * [Trades](api/nft-exchange-api/trades.md)
   * [Configurations](api/nft-exchange-api/configurations.md)
 
-## SDK
+## SDK-USAGE <a id="sdk"></a>
 
-* [TypeScript](sdk/typescript/README.md)
-  * [Client Examples](sdk/typescript/client-examples.md)
+* [Transaction Creation Examples](sdk/complementary-examples.md)
+* [NFT Client](sdk/nft-client.md)
 

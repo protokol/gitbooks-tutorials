@@ -28,7 +28,7 @@ Check our REST API Documentation in relation to trade or digital asset creation 
 
 {% page-ref page="api/nft-exchange-api/" %}
 
-
+All of the above functionality is nicely implementd in our Client-SDK implementations. Fill
 
 
 
