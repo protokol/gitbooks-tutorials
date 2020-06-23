@@ -14,7 +14,7 @@ NFTRegisterCollection transaction enables us to register a new type of digital a
 * jsonSchema - structure of the digital asset
 * allowedIssuers - if empty anyone can create/mine a new asset
 
-### How To Use NFTRegisterCollection:
+### How To Use NFTRegisterCollection Transaction:
 
 #### Initialization
 
