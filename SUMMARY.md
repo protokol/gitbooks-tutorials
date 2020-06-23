@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction To Digital Assets](README.md)
-* [Understanding Digital Assets On Blockhain](understanding-digital-assets-on-blockhain.md)
 
 ## Tutorials
 

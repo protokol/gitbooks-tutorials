@@ -4,19 +4,31 @@ description: Digital Assets (NFTs) and Blockchain - A Perfect Match
 
 # Introduction To Digital Assets
 
-Digital Assets represent anything that can be saved or tagged on the blockchain supported with a traceable and **unique** identifier. This in practice translates to many use-cases that can be seen in different industries \(identity management, supply chain,  digital trading cards and collectibles, loyalty cards and fan tokens, proof of completion/ownership and many more\).    
+Digital Assets represent anything that can be saved or tagged on the blockchain supported with a traceable and **unique** identifier. This in practice translates to many use-cases that can be seen in different industries \(identity management, supply chain,  digital trading cards and collectibles, loyalty cards and fan tokens, proof of completion/ownership and many more\). 
+
+Non-Fungible tokens \(NFTs\) enable new types of collectible digital assets as well as new infrastructure for blockchain-based unique items. **Non-Fungible tokens allow anyone to digitalize ownership of any arbitrary data**, while drastically increasing the design space and usability aspects of blockchain solutions \[[1](https://education.district0x.io/general-topics/understanding-ethereum/erc-721-tokens/)\]. The biggest differentiator of Non-Fungible tokens versus "regular" tokens is that each one is tied to a different identifier, **making each token unique to its owner**.  
   
 To support different industries and their use-cases we have developed a set of NFT-Core plugins and applications that enable us to quickly adopt and scale in related industry verticals. 
 
-All of the mentioned functionalities and content is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+![Protokol plugins that enable NFT Functionality](.gitbook/assets/nft-protokol%20%282%29.png)
 
-### Why use blockchain together with Digital Asset \(NFTs\) Management? 
+{% hint style="success" %}
+All of the mentioned functionalities and content is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+{% endhint %}
+
+### Why Use Blockchain Together With Digital Asset \(NFTs\) Management? 
 
 * Digital Assets \(NFTs\) enable the creation of rare & unique items that can’t be destroyed, replicated or forged 
 * NFTs can be tracked on the blockchain, providing an immutable history of the assets 
 * NFT cannot deteriorate over time like physical cards
 * Peer-to-peer, secure trading enabled by blockchain technology 
 * NFT can be sold for fan tokens, and traded / exchanged back into Fiat
+
+## Overview Of Digital Asset  Management Process 
+
+We developed a set of plugins to fully support NFT functionality from the creation and ownership process to the interaction and trading part for the owners of digital assets. The diagram below shows the actors and top-level processes associated with Digital Asset management functionalities. 
+
+![](.gitbook/assets/nft-3-.svg)
 
 ## Next Steps
 
