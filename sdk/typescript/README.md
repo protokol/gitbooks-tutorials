@@ -1,3 +1,9 @@
+---
+description: >-
+  Complementary Examples of NFT Base Crypto SDK and NFT Exchange Crypto SDK with
+  the NFT Client SDK to get your transactions out to the network and verified.
+---
+
 # TypeScript
 
 ## Prerequisites <a id="prerequisites"></a>
