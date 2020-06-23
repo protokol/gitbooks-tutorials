@@ -1,15 +1,41 @@
 ---
-description: Examples Showing How To Build NFT Base And Exchange Transaction Types
+description: Examples Showing How To Create Digital Assets (NFTs)
 ---
 
-# How To Build NFT Base Transaction Types
+# How To Create Digital Assets
 
-NFT Base Transaction Types enable you to:
+For a basic overview of the creation process also look into the Understaning of Digital Assets On The Blockchain
 
-1. Register a new collection of digital assets
-2. Create \(mine\) digital Assets based on the registered collection
-3. Transfer digital assets to new owners \(give away option\)
-4. Burn digital assets 
+Base Protokol plugins enable us to:
+
+### **STEP 1. Register A New Collection Of Digital Assets**
+
+NFTRegisterCollection Transaction Types enables us to define a new type of digitial assets by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create\(mine\) tokens with the help of NFTCreate transaction type. We need to define:
+
+* asset name
+* asset description
+* maximum supply \(optional\)
+* jsonSchema
+* allowedIssuers - if empty anyone can create/mine a new asset
+
+### STEP 2. Create New Digital Assets
+
+We can create \(mine\) new digital assets from the genesis wallet \(the wallet that registered the new collection in STEP 1. To create a digital asset we need its asset type, that is the collection id we registered with NFTRegisterCollection transaction. We need to specify:
+
+* collection id
+* token attributes \(need to comply with the registered JSONSchema from collection id\)
+
+After token is created it lives inside the genesis wallet, until it is transfered to a trading address, or to a new owner. 
+
+### STEP 3. Transfer Digital Assets
+
+We can transfer multiple owned digital assets. 
+
+
+
+Transfer only works from a genesis wallet. After that tokens can be exchanged in a normal trading process.
+
+
 
 See below for specific transaction type creation examples.
 
@@ -103,73 +129,5 @@ new Builders.NFTTransferBuilder()
         .sign("SENDER_PASSPHRASE");
 ```
 
-## NFT Exchange Builders
-
-### Initialization
-
-```typescript
-import { Builders } from "@protokol/nft-exchange-crypto";
-```
-
-### NFTAuction - Builder
-
-```typescript
-new Builders.NFTAuctionBuilder()
-        .NFTAuctionAsset({
-            startAmount: Utils.BigNumber.make("1000"),
-            expiration: {
-                blockHeight: 1000000,
-            },
-            nftIds: ["77c0cc9bbb26c69c95e7bd12ca7e2590ea70417eaf8f593905fd30b440ec8458"],
-        })
-        .nonce("1")
-        .sign("SENDER_PASSPHRASE");
-```
-
-### NFTAuctionCancel - Builder
-
-```typescript
-new Builders.NFTAuctionCancelBuilder()
-        .NFTAuctionCancelAsset({
-            auctionId: "58dc9625ff7190dc3ff2dbf541a2bb2c8a85366f2cbe95d21ec9b8970f41d086",
-        })
-        .nonce("1")
-        .sign("SENDER_PASSPHRASE");
-
-```
-
-### NFTBid - Builder
-
-```typescript
-new Builders.NFTBidBuilder()
-        .NFTBidAsset({
-            bidAmount: Utils.BigNumber.make("1100"),
-            auctionId: "717ce9f6dff858c4972b067a1fce8ea72fb1c4ac60c4a75cc8e9993dbbe7541a",
-        })
-        .nonce("1")
-        .sign("SENDER_PASSPHRASE");
-```
-
-### NFTBidCancel - Builder
-
-```typescript
-new Builders.NFTBidCancelBuilder()
-        .NFTBidCancelAsset({
-            bidId: "c67beef6edc35f81334e8bf825dbc735e8d579f8297509d74980756b9b9ff8fe",
-        })
-        .nonce("1")
-        .sign("SENDER_PASSPHRASE");
-```
-
-### NFTAcceptTrade - Builder
-
-```typescript
-new Builders.NftAcceptTradeBuilder()
-        .NFTAcceptTradeAsset({
-            auctionId: "d8177d5c2a3eee46aea48fa5a8ce7c58c43c71909ac6cf9568e11065dc1f544a",
-            bidId: "032383b3f5c541c117c3409fdb1545e7b34deb0f6922ef7a42c40867d24402d8",
-        })
-        .nonce("1")
-        .sign("SENDER_PASSPHRASE");
-```
+## 
 
