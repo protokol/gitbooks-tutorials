@@ -93,10 +93,6 @@ new Builders.NFTCreateBuilder()
 
 We can transfer multiple owned digital assets. See example below for NFT Transfer Transaction Type.
 
-{% hint style="warning" %}
-Transfer only works from a genesis wallet. After that tokens can be exchanged in a normal trading process.
-{% endhint %}
-
 ### How To Use NFTTransfer Transaction:
 
 ```typescript
