@@ -13,7 +13,7 @@
 * [NFT Client](sdk/nft-client.md)
 * [Examples](sdk/complementary-examples.md)
 
-## BASE-API ENDPOINTS <a id="nft-base-api"></a>
+## Base-API Endpoints <a id="nft-base-api"></a>
 
 * [Collections](nft-base-api/collections.md)
 * [Assets](nft-base-api/assets.md)
@@ -21,7 +21,7 @@
 * [Burns](nft-base-api/burns.md)
 * [Configurations](nft-base-api/configurations.md)
 
-## EXCHANGE-API ENDPOINTS <a id="nft-exchange-api"></a>
+## Exchange-API Endpoints <a id="nft-exchange-api"></a>
 
 * [Auctions](nft-exchange-api/auctions.md)
 * [Bids](nft-exchange-api/bids.md)
