@@ -12,11 +12,7 @@ We developed a set of plugins to fully support NFT functionality from the creati
 
 ## Available Digital Asset Functionalities
 
-The word Digital Asset relates to anything unique we can store and verify on the blockchain. In the ethereum landscape digital assets are powered by ERC 721 standard -  also know as NFT \(Non-Fungible token support\).   
-  
-We have the following processes of digital asset management built into the base layer, where we handle asset registration and creation; and the second layer is responsible for asset trading/exchange functionality - all being live and recorded on blockchain.
-
-The diagram shows the actors and top-level processes associated with Digital Asset functionalities. 
+We support creation and trading functionalities of digital asset management. The diagram shows the actors and top-level processes associated with Digital Asset functionalities. 
 
 ![](.gitbook/assets/nft-3-.svg)
 
