@@ -24,7 +24,7 @@ Learn how to create and trade digital items here:
 
 Check our REST API Documentation in relation to trade or digital asset creation activities here:
 
-All of the above functionality is nicely implementd in our Client-SDK implementations. For more information check the following links:
+All of the above functionality is  implemented in our client SDKs. For more information check the following links:
 
 {% page-ref page="sdk/nft-client.md" %}
 
