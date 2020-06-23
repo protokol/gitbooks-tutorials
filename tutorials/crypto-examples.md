@@ -4,11 +4,7 @@ description: Examples Showing How To Create Digital Assets (NFTs)
 
 # How To Create Digital Assets
 
-For a basic overview of the creation process also look into the Understaning of Digital Assets On The Blockchain
-
-Base Protokol plugins enable us to:
-
-### **STEP 1. Register A New Collection Of Digital Assets**
+## **STEP 1. Register A New Collection Of Digital Assets**
 
 NFTRegisterCollection Transaction Types enables us to define a new type of digitial assets by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create\(mine\) tokens with the help of NFTCreate transaction type. We need to define:
 
@@ -18,36 +14,15 @@ NFTRegisterCollection Transaction Types enables us to define a new type of digit
 * jsonSchema
 * allowedIssuers - if empty anyone can create/mine a new asset
 
-### STEP 2. Create New Digital Assets
+### How To Use NFTRegisterCollection Example:
 
-We can create \(mine\) new digital assets from the genesis wallet \(the wallet that registered the new collection in STEP 1. To create a digital asset we need its asset type, that is the collection id we registered with NFTRegisterCollection transaction. We need to specify:
-
-* collection id
-* token attributes \(need to comply with the registered JSONSchema from collection id\)
-
-After token is created it lives inside the genesis wallet, until it is transfered to a trading address, or to a new owner. 
-
-### STEP 3. Transfer Digital Assets
-
-We can transfer multiple owned digital assets. 
-
-
-
-Transfer only works from a genesis wallet. After that tokens can be exchanged in a normal trading process.
-
-
-
-See below for specific transaction type creation examples.
-
-## NFT Base Builders
-
-### Initialization
+#### Initialization
 
 ```typescript
 import { Builders } from "@protokol/nft-base-crypto";
 ```
 
-### NFTRegisterCollection - Builder
+#### NFTRegisterCollection - Builder
 
 ```typescript
 new Builders.NFTRegisterCollectionBuilder()
@@ -85,7 +60,16 @@ new Builders.NFTRegisterCollectionBuilder()
     .sign("SENDER_PASSPHRASE");
 ```
 
-### NFTCreate - Builder
+## STEP 2. Create New Digital Assets
+
+We can create \(mine\) new digital assets from the genesis wallet \(the wallet that registered the new collection in STEP 1. To create a digital asset we need its asset type, that is the collection id we registered with NFTRegisterCollection transaction. We need to specify:
+
+* collection id
+* token attributes \(need to comply with the registered JSONSchema from collection id\)
+
+After token is created it lives inside the genesis wallet, until it is transfered to a trading address, or to a new owner. 
+
+### How To Use NFTCreate Transaction:
 
 ```typescript
 new Builders.NFTCreateBuilder()
@@ -105,7 +89,15 @@ new Builders.NFTCreateBuilder()
         .sign("SENDER_PASSPHRASE");
 ```
 
-### NFTTransfer - Builder
+## STEP 3. Transfer Digital Assets
+
+We can transfer multiple owned digital assets. See example below for NFT Transfer Transaction Type.
+
+{% hint style="warning" %}
+Transfer only works from a genesis wallet. After that tokens can be exchanged in a normal trading process.
+{% endhint %}
+
+### How To Use NFTTransfer Transaction:
 
 ```typescript
 new Builders.NFTTransferBuilder()
@@ -118,7 +110,11 @@ new Builders.NFTTransferBuilder()
 
 ```
 
-### NFTBurn - Builder
+## STEP 4. Burn Digital Assets
+
+Our NFT plugin set also enables burning capability for digital assets. This is usefull with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owner can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
+
+### How To Use NFTBurn Transaction:
 
 ```typescript
  new Builders.NFTBurnBuilder()
