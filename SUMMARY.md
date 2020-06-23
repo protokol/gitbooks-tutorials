@@ -25,6 +25,5 @@
 
 ## SDK
 
-* [TypeScript](sdk/typescript/README.md)
-  * [Complementary Examples](sdk/typescript/complementary-examples.md)
+* [TypeScript](sdk/typescript.md)
 
