@@ -162,3 +162,146 @@ const response = connection.NFTBaseApi("configurations").index();
 
 
 
+## NFT Exchange Endpoints
+
+## Auctions
+
+### Return All Auctions
+
+```typescript
+const response = connection.NFTExchangeApi("auctions").getAllAuctions();
+
+>>> Promise<ApiResponseWithPagination<AuctionsResource[]>>
+```
+
+### Return Auction By Id
+
+```typescript
+const response = connection.NFTExchangeApi("auctions").getAuctionById("VALID_ID");
+
+>>>  Promise<ApiResponse<AuctionsResource>>
+```
+
+### Return Auctions Wallet
+
+```typescript
+const response = connection.NFTExchangeApi("auctions").getAuctionsWallets("VALID_ID");
+
+>>> Promise<ApiResponse<AuctionsWallet>>
+```
+
+### Search By Asset
+
+```typescript
+    const response = connection.NFTExchangeApi("auctions").searchByAsset({
+        nftIds: ["VALID_NFT_IDS"],
+        senderPublicKey: "VALID_SENDER_PUBLIC_KEY",
+        startAmount: "START_AMOUNT",
+        expiration: {
+            blockHeight: BLOCK_HEIGHT,
+        },
+    });
+    
+    >>> Promise<ApiResponseWithPagination<AuctionsResource[]>>
+```
+
+### Return All Canceled Auctions
+
+```typescript
+const response = connection.NFTExchangeApi("auctions").getAllCanceledAuctions();
+
+>>> Promise<ApiResponseWithPagination<AuctionCanceled[]>>
+```
+
+### Return Canceled Auction By Id
+
+```typescript
+const response = connection.NFTExchangeApi("auctions").getCanceledAuctionById("VALID_ID");
+
+>>> Promise<ApiResponse<AuctionCanceled>>
+```
+
+## Bids
+
+### Return All Bids
+
+```typescript
+const response = connection.NFTExchangeApi("bids").getAllBids();
+
+>>> Promise<ApiResponse<BidsResource>> 
+```
+
+### Return Bid By Id
+
+```typescript
+const response = connection.NFTExchangeApi("bids").getBidById("VALID_ID");
+
+>>> Promise<ApiResponse<BidsResource>>
+```
+
+### Return Bids Wallet
+
+```typescript
+const response = connection.NFTExchangeApi("bids").getBidsWallets("VALID_ID");
+
+>>> Promise<ApiResponse<BidsWallet>>
+```
+
+### Search Bid
+
+```typescript
+const response = connection.NFTExchangeApi("bids").searchByBid({
+        auctionId: "VALID_AUCTION_ID",
+        senderPublicKey: "VALID_SENDER_PUBLIC_KEY",
+        bidAmount: "BID_AMOUNT",
+});
+
+>>> Promise<ApiResponse<BidCanceled>>
+```
+
+### Return All Canceled Bids
+
+```typescript
+const response = connection.NFTExchangeApi("bids").getCanceledBidById("VALID_ID");
+
+>>> Promise<ApiResponse<BidCanceled>>
+```
+
+## Trades
+
+### Return All Trades
+
+```typescript
+const response = connection.NFTExchangeApi("trades").all();
+
+>>> Promise<ApiResponse<TradesResource>>
+```
+
+### Return Trade By Id 
+
+```typescript
+const response = connection.NFTExchangeApi("trades").get("VALID_ID");
+
+>>> Promise<ApiResponse<TradeById>>
+```
+
+### Search Trade
+
+```typescript
+const response = connection.NFTExchangeApi("trades").search({
+        auctionId: "VALID_AUCTION_ID",
+        bidId: "VALID_BID_ID",
+        senderPublicKey: "VALID_SENDER_PUBLIC_KEY",
+});
+
+>>> Promise<ApiResponseWithPagination<TradesResource[]>>
+```
+
+## Configurations
+
+```typescript
+const response = connection.NFTExchangeApi("configurations").index();
+
+>>> Promise<ApiResponse<ConfigurationsResource>>
+```
+
