@@ -64,12 +64,12 @@ new Builders.NFTRegisterCollectionBuilder()
 
 ## STEP 2. Create New Digital Assets
 
-We can create \(mine\) new digital assets from the genesis wallet \(the wallet that registered the new collection in STEP 1. To create a digital asset we need its asset type, that is the collection we registered with NFTRegisterCollection transaction. We need to specify:
+We can create \(mine\) new digital assets from the genesis wallet \(the wallet that registered the new collection in STEP 1\). To create a digital asset we need to comply with the asset type - that is the collection we registered with NFTRegisterCollection transaction. We need to specify:
 
-* collection id
-* token attributes \(need to comply with the registered JSONSchema from collection id\)
+* collectionId
+* token attributes -  need to comply with the registered JSONSchema
 
-After token is created it lives inside the genesis wallet, until it is transferred to a trading address, or to a new owner. 
+After token is created it lives inside the genesis wallet, until it is transferred to a trading address, or to a new owner with the NFTTransfer Transaction.
 
 ### How To Use NFTCreate Transaction
 
