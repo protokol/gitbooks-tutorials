@@ -26,9 +26,9 @@ All of the mentioned functionalities and content is licensed under [Creative Com
 
 ## Overview Of Digital Asset Management Process 
 
-We developed a set of ARK Core plugins and SKDs that fully support Digital Asset management process,  from the creation and ownership to the interaction and trading part of digital assets. The diagram below shows the actors and top-level processes associated with Digital Asset management functionalities. 
+We developed a set of ARK Core plugins and SKDs that fully support Digital Asset management process,  from the creation and ownership to the interaction and trading part of digital assets. The diagram below shows the actors and top-level processes associated with Digital Asset management functionalities.
 
-![](.gitbook/assets/nft-3-.svg)
+![Digital Asset Management Process Overview](.gitbook/assets/nft-3-.svg)
 
 ## Next Steps
 
