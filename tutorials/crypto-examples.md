@@ -14,7 +14,7 @@ NFTRegisterCollection transaction enables us to register a new type of digital a
 * jsonSchema - structure of the digital asset
 * allowedIssuers - if empty anyone can create/mine a new asset
 
-### How To Use NFTRegisterCollection Transaction:
+### How To Use NFTRegisterCollection Transaction
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/base/nft-register-collection.ts" caption="NFTRegisterCollection Runnable Example" %}
 
@@ -71,7 +71,7 @@ We can create \(mine\) new digital assets from the genesis wallet \(the wallet t
 
 After token is created it lives inside the genesis wallet, until it is transferred to a trading address, or to a new owner. 
 
-### How To Use NFTCreate Transaction:
+### How To Use NFTCreate Transaction
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/base/nft-create.ts" caption="NFTCreateAsset Runnable Example" %}
 
@@ -97,7 +97,7 @@ new Builders.NFTCreateBuilder()
 
 We can transfer multiple owned digital assets. See example below for NFT Transfer Transaction Type.
 
-### How To Use NFTTransfer Transaction:
+### How To Use NFTTransfer Transaction
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/base/nft-transfer.ts" caption="NFTTransfer Runnable Example" %}
 
@@ -116,7 +116,7 @@ new Builders.NFTTransferBuilder()
 
 Our NFT plugin set also enables burning capability for digital assets. This is useful with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owners can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
 
-### How To Use NFTBurn Transaction:
+### How To Use NFTBurn Transaction
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/base/nft-burn.ts" caption="NFTBurn Runnable Example" %}
 
