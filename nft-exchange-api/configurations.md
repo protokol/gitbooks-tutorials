@@ -1,5 +1,5 @@
 ---
-description: API Endpoints For Viewing dApp Configurations
+description: API Endpoints For Viewing Exchange Plugins Configurations
 ---
 
 # Configurations
