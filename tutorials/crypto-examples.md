@@ -16,6 +16,8 @@ NFTRegisterCollection transaction enables us to register a new type of digital a
 
 ### How To Use NFTRegisterCollection Transaction:
 
+{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/base/nft-register-collection.ts" caption="NFTRegisterCollection Runnable Example" %}
+
 #### Initialization
 
 ```typescript
@@ -71,6 +73,8 @@ After token is created it lives inside the genesis wallet, until it is transferr
 
 ### How To Use NFTCreate Transaction:
 
+{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/base/nft-create.ts" caption="NFTCreateAsset Runnable Example" %}
+
 ```typescript
 new Builders.NFTCreateBuilder()
         .NFTCreateToken({
@@ -95,6 +99,8 @@ We can transfer multiple owned digital assets. See example below for NFT Transfe
 
 ### How To Use NFTTransfer Transaction:
 
+{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/base/nft-transfer.ts" caption="NFTTransfer Runnable Example" %}
+
 ```typescript
 new Builders.NFTTransferBuilder()
         .NFTTransferAsset({
@@ -111,6 +117,8 @@ new Builders.NFTTransferBuilder()
 Our NFT plugin set also enables burning capability for digital assets. This is useful with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owners can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
 
 ### How To Use NFTBurn Transaction:
+
+{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/base/nft-burn.ts" caption="NFTBurn Runnable Example" %}
 
 ```typescript
  new Builders.NFTBurnBuilder()
