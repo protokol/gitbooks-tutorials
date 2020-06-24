@@ -16,7 +16,7 @@ We can open a new auction by using the NFTAuction Transaction Type. Auction can 
 
 Only an auction owner can cancel an auction.
 
-### How To Create An Auction:
+### How To Create An Auction
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/exchange/nft-auction.ts" caption="NFTAuction Runnable Example" %}
 
@@ -41,7 +41,7 @@ new Builders.NFTAuctionBuilder()
         .sign("SENDER_PASSPHRASE");
 ```
 
-### How To Cancel An Auction:
+### How To Cancel An Auction
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/exchange/nft-auction-cancel.ts" caption="NFTAuctionCancel Runnable Example" %}
 
@@ -70,7 +70,7 @@ We can create bid for nft items being available for sale via NFTAuctions \(Step 
 When a bid is issued, users balance is locked for the duration of this bid. User can always check his locked balance on the wallet endpoint via exchange endpoints. 
 {% endhint %}
 
-### How To Create A Bid:
+### How To Create A Bid
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/exchange/nft-bid.ts" caption="NFTBid Runnable Example" %}
 
@@ -86,7 +86,7 @@ new Builders.NFTBidBuilder()
         .sign("SENDER_PASSPHRASE");
 ```
 
-### How To Cancel A Bid:
+### How To Cancel A Bid
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/exchange/nft-bid-cancel.ts" caption="NFTBidCancel Runnable Example" %}
 
@@ -116,7 +116,7 @@ Both IDs correspond with the seller request and bidder offerings. The seller is 
 When a trade is accepted all other bids are cancelled and locked balances are returned to the bidders.
 {% endhint %}
 
-### How to Accept A Trade:
+### How to Accept A Trade
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/exchange/nft-accept-trade.ts" caption="NFTAcceptTrade Runnable Example" %}
 
