@@ -209,7 +209,7 @@ curl http://nft.protokol.com:4003/api/nft/collections/8eeaf8899d5230b22e6979805e
 
 ## GET - Collections Wallet
 
-Returns owning wallet for the specified collection
+Returns owning wallet for the specified collection.
 
 ### Endpoint
 

@@ -65,7 +65,7 @@ curl http://nft.protokol.com:4003/api/nft/burns
 
 ## GET - Return Burn By ID
 
-Return a NFTBurn transaction by specified id
+Return a NFTBurn transaction by specified id.
 
 ### Endpoint
 

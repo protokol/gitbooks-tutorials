@@ -133,7 +133,7 @@ curl http://nft.protokol.com:4003/api/nft/assets/efbd8b013d408584b2b5d170df4cc68
 
 ## GET - Return Assets Wallet
 
-Returns a specific assets owner wallet information.
+Returns a specific asset's owner wallet information.
 
 ### Endpoint
 

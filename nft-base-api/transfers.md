@@ -64,7 +64,7 @@ curl http://nft.protokol.com:4003/api/nft/transfers
 }
 ```
 
-## GET - Return transfer by id
+## GET - Return Transfer by id
 
 ### Endpoint
 

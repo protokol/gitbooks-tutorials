@@ -4,7 +4,7 @@ description: Simple Examples Showing How To Trade Digital Assets
 
 # How To Trade Digital Assets
 
-Protokol NFT set comes with full trading capabilities build-in and tracked on the digital ledger. In the following section we are going to explain the basic trading process supported with code examples. 
+Protokol NFT set comes with full trading capabilities built-in and tracked on the digital ledger. In the following section we are going to explain the basic trading process supported with code examples. 
 
 ## STEP 1. Auction Creation And Cancellation
 
@@ -61,13 +61,13 @@ new Builders.NFTAuctionCancelBuilder()
 
 ## STEP 2. Biding On Auction Items
 
-We can create bid for nft items being available for sale via NFTAuctions \(Step 1\). To bid on a specific auction we need to define the following fields:
+We can create a bid for NFT items being available for sale via NFTAuctions \(Step 1\). To bid on a specific auction we need to define the following fields:
 
 * bidAmount \(our bidAmount\) - needs to be higher that auction start Amount
 * auctionId - id of auction we are bidding for.
 
 {% hint style="info" %}
-When a bid is issued, users balance is locked for the duration of this bid. User can always check his locked balance on the wallet endpoint via exchange endpoints. 
+When a bid is issued, the users balance is locked for the duration of this bid. The user can always check their locked balance on the wallet endpoint via exchange endpoints. 
 {% endhint %}
 
 ### How To Create A Bid
@@ -90,7 +90,7 @@ new Builders.NFTBidBuilder()
 
 {% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/nft-examples/src/exchange/nft-bid-cancel.ts" caption="NFTBidCancel Runnable Example" %}
 
-To cancel a bit we need to specify a bidId and be owners of the specific bid.
+To cancel a bid we need to specify a bidId and be owners of the specific bid.
 
 #### NFTBidCancel - Builder
 
@@ -105,7 +105,7 @@ new Builders.NFTBidCancelBuilder()
 
 ## STEP 3. Accepting A Trade
 
-We can accept a trade by specifying the sub-transactions related to closing a specific trade. This transactions are:
+We can accept a trade by specifying the sub-transactions related to closing a specific trade. These transactions are:
 
 * auctionId - id of a NFTAuction Transaction \(Step 1\)
 * bidId - id of a NFTBid Transaction \(Step 2\)
@@ -113,7 +113,7 @@ We can accept a trade by specifying the sub-transactions related to closing a sp
 Both IDs correspond with the seller request and bidder offerings. The seller is responsible for which bid he is willing to accept. 
 
 {% hint style="info" %}
-When a trade is accepted all other bids are cancelled and locked balances are returned to the bidders.
+When a trade is accepted all other bids are cancelled, and locked balances are returned to the bidders.
 {% endhint %}
 
 ### How to Accept A Trade

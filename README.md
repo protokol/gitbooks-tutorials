@@ -20,9 +20,9 @@ All of the mentioned functionalities and content is licensed under [Creative Com
 
 * Digital Assets \(NFTs\) enable the creation of rare & unique items that can’t be destroyed, replicated or forged 
 * NFTs can be tracked on the blockchain, providing an immutable history of the assets 
-* NFT cannot deteriorate over time like physical cards
+* NFTs cannot deteriorate over time. So when utilized in applications such as digital collectibles they do not deteriorate like their physical counterpart
 * Peer-to-peer, secure trading enabled by blockchain technology 
-* NFT can be sold for fan tokens, and traded / exchanged back into Fiat
+* NFTs can be sold, and traded / exchanged back into Fiat
 
 ## Overview Of Digital Asset Management Process 
 
@@ -32,7 +32,7 @@ We developed a set of ARK Core plugins and SKDs that fully support Digital Asset
 
 ## Next Steps
 
-Learn how to create and trade digital items here:
+Learn how to create and trade digital assets here:
 
 {% page-ref page="tutorials/crypto-examples.md" %}
 

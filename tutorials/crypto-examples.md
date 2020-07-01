@@ -6,7 +6,7 @@ description: Examples Showing How To Create Digital Assets (NFTs) On Blockchain
 
 ## **STEP 1. Register A New Digital Asset Collection**
 
-NFTRegisterCollection transaction enables us to register a new type of digital assets by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create \(mine\) tokens with the help of NFTCreate transaction type. We need to define:
+NFTRegisterCollection transaction enables us to register a new type of digital asset by defining its structure. The structure is defined in the form of a standard JSONSchema \(see example below\). After the digital asset collection is registered we can create \(mine\) tokens with the help of NFTCreate transaction type. We need to define:
 
 * asset name
 * asset description
@@ -114,7 +114,7 @@ new Builders.NFTTransferBuilder()
 
 ## STEP 4. Burn Digital Assets \(optional\)
 
-Our NFT plugin set also enables burning capability for digital assets. This is useful with loyalty programs and expiring trading cards or gaming card functionality - where asset is destroyed when used. Only token owners can burn/destroy a digital assets. Digital asset or usage history is still visible on the blockchain. 
+Our NFT plugin set also enables burning capability for digital assets. This is useful with loyalty programs and expiring trading cards or gaming card functionality - where the asset is destroyed when used. Only token owners can burn/destroy a digital asset. Digital asset or usage history is still visible on the blockchain. 
 
 ### How To Use NFTBurn Transaction
 
