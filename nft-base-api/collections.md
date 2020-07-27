@@ -45,7 +45,7 @@ curl http://nft.protokol.com:4003/api/nft/collections
 ```javascript
 {
   "meta": {
-    "totalCountIsEstimate": false,
+    "totalCountIsEstimate": true,
     "count": 1,
     "pageCount": 1,
     "totalCount": 1,
@@ -57,11 +57,11 @@ curl http://nft.protokol.com:4003/api/nft/collections
   },
   "data": [
     {
-      "id": "8eeaf8899d5230b22e6979805e9a8865eb7093ccae028b46a972f80fd60c790b",
+      "id": "bc045f0a977d368735030c7eadaa45de5581c1ffb2b0e9e93752c82579c516fe",
       "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
       "name": "FIFA-20-PLAYERS",
       "description": "FIFA 2020 Players",
-      "maximumSupply": 1,
+      "maximumSupply": 10,
       "jsonSchema": {
         "properties": {
           "name": {
@@ -86,6 +86,11 @@ curl http://nft.protokol.com:4003/api/nft/collections
             "type": "number"
           }
         }
+      },
+      "timestamp": {
+        "epoch": 105746776,
+        "unix": 1595847976,
+        "human": "2020-07-27T11:06:16.000Z"
       }
     }
   ]
