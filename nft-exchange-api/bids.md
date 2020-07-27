@@ -55,11 +55,16 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids
   },
   "data": [
     {
-      "id": "b7cb70737ea5ae78fd348fb58c02e799dfd296e2ae7d54ac83f95f3e8bf8594b",
+      "id": "d86c6dc4cb3534549088fe96b06ccd90bde6e6953e14ddd2b9de1d291540bd1a",
       "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
       "nftBid": {
-        "auctionId": "4166ebfa58824bf774dbd1f70c04a22adf3f77f30ce2f32ae69f98b302b5752f",
-        "bidAmount": "12223"
+        "auctionId": "4acf50de691a6173a07ccb769381003685ebbdb2dbc9d7601baa882cc9bbfd56",
+        "bidAmount": "1223"
+      },
+      "timestamp": {
+        "epoch": 105742784,
+        "unix": 1595843984,
+        "human": "2020-07-27T09:59:44.000Z"
       }
     }
   ]
@@ -215,7 +220,7 @@ curl --request POST \
   --url http://nft.protokol.com:4003/api/nft/exchange/bids/search \
   --header 'content-type: application/json' \
   --data '{
-	  "bidAmount": "12223"
+	  "bidAmount": "1223"
 }'
 ```
 
@@ -230,17 +235,22 @@ curl --request POST \
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/nft/exchange/bids/search?page=1&limit=100",
-    "first": "/nft/exchange/bids/search?page=1&limit=100",
-    "last": "/nft/exchange/bids/search?page=1&limit=100"
+    "self": "/nft/exchange/bids/search?page=1&limit=100&transform=true",
+    "first": "/nft/exchange/bids/search?page=1&limit=100&transform=true",
+    "last": "/nft/exchange/bids/search?page=1&limit=100&transform=true"
   },
   "data": [
     {
-      "id": "b7cb70737ea5ae78fd348fb58c02e799dfd296e2ae7d54ac83f95f3e8bf8594b",
+      "id": "d86c6dc4cb3534549088fe96b06ccd90bde6e6953e14ddd2b9de1d291540bd1a",
       "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
       "nftBid": {
-        "auctionId": "4166ebfa58824bf774dbd1f70c04a22adf3f77f30ce2f32ae69f98b302b5752f",
-        "bidAmount": "12223"
+        "auctionId": "4acf50de691a6173a07ccb769381003685ebbdb2dbc9d7601baa882cc9bbfd56",
+        "bidAmount": "1223"
+      },
+      "timestamp": {
+        "epoch": 105742784,
+        "unix": 1595843984,
+        "human": "2020-07-27T09:59:44.000Z"
       }
     }
   ]
@@ -280,16 +290,21 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/canceled
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/nft/exchange/bids/canceled?page=1&limit=100",
-    "first": "/nft/exchange/bids/canceled?page=1&limit=100",
-    "last": "/nft/exchange/bids/canceled?page=1&limit=100"
+    "self": "/nft/exchange/bids/canceled?page=1&limit=100&transform=true",
+    "first": "/nft/exchange/bids/canceled?page=1&limit=100&transform=true",
+    "last": "/nft/exchange/bids/canceled?page=1&limit=100&transform=true"
   },
   "data": [
     {
-      "id": "88bda3c46f75d0ca2372825b2cded17987355ea8dc64f2c11e3855b869bb7935",
+      "id": "af0b1ee7d47c5342724a9e8567ff0fe4342a9bff522b2ca243c32d779e00b722",
       "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
       "nftBidCancel": {
-        "bidId": "b7cb70737ea5ae78fd348fb58c02e799dfd296e2ae7d54ac83f95f3e8bf8594b"
+        "bidId": "d86c6dc4cb3534549088fe96b06ccd90bde6e6953e14ddd2b9de1d291540bd1a"
+      },
+      "timestamp": {
+        "epoch": 105742936,
+        "unix": 1595844136,
+        "human": "2020-07-27T10:02:16.000Z"
       }
     }
   ]

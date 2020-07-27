@@ -52,11 +52,16 @@ curl http://nft.protokol.com:4003/api/nft/exchange/trades
   },
   "data": [
     {
-      "id": "993faf758740972af07b67892e1ff2a66f1467c9203020bdb65f8a0a533942e7",
-      "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "id": "b55750470dfb3e98a8a7acd4d1e933ab20db1ddd18343b7f6ddaa2a4395a9d06",
+      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
       "completedTrade": {
-        "auctionId": "4166ebfa58824bf774dbd1f70c04a22adf3f77f30ce2f32ae69f98b302b5752f",
-        "bidId": "249010d96a54a8fbd14b1d2b5d3d12abc56edf0843f11a9c84d0fd8a2385625a"
+        "auctionId": "4acf50de691a6173a07ccb769381003685ebbdb2dbc9d7601baa882cc9bbfd56",
+        "bidId": "405d07d0b41c7a279cab832c267d3be0e5947bdf89156103865e8a290d4e907a"
+      },
+      "timestamp": {
+        "epoch": 105743104,
+        "unix": 1595844304,
+        "human": "2020-07-27T10:05:04.000Z"
       }
     }
   ]
@@ -140,7 +145,7 @@ curl --request POST \
   --url http://nft.protokol.com:4003/api/nft/exchange/trades/search \
   --header 'content-type: application/json' \
   --data '{
-	  	"senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0"
+	  	"senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37"
 }'
 ```
 
@@ -155,17 +160,22 @@ curl --request POST \
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/nft/exchange/trades/search?page=1&limit=100",
-    "first": "/nft/exchange/trades/search?page=1&limit=100",
-    "last": "/nft/exchange/trades/search?page=1&limit=100"
+    "self": "/nft/exchange/trades/search?page=1&limit=100&transform=true",
+    "first": "/nft/exchange/trades/search?page=1&limit=100&transform=true",
+    "last": "/nft/exchange/trades/search?page=1&limit=100&transform=true"
   },
   "data": [
     {
-      "id": "993faf758740972af07b67892e1ff2a66f1467c9203020bdb65f8a0a533942e7",
-      "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "id": "b55750470dfb3e98a8a7acd4d1e933ab20db1ddd18343b7f6ddaa2a4395a9d06",
+      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
       "completedTrade": {
-        "auctionId": "4166ebfa58824bf774dbd1f70c04a22adf3f77f30ce2f32ae69f98b302b5752f",
-        "bidId": "249010d96a54a8fbd14b1d2b5d3d12abc56edf0843f11a9c84d0fd8a2385625a"
+        "auctionId": "4acf50de691a6173a07ccb769381003685ebbdb2dbc9d7601baa882cc9bbfd56",
+        "bidId": "405d07d0b41c7a279cab832c267d3be0e5947bdf89156103865e8a290d4e907a"
+      },
+      "timestamp": {
+        "epoch": 105743104,
+        "unix": 1595844304,
+        "human": "2020-07-27T10:05:04.000Z"
       }
     }
   ]

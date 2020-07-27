@@ -51,20 +51,27 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/nft/exchange/auctions?page=1&limit=100&transform=true",
-    "first": "/nft/exchange/auctions?page=1&limit=100&transform=true",
-    "last": "/nft/exchange/auctions?page=1&limit=100&transform=true"
+    "self": "/nft/exchange/auctions?transform=true&page=1&limit=100",
+    "first": "/nft/exchange/auctions?transform=true&page=1&limit=100",
+    "last": "/nft/exchange/auctions?transform=true&page=1&limit=100"
   },
   "data": [
     {
-      "id": "ab1303eb497ab290318c860bda259d5fafaf45fe0624712d088bcf99ee411e3e",
-      "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "id": "7584c9e10b5beb9e41eb1d328030b91352bb7a2198f658f6962233b9de86db99",
+      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
       "nftAuction": {
-        "nftId": "a6273964d15a1de37792497bf15e12e67898c7217a680cbf2e152cccc33e5182",
+        "nftIds": [
+          "5ad837bcec77fc2b5e9f8bfe89337f0dc02b95ec2ecac4842a95e4d4a1313f7b"
+        ],
         "startAmount": "999",
         "expiration": {
           "blockHeight": 1000000
         }
+      },
+      "timestamp": {
+        "epoch": 105741720,
+        "unix": 1595842920,
+        "human": "2020-07-27T09:42:00.000Z"
       }
     }
   ]
@@ -237,24 +244,30 @@ curl --request POST \
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/nft/exchange/auctions/search?page=1&limit=100",
-    "first": "/nft/exchange/auctions/search?page=1&limit=100",
-    "last": "/nft/exchange/auctions/search?page=1&limit=100"
+    "self": "/nft/exchange/auctions/search?page=1&limit=100&transform=true",
+    "first": "/nft/exchange/auctions/search?page=1&limit=100&transform=true",
+    "last": "/nft/exchange/auctions/search?page=1&limit=100&transform=true"
   },
   "data": [
     {
-      "id": "ab1303eb497ab290318c860bda259d5fafaf45fe0624712d088bcf99ee411e3e",
-      "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "id": "7584c9e10b5beb9e41eb1d328030b91352bb7a2198f658f6962233b9de86db99",
+      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
       "nftAuction": {
-        "nftId": "a6273964d15a1de37792497bf15e12e67898c7217a680cbf2e152cccc33e5182",
+        "nftIds": [
+          "5ad837bcec77fc2b5e9f8bfe89337f0dc02b95ec2ecac4842a95e4d4a1313f7b"
+        ],
         "startAmount": "999",
         "expiration": {
           "blockHeight": 1000000
         }
+      },
+      "timestamp": {
+        "epoch": 105741720,
+        "unix": 1595842920,
+        "human": "2020-07-27T09:42:00.000Z"
       }
     }
   ]
-}
 ```
 
 ## GET - Return All Canceled Auctions
@@ -290,16 +303,21 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/cancled
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/nft/exchange/auctions/canceled?page=1&limit=100",
-    "first": "/nft/exchange/auctions/canceled?page=1&limit=100",
-    "last": "/nft/exchange/auctions/canceled?page=1&limit=100"
+    "self": "/nft/exchange/auctions/canceled?page=1&limit=100&transform=true",
+    "first": "/nft/exchange/auctions/canceled?page=1&limit=100&transform=true",
+    "last": "/nft/exchange/auctions/canceled?page=1&limit=100&transform=true"
   },
   "data": [
     {
-      "id": "b772364d3bdb94333cdd6390c3c33910eb9444989eabfd5393f4fb75f30eb697",
-      "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
+      "id": "e90f3db3c4c144f78da7b0d7d19d1c859f61c24933b1ec97e2ebfe7abbc0a4d8",
+      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
       "nftAuctionCancel": {
-        "auctionId": "ab1303eb497ab290318c860bda259d5fafaf45fe0624712d088bcf99ee411e3e"
+        "auctionId": "7584c9e10b5beb9e41eb1d328030b91352bb7a2198f658f6962233b9de86db99"
+      },
+      "timestamp": {
+        "epoch": 105742000,
+        "unix": 1595843200,
+        "human": "2020-07-27T09:46:40.000Z"
       }
     }
   ]
