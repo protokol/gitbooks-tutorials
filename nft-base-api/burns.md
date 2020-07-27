@@ -41,7 +41,7 @@ curl http://nft.protokol.com:4003/api/nft/burns
 ```javascript
 {
   "meta": {
-    "totalCountIsEstimate": false,
+    "totalCountIsEstimate": true,
     "count": 1,
     "pageCount": 1,
     "totalCount": 1,
@@ -53,10 +53,15 @@ curl http://nft.protokol.com:4003/api/nft/burns
   },
   "data": [
     {
-      "id": "23a7f2a6a3dfeeacac170bcbbaac2002a030192b3ab8b00a5fef0b7264bc7f02",
+      "id": "bae71bfb5790dea7c7278f9329baf3b04745dd3378eb8801d7a94e542cd89908",
       "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
       "nftBurn": {
-        "nftId": "95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c"
+        "nftId": "1eeef6bac21a47cc33f897ee1f4e3eb2357108e859c614acd1a99e0a1cc5a117"
+      },
+      "timestamp": {
+        "epoch": 105741112,
+        "unix": 1595842312,
+        "human": "2020-07-27T09:31:52.000Z"
       }
     }
   ]

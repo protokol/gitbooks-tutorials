@@ -44,9 +44,9 @@ curl http://nft.protokol.com:4003/api/nft/assets
 {
   "meta": {
     "totalCountIsEstimate": true,
-    "count": 2,
+    "count": 1,
     "pageCount": 1,
-    "totalCount": 2,
+    "totalCount": 1,
     "next": null,
     "previous": null,
     "self": "/nft/assets?page=1&limit=100&transform=true",
@@ -55,31 +55,23 @@ curl http://nft.protokol.com:4003/api/nft/assets
   },
   "data": [
     {
-      "id": "efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59",
-      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
-      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
+      "id": "1eeef6bac21a47cc33f897ee1f4e3eb2357108e859c614acd1a99e0a1cc5a117",
+      "ownerPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+      "collectionId": "6c456c5687b1ca1b9a89457bc26dc8a7223694084a8f89cf295fc688f5a3342b",
       "attributes": {
         "name": "Antonio Caracciolo",
-        "pac": 78,
+        "pac": 90,
         "sho": 65,
         "pas": 23,
         "dri": 32,
         "def": 21,
         "phy": 12
-      }
-    },
-    {
-      "id": "194a9b4768faf5e85441c2c900eb0be6ac8e8a80074e6ee78f7ef9295b1f50a5",
-      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
-      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
-      "attributes": {
-        "name": "Antonio Caracciolo",
-        "pac": 78,
-        "sho": 65,
-        "pas": 23,
-        "dri": 32,
-        "def": 21,
-        "phy": 12
+      },
+      "timestamp": {
+        "epoch": 105740128,
+        "unix": 1595841328,
+        "human": "2020-07-27T09:15:28.000Z"
       }
     }
   ]
@@ -248,9 +240,9 @@ curl --request POST \
 {
   "meta": {
     "totalCountIsEstimate": true,
-    "count": 2,
+    "count": 1,
     "pageCount": 1,
-    "totalCount": 2,
+    "totalCount": 1,
     "next": null,
     "previous": null,
     "self": "/nft/assets/search?page=1&limit=100&transform=true",
@@ -259,31 +251,23 @@ curl --request POST \
   },
   "data": [
     {
-      "id": "efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59",
-      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
-      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
+      "id": "1eeef6bac21a47cc33f897ee1f4e3eb2357108e859c614acd1a99e0a1cc5a117",
+      "ownerPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+      "collectionId": "6c456c5687b1ca1b9a89457bc26dc8a7223694084a8f89cf295fc688f5a3342b",
       "attributes": {
         "name": "Antonio Caracciolo",
-        "pac": 78,
+        "pac": 90,
         "sho": 65,
         "pas": 23,
         "dri": 32,
         "def": 21,
         "phy": 12
-      }
-    },
-    {
-      "id": "194a9b4768faf5e85441c2c900eb0be6ac8e8a80074e6ee78f7ef9295b1f50a5",
-      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
-      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
-      "attributes": {
-        "name": "Antonio Caracciolo",
-        "pac": 78,
-        "sho": 65,
-        "pas": 23,
-        "dri": 32,
-        "def": 21,
-        "phy": 12
+      },
+      "timestamp": {
+        "epoch": 105740128,
+        "unix": 1595841328,
+        "human": "2020-07-27T09:15:28.000Z"
       }
     }
   ]

@@ -331,17 +331,17 @@ curl --request POST \
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/nft/collections/search?page=1&limit=100",
-    "first": "/nft/collections/search?page=1&limit=100",
-    "last": "/nft/collections/search?page=1&limit=100"
+    "self": "/nft/collections/search?page=1&limit=100&transform=true",
+    "first": "/nft/collections/search?page=1&limit=100&transform=true",
+    "last": "/nft/collections/search?page=1&limit=100&transform=true"
   },
   "data": [
     {
-      "id": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
+      "id": "6c456c5687b1ca1b9a89457bc26dc8a7223694084a8f89cf295fc688f5a3342b",
       "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
       "name": "FIFA-20-PLAYERS",
       "description": "FIFA 2020 Players",
-      "maximumSupply": 100,
+      "maximumSupply": 1,
       "jsonSchema": {
         "properties": {
           "name": {
@@ -366,6 +366,11 @@ curl --request POST \
             "type": "number"
           }
         }
+      },
+      "timestamp": {
+        "epoch": 105740120,
+        "unix": 1595841320,
+        "human": "2020-07-27T09:15:20.000Z"
       }
     }
   ]
@@ -414,23 +419,29 @@ curl http://nft.protokol.com:4003/api/nft/collections/e38324971ab923b6d74693448c
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/nft/collections/e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55/assets?page=1&limit=100&transform=true",
-    "first": "/nft/collections/e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55/assets?page=1&limit=100&transform=true",
-    "last": "/nft/collections/e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55/assets?page=1&limit=100&transform=true"
+    "self": "/nft/collections/6c456c5687b1ca1b9a89457bc26dc8a7223694084a8f89cf295fc688f5a3342b/assets?page=1&limit=100&transform=true",
+    "first": "/nft/collections/6c456c5687b1ca1b9a89457bc26dc8a7223694084a8f89cf295fc688f5a3342b/assets?page=1&limit=100&transform=true",
+    "last": "/nft/collections/6c456c5687b1ca1b9a89457bc26dc8a7223694084a8f89cf295fc688f5a3342b/assets?page=1&limit=100&transform=true"
   },
   "data": [
     {
-      "id": "efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59",
-      "ownerPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
-      "collectionId": "e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55",
+      "id": "1eeef6bac21a47cc33f897ee1f4e3eb2357108e859c614acd1a99e0a1cc5a117",
+      "ownerPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+      "collectionId": "6c456c5687b1ca1b9a89457bc26dc8a7223694084a8f89cf295fc688f5a3342b",
       "attributes": {
         "name": "Antonio Caracciolo",
-        "pac": 78,
+        "pac": 90,
         "sho": 65,
         "pas": 23,
         "dri": 32,
         "def": 21,
         "phy": 12
+      },
+      "timestamp": {
+        "epoch": 105740128,
+        "unix": 1595841328,
+        "human": "2020-07-27T09:15:28.000Z"
       }
     }
   ]
