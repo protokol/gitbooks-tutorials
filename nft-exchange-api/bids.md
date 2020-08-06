@@ -84,6 +84,7 @@ GET /bids/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the bid to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -101,6 +102,11 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/b7cb70737ea5ae78fd348fb5
     "nftBid": {
       "auctionId": "4166ebfa58824bf774dbd1f70c04a22adf3f77f30ce2f32ae69f98b302b5752f",
       "bidAmount": "12223"
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }
@@ -324,6 +330,7 @@ GET /bids/canceled/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the bid to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -340,6 +347,11 @@ curl http://nft.protokol.com:4003/api/nft/exchange/bids/canceled/88bda3c46f75d0c
     "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
     "nftBidCancel": {
       "bidId": "b7cb70737ea5ae78fd348fb58c02e799dfd296e2ae7d54ac83f95f3e8bf8594b"
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }

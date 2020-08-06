@@ -83,6 +83,7 @@ GET /burns/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the burn to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -99,6 +100,11 @@ curl http://nft.protokol.com:4003/api/nft/burns/23a7f2a6a3dfeeacac170bcbbaac2002
     "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
     "nftBurn": {
       "nftId": "95aa99984e1fbc5af94742a59ab5e5d3bda877aee98b098bbee8cd33afc9f26c"
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }

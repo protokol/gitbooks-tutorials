@@ -95,6 +95,7 @@ GET /assets/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the asset to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -118,6 +119,11 @@ curl http://nft.protokol.com:4003/api/nft/assets/efbd8b013d408584b2b5d170df4cc68
       "dri": 32,
       "def": 21,
       "phy": 12
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }

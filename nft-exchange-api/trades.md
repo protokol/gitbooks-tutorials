@@ -81,6 +81,7 @@ GET /trades/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the trade to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -109,6 +110,11 @@ curl http://nft.protokol.com:4003/api/nft/exchange/trades/993faf758740972af07b67
         "auctionId": "4166ebfa58824bf774dbd1f70c04a22adf3f77f30ce2f32ae69f98b302b5752f",
         "bidAmount": "12223"
       }
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }

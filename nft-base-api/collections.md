@@ -110,6 +110,7 @@ GET /collections/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the collection to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -151,6 +152,11 @@ curl http://nft.protokol.com:4003/api/nft/collections/8eeaf8899d5230b22e6979805e
           "type": "number"
         }
       }
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }
@@ -171,6 +177,7 @@ GET /collections/{id}/schema
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the collection to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -207,6 +214,11 @@ curl http://nft.protokol.com:4003/api/nft/collections/8eeaf8899d5230b22e6979805e
       "phy": {
         "type": "number"
       }
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }

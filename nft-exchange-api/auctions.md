@@ -91,6 +91,7 @@ GET /auctions/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the auction to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -111,6 +112,11 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/ab1303eb497ab290318c
       "expiration": {
         "blockHeight": 1000000
       }
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }
@@ -337,6 +343,7 @@ GET /auctions/canceled/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the canceled auction to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -353,6 +360,11 @@ curl http://nft.protokol.com:4003/api/nft/exchange/auctions/canceled/b772364d3bd
     "senderPublicKey": "022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
     "nftAuctionCancel": {
       "auctionId": "ab1303eb497ab290318c860bda259d5fafaf45fe0624712d088bcf99ee411e3e"
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }

@@ -82,6 +82,7 @@ GET /transfers/{id}
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | id | string | The identifier of the transfer to be retrieved. | Yes |
+| transform | boolean | If returns modified or raw data. | No |
 
 ### Example
 
@@ -101,6 +102,11 @@ curl http://nft.protokol.com:4003/api/nft/transfers/ca89d9614d79e0df97cee7dbb3d5
         "a6273964d15a1de37792497bf15e12e67898c7217a680cbf2e152cccc33e5182"
       ],
       "recipientId": "AW8n3yvSAqUJkyfcG5u3bgRxsNKzXYPamN"
+    },
+    "timestamp": {
+      "epoch": 105746776,
+      "unix": 1595847976,
+      "human": "2020-07-27T11:06:16.000Z"
     }
   }
 }
