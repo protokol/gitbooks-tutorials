@@ -11,7 +11,7 @@ Before we get started we need to make sure that all of the required dependencies
 ### [yarn](https://classic.yarnpkg.com/lang/en/)
 
 ```text
-yarn add @protokol/nft-client
+yarn add @protokol/client
 ```
 
 ## Initialization

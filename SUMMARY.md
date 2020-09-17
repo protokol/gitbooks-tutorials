@@ -10,7 +10,8 @@
 ## SDK-USAGE <a id="sdk"></a>
 
 * [NFT Client](sdk/nft-client.md)
-* [Examples](sdk/complementary-examples.md)
+* [NFT-Examples](sdk/complementary-examples.md)
+* [Guardian Examples](sdk/guardian-examples.md)
 
 ## Base-API Endpoints <a id="nft-base-api"></a>
 

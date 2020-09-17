@@ -2,15 +2,15 @@
 description: Scenarios Showing Transaction Creation And Broadcasting Best Practices
 ---
 
-# Examples
+# NFT-Examples
 
-Complementary Examples of NFTBase and NFTExchangeCrypto SDK used in conjuction with the NFTClient to get your transactions out to the network and verified.
+Complementary Examples of NFTBase and NFTExchangeCrypto SDK used in conjunction with the Client to get your transactions out to the network and verified.
 
 Runnable implementation of all the examples listed can be found here:
 
-{% embed url="https://github.com/protokol/nft-plugins/tree/develop/packages/nft-examples" %}
+{% embed url="https://github.com/protokol/nft-plugins/tree/develop/packages/examples" %}
 
-Edit the `src/index.ts` file to run the a specific example.
+Edit the `src/index.ts` file to run a specific example.
 
 ### Prerequisites
 
@@ -21,7 +21,7 @@ Before we get started we need to make sure that all of the required dependencies
 ```text
 yarn add @protokol/nft-base-crypto
 yarn add @protokol/nft-exchange-crypto
-yarn add @protokol/nft-client
+yarn add @protokol/client
 ```
 
 ### [pnpm](https://pnpm.js.org/)
@@ -29,7 +29,7 @@ yarn add @protokol/nft-client
 ```text
 pnpm add @protokol/nft-base-crypto
 pnpm add @protokol/nft-exchange-crypto
-pnpm add @protokol/nft-client
+pnpm add @protokol/client
 ```
 
 ### [npm](https://www.npmjs.com/)
@@ -37,7 +37,7 @@ pnpm add @protokol/nft-client
 ```text
 npm install @protokol/nft-base-crypto
 npm install @protokol/nft-exchange-crypto
-npm install @protokol/nft-client
+npm install @protokol/client
 ```
 
 ## How To Create And Broadcast NFT Base Transactions
@@ -45,23 +45,24 @@ npm install @protokol/nft-client
 ### NFTRegisterCollection - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
-import { NFTConnection } from "@protokol/nft-client";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
 export const NFTRegisterCollection = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTRegisterCollectionTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(
+        NFTTransactions.NFTRegisterCollectionTransaction,
+    );
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NFTRegisterCollectionBuilder()
@@ -109,23 +110,22 @@ export const NFTRegisterCollection = async () => {
 ### NFTCreate - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
-import { NFTConnection } from "@protokol/nft-client";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
 export const NFTCreate = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTCreateTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTCreateTransaction);
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NFTCreateBuilder()
@@ -155,28 +155,27 @@ export const NFTCreate = async () => {
 ### NFTTransfer - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
-import { NFTConnection } from "@protokol/nft-client";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
 export const NFTTransfer = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTTransferTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTTransferTransaction);
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NFTTransferBuilder()
         .NFTTransferAsset({
-            recipientId: Identities.Address.fromPassphrase(passphrase),
+            recipientId: ARKCrypto.Identities.Address.fromPassphrase(passphrase),
             nftIds: ["7373bbe5524898faec40bfcd12c6161981771f3be6426404208784831f4b0d02"],
         })
         .nonce(senderNonce.toFixed())
@@ -194,23 +193,22 @@ export const NFTTransfer = async () => {
 ### NFTBurn - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
-import { NFTConnection } from "@protokol/nft-client";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
 export const NFTBurn = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBurnTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBurnTransaction);
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NFTBurnBuilder()
@@ -234,28 +232,27 @@ export const NFTBurn = async () => {
 ### NFTAuction - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { NFTConnection } from "@protokol/nft-client";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTAuction = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAuctionTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAuctionTransaction);
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NFTAuctionBuilder()
         .NFTAuctionAsset({
-            startAmount: Utils.BigNumber.make("1000"),
+            startAmount: ARKCrypto.Utils.BigNumber.make("1000"),
             expiration: {
                 blockHeight: 1000000,
             },
@@ -276,23 +273,22 @@ export const NFTAuction = async () => {
 ### NFTAuctionCancel - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { NFTConnection } from "@protokol/nft-client";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTAuctionCancel = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAuctionCancelTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAuctionCancelTransaction);
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NFTAuctionCancelBuilder()
@@ -314,28 +310,27 @@ export const NFTAuctionCancel = async () => {
 ### NFTBid - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { NFTConnection } from "@protokol/nft-client";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTBid = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBidTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBidTransaction);
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NFTBidBuilder()
         .NFTBidAsset({
-            bidAmount: Utils.BigNumber.make("1100"),
+            bidAmount: ARKCrypto.Utils.BigNumber.make("1100"),
             auctionId: "717ce9f6dff858c4972b067a1fce8ea72fb1c4ac60c4a75cc8e9993dbbe7541a",
         })
         .nonce(senderNonce.toFixed())
@@ -353,23 +348,22 @@ export const NFTBid = async () => {
 ### NFTBidCancel - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { NFTConnection } from "@protokol/nft-client";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTBidCancel = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBidCancelTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBidCancelTransaction);
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NFTBidCancelBuilder()
@@ -386,28 +380,28 @@ export const NFTBidCancel = async () => {
     console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
 };
 
+
 ```
 
 ### NFTAcceptTrade - Creating and Broadcasting
 
 ```typescript
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
-import { NFTConnection } from "@protokol/nft-client";
-import { Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
+import { NFTConnection } from "@protokol/client";
+import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTAcceptTrade = async () => {
     // Configure manager and register transaction type
-    Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
-    Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAcceptTradeTransaction);
+    ARKCrypto.Managers.configManager.setFromPreset("testnet");
+    ARKCrypto.Managers.configManager.setHeight(2);
+    ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAcceptTradeTransaction);
 
     // Configure our API client
     const client = new NFTConnection("http://nft.protokol.com:4003/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
-    const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-    const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+    const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
+    const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
     // Step 2: Create the transaction
     const transaction = new Builders.NftAcceptTradeBuilder()
@@ -424,6 +418,7 @@ export const NFTAcceptTrade = async () => {
     // Step 4: Log the response
     console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
 };
+
 
 ```
 
