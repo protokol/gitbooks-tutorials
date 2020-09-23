@@ -11,6 +11,7 @@
 
 * [NFT Client](sdk/nft-client.md)
 * [NFT-Examples](sdk/complementary-examples.md)
+* [Guardian Client](sdk/guardian-client.md)
 * [Guardian Examples](sdk/guardian-examples.md)
 
 ## Base-API Endpoints <a id="nft-base-api"></a>
