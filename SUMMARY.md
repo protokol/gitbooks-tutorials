@@ -29,3 +29,9 @@
 * [Trades](nft-exchange-api/trades.md)
 * [Configurations](nft-exchange-api/configurations.md)
 
+## GUARDIAN-API ENDPOINTS
+
+* [Configurations](guardian-api-endpoints/configurations.md)
+* [Groups](guardian-api-endpoints/groups.md)
+* [Users](guardian-api-endpoints/users.md)
+
