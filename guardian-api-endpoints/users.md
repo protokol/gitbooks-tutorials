@@ -8,9 +8,9 @@ description: API Endpoints for Users
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| /users | Retrun all users | GET |
-| /users/:id | Retrun user by public key | GET |
-| /users/:id/groups | Return all groups of user | GET |
+| [/users](users.md#list-all-users-endpoints) | Retrun all users | GET |
+| [/users/:id](users.md#get-return-user-by-public-key) | Retrun user by public key | GET |
+| [/users/:id/groups](users.md#get-return-groups-of-user-by-public-key) | Return all groups of user | GET |
 
 ## GET - Return All Users
 
