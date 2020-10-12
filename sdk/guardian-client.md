@@ -39,7 +39,7 @@ const response = await connection.guardianApi("configurations").index();
 ### List All Groups
 
 ```typescript
-const response = await connection.guardianApi("configurations").index();
+const response = await connection.guardianApi("groups").index();
 
 >>> Promise<ApiResponseWithPagination<Group>>
 ```

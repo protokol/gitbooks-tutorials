@@ -8,9 +8,9 @@ description: API Endpoints for Users
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| [/users](users.md#list-all-users-endpoints) | Retrun all users | GET |
-| [/users/:id](users.md#get-return-user-by-public-key) | Retrun user by public key | GET |
-| [/users/:id/groups](users.md#get-return-groups-of-user-by-public-key) | Return all groups of user | GET |
+| [/users](users.md#list-all-users-endpoints) | Return all users | GET |
+| [/users/:id](users.md#get-return-user-by-public-key) | Return user by a public key | GET |
+| [/users/:id/groups](users.md#get-return-groups-of-user-by-public-key) | Return all groups of a user | GET |
 
 ## GET - Return All Users
 
@@ -26,6 +26,7 @@ GET /users
 | :--- | :--- | :--- | :--- |
 | page | int | The number of the page that will be returned. | No |
 | limit | int | The number of resources per page. | No |
+| publicKey | string | String by which should search for resources \(allows wildcard %\) | No |
 
 ### Example
 
@@ -44,9 +45,9 @@ curl http://nft.protokol.com:4003/api/guardian/users
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/guardian/users?page=1&limit=100",
-    "first": "/guardian/users?page=1&limit=100",
-    "last": "/guardian/users?page=1&limit=100"
+    "self": "/guardian/users?publicKey=032%25&page=1&limit=100",
+    "first": "/guardian/users?publicKey=032%25&page=1&limit=100",
+    "last": "/guardian/users?publicKey=032%25&page=1&limit=100"
   },
   "data": [
     {
@@ -54,17 +55,13 @@ curl http://nft.protokol.com:4003/api/guardian/users
       "groups": [
         "group name"
       ],
-      "permissions": [
+      "allow": [
         {
-          "kind": 1,
-          "types": [
-            {
-              "transactionType": 1,
-              "transactionTypeGroup": 9002
-            }
-          ]
+          "transactionType": 0,
+          "transactionTypeGroup": 9002
         }
-      ]
+      ],
+      "deny": []
     }
   ]
 }
@@ -142,19 +139,15 @@ curl http://nft.protokol.com:4003/api/guardian/users/03287bfebba4c7881a0509717e7
     {
       "name": "group name",
       "priority": 1,
-      "active": false,
-      "default": false,
-      "permissions": [
+      "active": true,
+      "default": true,
+      "allow": [
         {
-          "kind": 1,
-          "types": [
-            {
-              "transactionType": 1,
-              "transactionTypeGroup": 9002
-            }
-          ]
+          "transactionType": 1,
+          "transactionTypeGroup": 9002
         }
-      ]
+      ],
+      "deny": []
     }
   ]
 }

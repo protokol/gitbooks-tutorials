@@ -65,12 +65,7 @@ export const guardianUserPermission = async () => {
     const transaction = new Builders.GuardianUserPermissionsBuilder()
         .GuardianUserPermissions({
             groupNames: ["Test Guardian Permission Group"],
-            permissions: [
-                {
-                    types: [{ transactionTypeGroup: 1, transactionType: 2 }],
-                    kind: Enums.PermissionKind.Allow,
-                },
-            ],
+            allow: [{ transactionTypeGroup: 1, transactionType: 2 }],
             publicKey: ARKCrypto.Identities.PublicKey.fromPassphrase("This is my passphrase"),
         })
         .nonce(senderNonce.toFixed())
@@ -113,12 +108,8 @@ export const guardianGroupPermission = async () => {
     const transaction = new Builders.GuardianGroupPermissionsBuilder()
         .GuardianGroupPermissions({
             name: "Test Guardian Permission Group",
-            permissions: [
-                {
-                    kind: Enums.PermissionKind.Allow,
-                    types: [{ transactionType: 1, transactionTypeGroup: 1 }],
-                },
-            ],
+            allow: [{ transactionType: 1, transactionTypeGroup: 1 }],
+            deny: [{ transactionType: 1, transactionTypeGroup: 2 }],
             priority: 1,
             active: true,
             default: false,

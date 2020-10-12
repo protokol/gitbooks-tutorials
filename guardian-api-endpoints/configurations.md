@@ -8,7 +8,7 @@ description: API Endpoints for Configurations
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| [/configurations](configurations.md#get-configurationss) | Return configurations for crypto and transaction pacakage | GET |
+| [/configurations](configurations.md#get-configurationss) | Return configurations for crypto and transaction package | GET |
 
 ## GET - Configurations
 
@@ -53,7 +53,8 @@ curl http://nft.protokol.com:4003/api/guardian/configurations
     "transactions": {
       "defaults": {
         "maxDefinedGroupsPerUser": 20,
-        "defaultRuleBehaviour": 1
+        "transactionsAllowedByDefault": true,
+        "feeType": 0
       }
     }
   }

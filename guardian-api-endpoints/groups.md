@@ -8,9 +8,9 @@ description: API Endpoints for Groups
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| [/groups](groups.md#get-return-all-groups) | Retrun all groups | GET |
-| [/groups/:id](groups.md#get-return-group-by-name) | Retrun group by name | GET |
-| [/groups/:id/users](groups.md#get-return-all-users-of-group) | Return all users of group with wanted name | GET |
+| [/groups](groups.md#get-return-all-groups) | Return all groups | GET |
+| [/groups/:id](groups.md#get-return-group-by-name) | Return group by name | GET |
+| [/groups/:id/users](groups.md#get-return-all-users-of-group) | Return all users of a group with wanted name | GET |
 
 
 
@@ -29,6 +29,10 @@ GET /groups
 | page | int | The number of the page that will be returned. | No |
 | limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
+| name | string | String by which should search for resources \(allows wildcard %\) | No |
+| priority | int | The number by which should search for resources | No |
+| active | boolean | Value by which should search for resources | No |
+| default | boolean | Value by which should search for resources | No |
 
 ### Example
 
@@ -47,27 +51,23 @@ curl http://nft.protokol.com:4003/api/guardian/groups
     "totalCount": 1,
     "next": null,
     "previous": null,
-    "self": "/guardian/groups?page=1&limit=100",
-    "first": "/guardian/groups?page=1&limit=100",
-    "last": "/guardian/groups?page=1&limit=100"
+    "self": "/guardian/groups?orderBy=name%3Adesc&name=def%25&page=1&limit=100",
+    "first": "/guardian/groups?orderBy=name%3Adesc&name=def%25&page=1&limit=100",
+    "last": "/guardian/groups?orderBy=name%3Adesc&name=def%25&page=1&limit=100"
   },
   "data": [
     {
-      "name": "group name",
+      "name": "Default Transfer Group",
       "priority": 1,
-      "active": false,
-      "default": false,
-      "permissions": [
+      "active": true,
+      "default": true,
+      "allow": [
         {
-          "kind": 1,
-          "types": [
-            {
-              "transactionType": 1,
-              "transactionTypeGroup": 9002
-            }
-          ]
+          "transactionType": 1,
+          "transactionTypeGroup": 1
         }
-      ]
+      ],
+      "deny": []
     }
   ]
 }
@@ -98,21 +98,17 @@ curl http://nft.protokol.com:4003/api/guardian/groups/group%20name
 ```javascript
 {
   "data": {
-    "name": "group name",
+    "name": "Default Transfer Group",
     "priority": 1,
-    "active": false,
-    "default": false,
-    "permissions": [
+    "active": true,
+    "default": true,
+    "allow": [
       {
-        "kind": 1,
-        "types": [
-          {
-            "transactionType": 1,
-            "transactionTypeGroup": 9002
-          }
-        ]
+        "transactionType": 1,
+        "transactionTypeGroup": 1
       }
-    ]
+    ],
+    "deny": []
   }
 }
 ```
@@ -147,19 +143,17 @@ curl http://nft.protokol.com:4003/api/guardian/groups/group%20name/users
       "groups": [
         "group name"
       ],
-      "permissions": [
+      "allow": [
         {
-          "kind": 1,
-          "types": [
-            {
-              "transactionType": 1,
-              "transactionTypeGroup": 9002
-            }
-          ]
+          "transactionType": 1,
+          "transactionTypeGroup": 1
         }
-      ]
+      ],
+      "deny": []
     }
   ]
 }
 ```
+
+
 
