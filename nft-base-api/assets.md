@@ -35,7 +35,7 @@ GET /assets
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/nft/assets
+curl https://api.protokol.com/api/nft/assets
 ```
 
 ### Response
@@ -100,7 +100,7 @@ GET /assets/{id}
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/assets/efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59
+curl https://api.protokol.com/api/nft/assets/efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59
 ```
 
 ### Response
@@ -148,7 +148,7 @@ GET /assets/{id}/wallets
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/assets/efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59/wallets
+curl https://api.protokol.com/api/nft/assets/efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59/wallets
 ```
 
 ### Response
@@ -232,7 +232,7 @@ POST /assets/search
 
 ```bash
 curl --request POST \
-  --url http://nft.protokol.com:4003/api/nft/assets/search \
+  --url https://api.protokol.com/api/nft/assets/search \
   --header 'content-type: application/json' \
   --data '{
 	  "name": "Antonio Caracciolo"

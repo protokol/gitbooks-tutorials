@@ -45,7 +45,7 @@ npm install @protokol/client
 ### NFTRegisterCollection - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
 export const NFTRegisterCollection = async () => {
@@ -57,7 +57,7 @@ export const NFTRegisterCollection = async () => {
     );
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -110,7 +110,7 @@ export const NFTRegisterCollection = async () => {
 ### NFTCreate - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
 export const NFTCreate = async () => {
@@ -120,7 +120,7 @@ export const NFTCreate = async () => {
     ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTCreateTransaction);
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -155,7 +155,7 @@ export const NFTCreate = async () => {
 ### NFTTransfer - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
 export const NFTTransfer = async () => {
@@ -165,7 +165,7 @@ export const NFTTransfer = async () => {
     ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTTransferTransaction);
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -193,7 +193,7 @@ export const NFTTransfer = async () => {
 ### NFTBurn - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
 export const NFTBurn = async () => {
@@ -203,7 +203,7 @@ export const NFTBurn = async () => {
     ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBurnTransaction);
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -232,7 +232,7 @@ export const NFTBurn = async () => {
 ### NFTAuction - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTAuction = async () => {
@@ -242,7 +242,7 @@ export const NFTAuction = async () => {
     ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAuctionTransaction);
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -273,7 +273,7 @@ export const NFTAuction = async () => {
 ### NFTAuctionCancel - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTAuctionCancel = async () => {
@@ -283,7 +283,7 @@ export const NFTAuctionCancel = async () => {
     ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAuctionCancelTransaction);
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -310,7 +310,7 @@ export const NFTAuctionCancel = async () => {
 ### NFTBid - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTBid = async () => {
@@ -320,7 +320,7 @@ export const NFTBid = async () => {
     ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBidTransaction);
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -348,7 +348,7 @@ export const NFTBid = async () => {
 ### NFTBidCancel - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTBidCancel = async () => {
@@ -358,7 +358,7 @@ export const NFTBidCancel = async () => {
     ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBidCancelTransaction);
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -386,7 +386,7 @@ export const NFTBidCancel = async () => {
 ### NFTAcceptTrade - Creating and Broadcasting
 
 ```typescript
-import { NFTConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
 
 export const NFTAcceptTrade = async () => {
@@ -396,7 +396,7 @@ export const NFTAcceptTrade = async () => {
     ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAcceptTradeTransaction);
 
     // Configure our API client
-    const client = new NFTConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet

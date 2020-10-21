@@ -42,7 +42,7 @@ yarn add @protokol/client
 ### GuardianUserPermissions - Creating and Broadcasting
 
 ```typescript
-import { GuardianConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Enums, Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
 
 export const guardianUserPermission = async () => {
@@ -54,7 +54,7 @@ export const guardianUserPermission = async () => {
     );
 
     // Configure our API client
-    const client = new GuardianConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet
@@ -85,7 +85,7 @@ export const guardianUserPermission = async () => {
 ### GuardianGroupPermissions - Creating and Broadcasting
 
 ```typescript
-import { GuardianConnection } from "@protokol/client";
+import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto, Builders, Enums, Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
 
 export const guardianGroupPermission = async () => {
@@ -97,7 +97,7 @@ export const guardianGroupPermission = async () => {
     );
 
     // Configure our API client
-    const client = new GuardianConnection("http://nft.protokol.com:4003/api");
+    const client = new ProtokolConnection("https://api.protokol.com/api");
     const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
     // Step 1: Retrieve the nonce of the sender wallet

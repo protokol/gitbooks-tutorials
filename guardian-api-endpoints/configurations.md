@@ -23,7 +23,7 @@ GET /configurations
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/guardian/configurations
+curl https://api.protokol.com/api/guardian/configurations
 ```
 
 ### Response

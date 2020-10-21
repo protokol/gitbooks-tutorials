@@ -31,7 +31,7 @@ GET /transfers
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/nft/transfers
+curl https://api.protokol.com/api/nft/transfers
 ```
 
 ### Response
@@ -87,7 +87,7 @@ GET /transfers/{id}
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/transfers/ca89d9614d79e0df97cee7dbb3d517f6872bb719e2c0a4727ea980ed18274411
+curl https://api.protokol.com/api/nft/transfers/ca89d9614d79e0df97cee7dbb3d517f6872bb719e2c0a4727ea980ed18274411
 ```
 
 ### Response

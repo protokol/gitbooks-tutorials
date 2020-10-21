@@ -31,7 +31,7 @@ GET /users
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/guardian/users
+curl https://api.protokol.com/api/guardian/users
 ```
 
 ### Response
@@ -84,7 +84,7 @@ GET /users/{id}
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/guardian/users/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37
+curl https://api.protokol.com/api/guardian/users/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37
 ```
 
 ### Response
@@ -128,7 +128,7 @@ GET /users/{id}/groups
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/guardian/users/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37/groups
+curl https://api.protokol.com/api/guardian/users/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37/groups
 ```
 
 ### Response

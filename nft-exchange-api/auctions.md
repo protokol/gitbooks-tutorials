@@ -37,7 +37,7 @@ GET /auctions
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/nft/exchange/auctions
+curl https://api.protokol.com/api/nft/exchange/auctions
 ```
 
 ### Response
@@ -96,7 +96,7 @@ GET /auctions/{id}
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/exchange/auctions/ab1303eb497ab290318c860bda259d5fafaf45fe0624712d088bcf99ee411e3e
+curl https://api.protokol.com/api/nft/exchange/auctions/ab1303eb497ab290318c860bda259d5fafaf45fe0624712d088bcf99ee411e3e
 ```
 
 ### Response
@@ -139,7 +139,7 @@ GET /auctions/{id}/wallets
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/exchange/auctions/ab1303eb497ab290318c860bda259d5fafaf45fe0624712d088bcf99ee411e3e/wallets
+curl https://api.protokol.com/api/nft/exchange/auctions/ab1303eb497ab290318c860bda259d5fafaf45fe0624712d088bcf99ee411e3e/wallets
 ```
 
 ### Response
@@ -232,7 +232,7 @@ POST /auctions/search
 
 ```bash
 curl --request POST \
-  --url http://nft.protokol.com:4003/api/nft/exchange/auctions/search \
+  --url https://api.protokol.com/api/nft/exchange/auctions/search \
   --header 'content-type: application/json' \
   --data '{
 	  "nftId": "a6273964d15a1de37792497bf15e12e67898c7217a680cbf2e152cccc33e5182"
@@ -295,7 +295,7 @@ GET /auctions/canceled
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/exchange/auctions/cancled
+curl https://api.protokol.com/api/nft/exchange/auctions/cancled
 ```
 
 ### Response
@@ -348,7 +348,7 @@ GET /auctions/canceled/{id}
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/exchange/auctions/canceled/b772364d3bdb94333cdd6390c3c33910eb9444989eabfd5393f4fb75f30eb697
+curl https://api.protokol.com/api/nft/exchange/auctions/canceled/b772364d3bdb94333cdd6390c3c33910eb9444989eabfd5393f4fb75f30eb697
 ```
 
 ### Response

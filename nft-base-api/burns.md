@@ -33,7 +33,7 @@ GET /burns
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/nft/burns
+curl https://api.protokol.com/api/nft/burns
 ```
 
 ### Response
@@ -88,7 +88,7 @@ GET /burns/{id}
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/burns/23a7f2a6a3dfeeacac170bcbbaac2002a030192b3ab8b00a5fef0b7264bc7f02
+curl https://api.protokol.com/api/nft/burns/23a7f2a6a3dfeeacac170bcbbaac2002a030192b3ab8b00a5fef0b7264bc7f02
 ```
 
 ### Response

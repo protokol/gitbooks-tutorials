@@ -17,9 +17,9 @@ yarn add @protokol/client
 ## Initialization
 
 ```typescript
-import { NFTConnection } from "./nft-connection";
+import { ProtokolConnection } from "@protokol/client";
 
-const connection = new NFTConnection("http://nft.protokol.com:4003/api");
+const connection = new ProtokolConnection("https://api.protokol.com/api");
 ```
 
 ## NFT Base Endpoints

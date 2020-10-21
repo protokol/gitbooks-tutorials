@@ -21,7 +21,7 @@ GET /configurations
 ### Example
 
 ```bash
-curl http://nft.protokol.com:4003/api/nft/exchange/configurations
+curl https://api.protokol.com/api/nft/exchange/configurations
 ```
 
 ### Response

@@ -32,7 +32,7 @@ GET /trades
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/nft/exchange/trades
+curl https://api.protokol.com/api/nft/exchange/trades
 ```
 
 ### Response
@@ -86,7 +86,7 @@ GET /trades/{id}
 ### Example
 
 ```text
-curl http://nft.protokol.com:4003/api/nft/exchange/trades/993faf758740972af07b67892e1ff2a66f1467c9203020bdb65f8a0a533942e7
+curl https://api.protokol.com/api/nft/exchange/trades/993faf758740972af07b67892e1ff2a66f1467c9203020bdb65f8a0a533942e7
 ```
 
 ### Response
@@ -148,7 +148,7 @@ POST /trades/search
 
 ```bash
 curl --request POST \
-  --url http://nft.protokol.com:4003/api/nft/exchange/trades/search \
+  --url https://api.protokol.com/api/nft/exchange/trades/search \
   --header 'content-type: application/json' \
   --data '{
 	  	"senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37"

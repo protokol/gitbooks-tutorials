@@ -17,9 +17,9 @@ yarn add @protokol/client
 ## Initialization
 
 ```typescript
-import { GuardianConnection } from "./guardian-connection";
+import { ProtokolConnection } from "@protokol/client";
 
-const connection = new GuardianConnection("http://nft.protokol.com:4003/api");
+const connection = new ProtokolConnection("https://api.protokol.com/api");
 ```
 
 ## Guardian Endpoints
