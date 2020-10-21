@@ -8,7 +8,9 @@ Complementary Examples of Guardian SDK used in conjunction with the Client to ge
 
 Runnable implementation of all the examples listed can be found here:
 
-{% embed url="https://github.com/protokol/nft-plugins/tree/develop/packages/examples" %}
+{% embed url="https://github.com/protokol/examples/tree/develop/packages/examples" %}
+
+
 
 Edit the `src/index.ts` file to run a specific example.
 

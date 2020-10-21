@@ -16,7 +16,7 @@ NFTRegisterCollection transaction enables us to register a new type of digital a
 
 ### How To Use NFTRegisterCollection Transaction
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/base/nft-register-collection.ts" caption="NFT RegisterCollection Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/base/nft-register-collection.ts" caption="NFT RegisterCollection Runnable Example" %}
 
 #### Initialization
 
@@ -73,7 +73,9 @@ After token is created it lives inside the genesis wallet, until it is transferr
 
 ### How To Use NFTCreate Transaction
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/base/nft-create.ts" caption="NFTCreateAsset Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/base/nft-create.ts" caption="NFTCreateAsset Runnable Example" %}
+
+#### NFTCreateAsset - Builder
 
 ```typescript
 new Builders.NFTCreateBuilder()
@@ -99,7 +101,9 @@ We can transfer multiple owned digital assets. See example below for NFT Transfe
 
 ### How To Use NFTTransfer Transaction
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/base/nft-transfer.ts" caption="NFTTransfer Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/base/nft-transfer.ts" caption="NFTTransfer Runnable Example" %}
+
+#### NFTTransfer - Builder
 
 ```typescript
 new Builders.NFTTransferBuilder()
@@ -118,7 +122,9 @@ Our NFT plugin set also enables burning capability for digital assets. This is u
 
 ### How To Use NFTBurn Transaction
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/base/nft-burn.ts" caption="NFTBurn Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/base/nft-burn.ts" caption="NFTBurn Runnable Example" %}
+
+#### NFTBurn - Builder
 
 ```typescript
  new Builders.NFTBurnBuilder()

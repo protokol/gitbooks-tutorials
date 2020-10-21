@@ -18,7 +18,7 @@ Only an auction owner can cancel an auction.
 
 ### How To Create An Auction
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/exchange/nft-auction.ts" caption="NFTAuction Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/exchange/nft-auction.ts" caption="NFTAuction Runnable Example" %}
 
 #### Initialization
 
@@ -43,7 +43,7 @@ new Builders.NFTAuctionBuilder()
 
 ### How To Cancel An Auction
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/exchange/nft-auction-cancel.ts" caption="NFTAuctionCancel Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/exchange/nft-auction-cancel.ts" caption="NFTAuctionCancel Runnable Example" %}
 
 To cancel an auction we need to specify **auctionId** and be **owners** of the specific auction.
 
@@ -72,7 +72,7 @@ When a bid is issued, the users balance is locked for the duration of this bid. 
 
 ### How To Create A Bid
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/exchange/nft-bid-cancel.ts" caption="NFTBid Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/exchange/nft-bid.ts" caption="NFTBid Runnable Example" %}
 
 #### NFTBid - Builder
 
@@ -88,7 +88,7 @@ new Builders.NFTBidBuilder()
 
 ### How To Cancel A Bid
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/exchange/nft-bid-cancel.ts" caption="NFTBidCancel Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/exchange/nft-bid-cancel.ts" caption="NFTBidCancel Runnable Example" %}
 
 To cancel a bid we need to specify a **bidId** and be **owners** of the specific bid.
 
@@ -113,12 +113,14 @@ We can accept a trade by specifying the sub-transactions related to closing a sp
 Both IDs correspond with the seller request and bidder offerings. The seller is responsible for which bid he is willing to accept. 
 
 {% hint style="info" %}
-When a trade is accepted all other bids are cancelled, and locked balances are returned to the bidders.
+When a trade is accepted all other bids are canceled, and locked balances are returned to the bidders.
 {% endhint %}
 
 ### How to Accept A Trade
 
-{% embed url="https://github.com/protokol/nft-plugins/blob/develop/packages/examples/src/exchange/nft-accept-trade.ts" caption="NFTAcceptTrade Runnable Example" %}
+{% embed url="https://github.com/protokol/examples/blob/develop/packages/examples/src/exchange/nft-accept-trade.ts" caption="NFTAcceptTrade Runnable Example" %}
+
+#### NFTAcceptTrade - Builder
 
 ```typescript
 new Builders.NftAcceptTradeBuilder()
