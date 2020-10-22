@@ -90,7 +90,7 @@ GET /groups/{id}
 ### Example
 
 ```text
-curl https://api.protokol.com/api/guardian/groups/group%20name
+curl https://api.protokol.com/api/guardian/groups/Test%20Guardian%20Permission%20Group
 ```
 
 ### Response
@@ -98,7 +98,7 @@ curl https://api.protokol.com/api/guardian/groups/group%20name
 ```javascript
 {
   "data": {
-    "name": "Default Transfer Group",
+    "name": "Test Guardian Permission Group",
     "priority": 1,
     "active": true,
     "default": true,
@@ -130,7 +130,7 @@ GET /groups/{id}/users
 ### Example
 
 ```text
-curl https://api.protokol.com/api/guardian/groups/group%20name/users
+curl https://api.protokol.com/api/guardian/groups/Test%20group%201/users
 ```
 
 ### Response
@@ -141,7 +141,7 @@ curl https://api.protokol.com/api/guardian/groups/group%20name/users
     {
       "publicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
       "groups": [
-        "group name"
+        "Test group 1"
       ],
       "allow": [
         {

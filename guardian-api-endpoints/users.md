@@ -84,7 +84,7 @@ GET /users/{id}
 ### Example
 
 ```text
-curl https://api.protokol.com/api/guardian/users/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37
+curl https://api.protokol.com/api/guardian/users/03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc
 ```
 
 ### Response
@@ -128,7 +128,7 @@ GET /users/{id}/groups
 ### Example
 
 ```text
-curl https://api.protokol.com/api/guardian/users/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37/groups
+curl https://api.protokol.com/api/guardian/users/03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc/groups
 ```
 
 ### Response
