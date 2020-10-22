@@ -86,7 +86,7 @@ GET /trades/{id}
 ### Example
 
 ```text
-curl https://api.protokol.com/api/nft/exchange/trades/993faf758740972af07b67892e1ff2a66f1467c9203020bdb65f8a0a533942e7
+curl https://api.protokol.com/api/nft/exchange/trades/e80a40379f9dc26a7be1b7302e4f2f1129ae6335c538a41cf29e9f242cfaee0d
 ```
 
 ### Response

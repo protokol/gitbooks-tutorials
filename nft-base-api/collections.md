@@ -326,15 +326,7 @@ POST /collections/search
 curl --request POST \
   --url https://api.protokol.com/api/nft/collections/search \
   --header 'content-type: application/json' \
-  --data '{
-		"jsonSchema": {
-		"properties":{
-			"name": {
-				"type": "string"
-			}
-		}
-  }
-}'
+  --data '{"jsonSchema": {"properties": {"name": {"type":"string"}}}}'
 ```
 
 ### Response
