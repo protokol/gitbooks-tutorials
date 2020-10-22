@@ -100,7 +100,7 @@ GET /assets/{id}
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/assets/efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59
+curl https://api.protokol.com/api/nft/assets/baab82791f89a7f0af9e806dd2c634c9064903e514d1053179ff03f6d3d40866
 ```
 
 ### Response
@@ -148,7 +148,7 @@ GET /assets/{id}/wallets
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/assets/efbd8b013d408584b2b5d170df4cc685b0495b8fecad0f6551ddc13105043b59/wallets
+curl https://api.protokol.com/api/nft/assets/baab82791f89a7f0af9e806dd2c634c9064903e514d1053179ff03f6d3d40866/wallets
 ```
 
 ### Response

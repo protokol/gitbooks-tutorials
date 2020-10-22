@@ -88,7 +88,7 @@ GET /burns/{id}
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/burns/23a7f2a6a3dfeeacac170bcbbaac2002a030192b3ab8b00a5fef0b7264bc7f02
+curl https://api.protokol.com/api/nft/burns/f2c47694e32cdb7cae7e3ca8726836fac323a3175559277469faf541ae49c5b4
 ```
 
 ### Response

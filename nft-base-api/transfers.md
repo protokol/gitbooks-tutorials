@@ -87,7 +87,7 @@ GET /transfers/{id}
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/transfers/ca89d9614d79e0df97cee7dbb3d517f6872bb719e2c0a4727ea980ed18274411
+curl https://api.protokol.com/api/nft/transfers/5a5fe2fb9c5b1102b2d6266d41b6184676bd42c2b648c82e13264a562252072b
 ```
 
 ### Response
