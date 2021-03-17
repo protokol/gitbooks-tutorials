@@ -11,6 +11,7 @@ description: API Endpoints For Managing Assets
 | [/assets](https://docs.protokol.com/nft/nft-base-api/assets#get-return-all-assets) | return all assets | GET |
 | [/assets/:id](https://docs.protokol.com/nft/nft-base-api/assets#get-return-asset-by-id) | return asset by :id | GET |
 | [/assets/:id/wallets](https://docs.protokol.com/nft/nft-base-api/assets#get-return-assets-wallet) | return the wallet owning an asset | GET |
+| /assets/wallets/:id | return the assets that wallet owns | GET |
 | [/assets/search](https://docs.protokol.com/nft/nft-base-api/assets#post-search-assets-by-attributes) | search assets | POST |
 
 ## GET - Return All Assets
@@ -200,6 +201,72 @@ curl https://api.protokol.com/api/nft/assets/baab82791f89a7f0af9e806dd2c634c9064
       ]
     }
   }
+}
+```
+
+## GET - Return Wallet's Assets
+
+Returns the assets that a wallet owns.
+
+### Endpoint
+
+```bash
+GET /assets/wallet/{id}
+```
+
+### Path parameters
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| id | string | The public key of a wallet | Yes |
+
+### **Query Parameters**
+
+| **Name** | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| page | int | The number of the page that will be returned. | No |
+| limit | int  | The number of resources per page. | No |
+| orderBy | string | Type by which should order resources. | No |
+| transform | boolean | If returns modified or raw data. | No |
+
+### Example
+
+```bash
+curl https://api.protokol.com/api/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37
+```
+
+### Response
+
+```javascript
+{
+   "meta":{
+      "totalCountIsEstimate":true,
+      "count":1,
+      "pageCount":1,
+      "totalCount":1,
+      "next":null,
+      "previous":null,
+      "self":"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?limit=1&transform=true&page=1",
+      "first":"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?limit=1&transform=true&page=1",
+      "last":"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?limit=1&transform=true&page=1"
+   },
+   "data":[
+      {
+         "id":"85ae652027c44696bb7b5188f951b287ed507312e827c0f0e71a363188928e84",
+         "ownerPublicKey":"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+         "senderPublicKey":"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+         "collectionId":"76b406ad81e2731b64325d6024a67b38a0ef7c67905e6e7eb03a746cf977042a",
+         "attributes":{
+            "number":100,
+            "string":"Card"
+         },
+         "timestamp":{
+            "epoch":124666048,
+            "unix":1614767248,
+            "human":"2021-03-03T10:27:28.000Z"
+         }
+      }
+   ]
 }
 ```
 

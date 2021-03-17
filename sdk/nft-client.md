@@ -104,6 +104,14 @@ const response = connection.NFTBaseApi("assets").wallet("VALID_ID");
 >>> Promise<ApiResponse<AssetsWallet>>
 ```
 
+### Return Wallet's assets
+
+```typescript
+const response = connection.NFTBaseApi("assets").walletAssets("PUBLIC_KEY");
+
+>>> Promise<ApiResponseWithPagination<AssetsResource[]>>
+```
+
 ### Search By Asset
 
 ```typescript
