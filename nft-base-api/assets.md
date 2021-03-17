@@ -11,7 +11,7 @@ description: API Endpoints For Managing Assets
 | [/assets](https://docs.protokol.com/nft/nft-base-api/assets#get-return-all-assets) | return all assets | GET |
 | [/assets/:id](https://docs.protokol.com/nft/nft-base-api/assets#get-return-asset-by-id) | return asset by :id | GET |
 | [/assets/:id/wallets](https://docs.protokol.com/nft/nft-base-api/assets#get-return-assets-wallet) | return the wallet owning an asset | GET |
-| /assets/wallets/:id | return the assets that wallet owns | GET |
+| [/assets/wallets/:id](https://docs.protokol.com/nft/nft-base-api/assets#get-return-wallets-assets) | return the assets that wallet owns | GET |
 | [/assets/search](https://docs.protokol.com/nft/nft-base-api/assets#post-search-assets-by-attributes) | search assets | POST |
 
 ## GET - Return All Assets
