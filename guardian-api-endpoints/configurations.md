@@ -23,7 +23,7 @@ GET /configurations
 ### Example
 
 ```text
-curl https://api.protokol.com/api/guardian/configurations
+curl https://explorer.protokol.sh/api/guardian/configurations
 ```
 
 ### Response

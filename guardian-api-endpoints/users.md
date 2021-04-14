@@ -31,7 +31,7 @@ GET /users
 ### Example
 
 ```text
-curl https://api.protokol.com/api/guardian/users
+curl https://explorer.protokol.sh/api/guardian/users
 ```
 
 ### Response
@@ -84,7 +84,7 @@ GET /users/{id}
 ### Example
 
 ```text
-curl https://api.protokol.com/api/guardian/users/03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc
+curl https://explorer.protokol.sh/api/guardian/users/03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc
 ```
 
 ### Response
@@ -128,7 +128,7 @@ GET /users/{id}/groups
 ### Example
 
 ```text
-curl https://api.protokol.com/api/guardian/users/03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc/groups
+curl https://explorer.protokol.sh/api/guardian/users/03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc/groups
 ```
 
 ### Response

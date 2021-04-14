@@ -19,7 +19,7 @@ yarn add @protokol/client
 ```typescript
 import { ProtokolConnection } from "@protokol/client";
 
-const connection = new ProtokolConnection("https://api.protokol.com/api");
+const connection = new ProtokolConnection("https://explorer.protokol.sh/api");
 ```
 
 ## NFT Base Endpoints
