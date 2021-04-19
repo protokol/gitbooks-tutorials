@@ -37,7 +37,7 @@ GET /collections
 ### Example
 
 ```text
-curl https://api.protokol.com/api/nft/collections
+curl https://explorer.protokol.sh/api/nft/collections
 ```
 
 ### Response
@@ -115,7 +115,7 @@ GET /collections/{id}
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/collections/a6ebed9672c970f4eeb4387321806e5eb478d9609b5d67401ecbb32fde759425
+curl https://explorer.protokol.sh/api/nft/collections/a6ebed9672c970f4eeb4387321806e5eb478d9609b5d67401ecbb32fde759425
 ```
 
 ### Response
@@ -182,7 +182,7 @@ GET /collections/{id}/schema
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/collections/a6ebed9672c970f4eeb4387321806e5eb478d9609b5d67401ecbb32fde759425/schema
+curl https://explorer.protokol.sh/api/nft/collections/a6ebed9672c970f4eeb4387321806e5eb478d9609b5d67401ecbb32fde759425/schema
 ```
 
 ### Response
@@ -243,7 +243,7 @@ GET /collections/{id}/wallets
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/collections/a6ebed9672c970f4eeb4387321806e5eb478d9609b5d67401ecbb32fde759425/wallets
+curl https://explorer.protokol.sh/api/nft/collections/a6ebed9672c970f4eeb4387321806e5eb478d9609b5d67401ecbb32fde759425/wallets
 ```
 
 ### Response
@@ -324,7 +324,7 @@ POST /collections/search
 
 ```javascript
 curl --request POST \
-  --url https://api.protokol.com/api/nft/collections/search \
+  --url https://explorer.protokol.sh/api/nft/collections/search \
   --header 'content-type: application/json' \
   --data '{"jsonSchema": {"properties": {"name": {"type":"string"}}}}'
 ```
@@ -414,7 +414,7 @@ GET /collections/{id}/assets
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/collections/a6ebed9672c970f4eeb4387321806e5eb478d9609b5d67401ecbb32fde759425/assets
+curl https://explorer.protokol.sh/api/nft/collections/a6ebed9672c970f4eeb4387321806e5eb478d9609b5d67401ecbb32fde759425/assets
 ```
 
 ### Response

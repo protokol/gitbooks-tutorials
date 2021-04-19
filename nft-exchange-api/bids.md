@@ -35,7 +35,7 @@ GET /bids
 ### Example
 
 ```text
-curl https://api.protokol.com/api/nft/exchange/bids
+curl https://explorer.protokol.sh/api/nft/exchange/bids
 ```
 
 ### Response
@@ -89,7 +89,7 @@ GET /bids/{id}
 ### Example
 
 ```text
-curl https://api.protokol.com/api/nft/exchange/bids/b6cac8e4e759e90048b3227a021030e3635a559081434b705c83d67c56460f03
+curl https://explorer.protokol.sh/api/nft/exchange/bids/b6cac8e4e759e90048b3227a021030e3635a559081434b705c83d67c56460f03
 ```
 
 ### Response
@@ -129,7 +129,7 @@ GET /bids/{id}/wallets
 ### Example
 
 ```text
-curl https://api.protokol.com/api/nft/exchange/bids/b6cac8e4e759e90048b3227a021030e3635a559081434b705c83d67c56460f03/wallets
+curl https://explorer.protokol.sh/api/nft/exchange/bids/b6cac8e4e759e90048b3227a021030e3635a559081434b705c83d67c56460f03/wallets
 ```
 
 ### Response
@@ -223,7 +223,7 @@ POST /bids/search
 
 ```bash
 curl --request POST \
-  --url https://api.protokol.com/api/nft/exchange/bids/search \
+  --url https://explorer.protokol.sh/api/nft/exchange/bids/search \
   --header 'content-type: application/json' \
   --data '{
 	  "bidAmount": "11"
@@ -282,7 +282,7 @@ GET /bids/canceled
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/exchange/bids/canceled
+curl https://explorer.protokol.sh/api/nft/exchange/bids/canceled
 ```
 
 ### Response
@@ -335,7 +335,7 @@ GET /bids/canceled/{id}
 ### Example
 
 ```bash
-curl https://api.protokol.com/api/nft/exchange/bids/canceled/d2995a639c77a5bc6d242b02a29ab8237ffecd231661dede4361b3bb73d4f075
+curl https://explorer.protokol.sh/api/nft/exchange/bids/canceled/d2995a639c77a5bc6d242b02a29ab8237ffecd231661dede4361b3bb73d4f075
 ```
 
 ### Response
