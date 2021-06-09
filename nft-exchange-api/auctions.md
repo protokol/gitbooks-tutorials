@@ -18,7 +18,7 @@ description: API Endpoints For Auctions
 
 Active auctions are auctions that have NOT been canceled or closed with a succesfull NFTAcceptTrade Transaction.
 ```diff
-- By default response includes expired (not accepted) auctions also.</
+- By default response includes expired (still not accepted trade) auctions also.
 ```
 
 ### Endpoint <a id="endpoint"></a>
