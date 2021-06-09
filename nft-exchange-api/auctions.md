@@ -227,8 +227,8 @@ POST /auctions/search
 | limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 ```diff
-- | onlyActive | boolean | Only returns not cancelled and not accepted trade auctions | No |
-- | expired | boolean | If true include expired auctions | No |
+- | onlyActive | boolean | Only returns not cancelled and not closed auctions | No |
+- | expired | boolean | Extends onlyActive, if true include expired auctions | No |
 - | includeBids | boolean | If true include auction bids | No |
 - | canceledBids | boolean | Together with includeBids, if true include cancelled bids, false by default | No |
 ```
