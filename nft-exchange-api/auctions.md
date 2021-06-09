@@ -1,7 +1,9 @@
+<style>
+  ad { color: red }
+</style>
 ---
 description: API Endpoints For Auctions
 ---
-
 # Auctions
 
 ## List of Auction Endpoints
@@ -18,6 +20,7 @@ description: API Endpoints For Auctions
 ## GET - Return All Active Auctions
 
 Active auctions are auctions that have NOT been canceled or closed with a succesfull NFTAcceptTrade Transaction.
+- <ad> By default will include expired auctions also.</ad>
 
 ### Endpoint <a id="endpoint"></a>
 
@@ -32,12 +35,13 @@ GET /auctions
 | page | int | The number of the page that will be returned. | No |
 | limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
-| transform | boolean | If returns modified or raw data. | No |
+| transform | boolean | It returns modified or raw data. | No |
+- <ad>| expired | boolean | If true include expired auctions. | No |</ad>
 
 ### Example
 
 ```text
-curl https://explorer.protokol.sh/api/nft/exchange/auctions
+curl https://api.protokol.com/api/nft/exchange/auctions
 ```
 
 ### Response
@@ -96,7 +100,7 @@ GET /auctions/{id}
 ### Example
 
 ```bash
-curl https://explorer.protokol.sh/api/nft/exchange/auctions/1d1757bc7e598fd73f0ec670e1f2c517d7d9a2a94d447bd5daa0a9384ebd4e7e
+curl https://api.protokol.com/api/nft/exchange/auctions/1d1757bc7e598fd73f0ec670e1f2c517d7d9a2a94d447bd5daa0a9384ebd4e7e
 ```
 
 ### Response
@@ -139,7 +143,7 @@ GET /auctions/{id}/wallets
 ### Example
 
 ```bash
-curl https://explorer.protokol.sh/api/nft/exchange/auctions/1d1757bc7e598fd73f0ec670e1f2c517d7d9a2a94d447bd5daa0a9384ebd4e7e/wallets
+curl https://api.protokol.com/api/nft/exchange/auctions/1d1757bc7e598fd73f0ec670e1f2c517d7d9a2a94d447bd5daa0a9384ebd4e7e/wallets
 ```
 
 ### Response
@@ -232,7 +236,7 @@ POST /auctions/search
 
 ```bash
 curl --request POST \
-  --url https://explorer.protokol.sh/api/nft/exchange/auctions/search \
+  --url https://api.protokol.com/api/nft/exchange/auctions/search \
   --header 'content-type: application/json' \
   --data '{
 	  "nftIds": ["238d98bd751025decc853a46da8fb995c68a9684a4156bcfa414e7596b6e73b1"]
@@ -295,7 +299,7 @@ GET /auctions/canceled
 ### Example
 
 ```bash
-curl https://explorer.protokol.sh/api/nft/exchange/auctions/cancled
+curl https://api.protokol.com/api/nft/exchange/auctions/cancled
 ```
 
 ### Response
@@ -348,7 +352,7 @@ GET /auctions/canceled/{id}
 ### Example
 
 ```bash
-curl https://explorer.protokol.sh/api/nft/exchange/auctions/canceled/3c26dee62a937aaf49c25e64d2776117362e9dc30dd6f27c839081d1e44608bc
+curl https://api.protokol.com/api/nft/exchange/auctions/canceled/3c26dee62a937aaf49c25e64d2776117362e9dc30dd6f27c839081d1e44608bc
 ```
 
 ### Response
