@@ -18,7 +18,7 @@ description: API Endpoints For Auctions
 
 Active auctions are auctions that have NOT been canceled or closed with a succesfull NFTAcceptTrade Transaction.
 ```diff
-- By default response includes expired (still not accepted trade) auctions also.
+- By default response does not include expired auctions.
 ```
 
 ### Endpoint <a id="endpoint"></a>
@@ -36,7 +36,7 @@ GET /auctions
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | It returns modified or raw data. | No |
 ```diff
-- | expired | boolean | If true include expired auctions. | No |
+- | expired | boolean | If true include expired (NOT been canceled or closed) auctions. | No |
 ```
 
 ### Example
