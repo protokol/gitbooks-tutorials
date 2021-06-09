@@ -1,3 +1,6 @@
+<style>
+  ad { color: red }
+</style>
 ---
 description: API Endpoints For Managing Assets
 ---
@@ -228,6 +231,8 @@ GET /assets/wallet/{id}
 | limit | int  | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
+- <ad>| inAuction | boolean | Return only assets in active Auctions (not cancelled and not accepted trade auctions) | No |</ad>
+- <ad>| inExpiredAuction | boolean | Extends inAuction parameter, if true include assets included in expired auctions, false by default | No |</ad>
 
 ### Example
 

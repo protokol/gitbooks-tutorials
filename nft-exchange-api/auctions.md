@@ -20,7 +20,7 @@ description: API Endpoints For Auctions
 ## GET - Return All Active Auctions
 
 Active auctions are auctions that have NOT been canceled or closed with a succesfull NFTAcceptTrade Transaction.
-- <ad> By default will include expired auctions also.</ad>
+- <ad> By default response includes expired (not accepted) auctions also.</ad>
 
 ### Endpoint <a id="endpoint"></a>
 
@@ -214,6 +214,7 @@ curl https://api.protokol.com/api/nft/exchange/auctions/1d1757bc7e598fd73f0ec670
 ```bash
 POST /auctions/search
 ```
+- <ad>By default does not return expired auctions
 
 ### **Query parameters** <a id="query-parameters-1"></a>
 
@@ -222,6 +223,10 @@ POST /auctions/search
 | page | int | The number of the page that will be returned. | No |
 | limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
+- <ad>| onlyActive | boolean | Only returns not cancelled and not accepted trade auctions | No |</ad>
+- <ad>| expired | boolean | If true include expired auctions | No |</ad>
+- <ad>| includeBids | boolean | If true include auction bids | No |</ad>
+- <ad>| canceledBids | boolean | Together with includeBids, if true include cancelled bids, false by default | No |</ad>
 
 ### Body Parameters <a id="body-parameters"></a>
 

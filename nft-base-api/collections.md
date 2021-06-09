@@ -1,3 +1,6 @@
+<style>
+  ad { color: red }
+</style>
 ---
 description: API Endpoints For Token Collections
 ---
