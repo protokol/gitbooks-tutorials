@@ -42,7 +42,7 @@ const response = connection.NFTBaseApi("collections").get("VALID_ID");
 >>> Promise<ApiResponse<CollectionsResource>>
 ```
 
-### Get Schema By Id 
+### Get Schema By Id
 
 ```typescript
 const response = connection.NFTBaseApi("collections").getSchema("VALID_ID");
@@ -50,7 +50,7 @@ const response = connection.NFTBaseApi("collections").getSchema("VALID_ID");
 >>> Promise<ApiResponse<Schema>>
 ```
 
-### Get Collections Wallet 
+### Get Collections Wallet
 
 ```typescript
 const response = connection.NFTBaseApi("collections").wallet("VALID_ID");
@@ -66,11 +66,11 @@ const response = connection.NFTBaseApi("collections").searchByCollections({
       "VALID_JSON_OBJECT"
       },
 });
-    
+
     >>> Promise<ApiResponseWithPagination<CollectionsResource[]>>
 ```
 
-### Search Asset By Collection Id 
+### Search Asset By Collection Id
 
 ```typescript
 const response = connection.NFTBaseApi("collections").assetByCollectionId("VALID_ID");
@@ -93,7 +93,7 @@ const response = connection.NFTBaseApi("assets").all();
 ```typescript
 const response = connection.NFTBaseApi("assets").get("VALID_ID");
 
->>> Promise<ApiResponse<AssetsResource>> 
+>>> Promise<ApiResponse<AssetsResource>>
 ```
 
 ### Return Assets Wallet
@@ -155,7 +155,7 @@ const response = connection.NFTBaseApi("burns").all();
 ```typescript
 const response = connection.NFTBaseApi("burns").get("VALID_ID");
 
->>> Promise<ApiResponse<BurnsResource>> 
+>>> Promise<ApiResponse<BurnsResource>>
 ```
 
 ## Configurations
@@ -167,8 +167,6 @@ const response = connection.NFTBaseApi("configurations").index();
 
 >>> Promise<ApiResponse<ConfigurationsResource>>
 ```
-
-
 
 ## NFT Exchange Endpoints
 
@@ -209,7 +207,7 @@ const response = connection.NFTExchangeApi("auctions").getAuctionsWallets("VALID
             blockHeight: BLOCK_HEIGHT,
         },
     });
-    
+
     >>> Promise<ApiResponseWithPagination<AuctionsResource[]>>
 ```
 
@@ -236,7 +234,7 @@ const response = connection.NFTExchangeApi("auctions").getCanceledAuctionById("V
 ```typescript
 const response = connection.NFTExchangeApi("bids").getAllBids();
 
->>> Promise<ApiResponse<BidsResource>> 
+>>> Promise<ApiResponse<BidsResource>>
 ```
 
 ### Return Bid By Id
@@ -285,7 +283,7 @@ const response = connection.NFTExchangeApi("trades").all();
 >>> Promise<ApiResponse<TradesResource>>
 ```
 
-### Return Trade By Id 
+### Return Trade By Id
 
 ```typescript
 const response = connection.NFTExchangeApi("trades").get("VALID_ID");

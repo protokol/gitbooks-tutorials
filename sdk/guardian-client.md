@@ -78,17 +78,11 @@ const response = await connection.guardianApi("users").get("PUBLIC_KEY");
 >>> Promise<ApiResponse<User>>
 ```
 
-### Get User Groups 
+### Get User Groups
 
 ```typescript
 const response = await connection.guardianApi("users").userGroups("PUBLIC_KEY");
 
 >>> Promise<ApiResponse<UserGroups>>
 ```
-
-
-
-
-
-
 

@@ -12,8 +12,6 @@ description: API Endpoints for Groups
 | [/groups/:id](groups.md#get-return-group-by-name) | Return group by name | GET |
 | [/groups/:id/users](groups.md#get-return-all-users-of-group) | Return all users of a group with wanted name | GET |
 
-
-
 ## GET - Return All Groups
 
 ### Endpoint <a id="endpoint"></a>
@@ -154,6 +152,4 @@ curl https://explorer.protokol.sh/api/guardian/groups/Test%20group%201/users
   ]
 }
 ```
-
-
 

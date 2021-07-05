@@ -17,7 +17,7 @@ description: API Endpoints For Token Collections
 
 ## GET - Return All Collections
 
-Return all registered asset collection types. 
+Return all registered asset collection types.
 
 ### Endpoint
 
@@ -30,7 +30,7 @@ GET /collections
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | page | int | The number of the page that will be returned. | No |
-| limit | int  | The number of resources per page. | No |
+| limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
 
@@ -310,7 +310,7 @@ POST /collections/search
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | page | int | The number of the page that will be returned. | No |
-| limit | int  | The number of resources per page. | No |
+| limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | N |
 
@@ -401,7 +401,7 @@ GET /collections/{id}/assets
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | page | int | The number of the page that will be returned. | No |
-| limit | int  | The number of resources per page. | No |
+| limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
 

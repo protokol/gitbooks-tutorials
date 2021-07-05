@@ -26,7 +26,7 @@ GET /burns
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | page | int | The number of the page that will be returned. | No |
-| limit | int  | The number of resources per page. | No |
+| limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
 
@@ -109,6 +109,4 @@ curl https://explorer.protokol.sh/api/nft/burns/f2c47694e32cdb7cae7e3ca8726836fa
   }
 }
 ```
-
-
 

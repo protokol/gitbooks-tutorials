@@ -226,7 +226,7 @@ curl --request POST \
   --url https://explorer.protokol.sh/api/nft/exchange/bids/search \
   --header 'content-type: application/json' \
   --data '{
-	  "bidAmount": "11"
+      "bidAmount": "11"
 }'
 ```
 

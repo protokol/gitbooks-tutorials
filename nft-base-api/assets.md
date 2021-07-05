@@ -29,7 +29,7 @@ GET /assets
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | page | int | The number of the page that will be returned. | No |
-| limit | int  | The number of resources per page. | No |
+| limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
 
@@ -78,8 +78,6 @@ curl https://explorer.protokol.sh/api/nft/assets
   ]
 }
 ```
-
-
 
 ## GET - Return Asset By ID
 
@@ -225,9 +223,11 @@ GET /assets/wallet/{id}
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | page | int | The number of the page that will be returned. | No |
-| limit | int  | The number of resources per page. | No |
+| limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
+| inAuction | boolean | Return only assets in active Auctions \(not cancelled and not accepted trade auctions\) | No |
+| inExpiredAuction | boolean | Extends inAuction parameter, if true include assets included in expired auctions, false by default | No |
 
 ### Example
 
@@ -285,7 +285,7 @@ POST /assets/search
 | **Name** | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | page | int | The number of the page that will be returned. | No |
-| limit | int  | The number of resources per page. | No |
+| limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
 
@@ -302,9 +302,8 @@ curl --request POST \
   --url https://explorer.protokol.sh/api/nft/assets/search \
   --header 'content-type: application/json' \
   --data '{
-	  "name": "Antonio Caracciolo"
+      "name": "Antonio Caracciolo"
 }'
-
 ```
 
 ### Response

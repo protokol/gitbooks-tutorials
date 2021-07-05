@@ -235,7 +235,7 @@ curl --request POST \
   --url https://explorer.protokol.sh/api/nft/exchange/auctions/search \
   --header 'content-type: application/json' \
   --data '{
-	  "nftIds": ["238d98bd751025decc853a46da8fb995c68a9684a4156bcfa414e7596b6e73b1"]
+      "nftIds": ["238d98bd751025decc853a46da8fb995c68a9684a4156bcfa414e7596b6e73b1"]
   }'
 ```
 
@@ -369,6 +369,4 @@ curl https://explorer.protokol.sh/api/nft/exchange/auctions/canceled/3c26dee62a9
   }
 }
 ```
-
-
 
