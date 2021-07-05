@@ -17,7 +17,7 @@ description: API Endpoints For Auctions
 
 ## GET - Return All Active Auctions
 
-Active auctions are auctions that have NOT been canceled or closed with a succesfull NFTAcceptTrade Transaction.
+Active auctions are auctions that have NOT been canceled or closed with a successful NFTAcceptTrade Transaction. By default, the response does not include expired auctions.
 
 ### Endpoint <a id="endpoint"></a>
 
@@ -33,6 +33,7 @@ GET /auctions
 | limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
 | transform | boolean | If returns modified or raw data. | No |
+| expired | boolean | If true include expired \(NOT been canceled or closed\) auctions. | No |
 
 ### Example
 
@@ -205,6 +206,8 @@ curl https://explorer.protokol.sh/api/nft/exchange/auctions/1d1757bc7e598fd73f0e
 
 ## POST - Search Auctions
 
+By default does not return expired auctions
+
 ### Endpoint
 
 ```bash
@@ -218,6 +221,10 @@ POST /auctions/search
 | page | int | The number of the page that will be returned. | No |
 | limit | int | The number of resources per page. | No |
 | orderBy | string | Type by which should order resources. | No |
+| onlyActive | boolean | Only returns not canceled and not closed auctions | No |
+| expired | boolean | Extends onlyActive, if true include expired auctions | No |
+| includeBids | boolean | If true include auction bids | No |
+| canceledBids | boolean | Together with includeBids, if true include canceled bids, false by default | No |
 
 ### Body Parameters <a id="body-parameters"></a>
 
