@@ -18,6 +18,10 @@ Edit the `src/index.ts` file to run a specific example.
 
 Before we get started we need to make sure that all of the required dependencies are installed.
 
+{% hint style="warning" %}
+We recommend the usage of Yarn, but you can choose any other package manager you want!
+{% endhint %}
+
 ### [yarn](https://classic.yarnpkg.com/lang/en/)
 
 ```text
@@ -28,15 +32,15 @@ yarn add @protokol/client
 ### [pnpm](https://pnpm.js.org/)
 
 ```text
-yarn add @protokol/guardian-crypto
-yarn add @protokol/client
+pnpm @protokol/guardian-crypto
+pnpm @protokol/client
 ```
 
 ### [npm](https://www.npmjs.com/)
 
 ```text
-yarn add @protokol/guardian-crypto
-yarn add @protokol/client
+npm @protokol/guardian-crypto
+npm @protokol/client
 ```
 
 ## How To Create And Broadcast Guardian Transactions
