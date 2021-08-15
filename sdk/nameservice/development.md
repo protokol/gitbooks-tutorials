@@ -1,5 +1,5 @@
 ---
-description: Showing how to setup protokol/nameservice development environment.
+description: Showing how to setup @protokol/nameservice development environment.
 ---
 
 # Development
