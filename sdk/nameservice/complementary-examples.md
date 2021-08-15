@@ -35,7 +35,7 @@ npm @protokol/nameservice-crypto
 npm @protokol/client
 ```
 
-## How To Create And Broadcast Guardian Transactions
+## How To Create And Broadcast Nameservice Transactions
 
 ### Nameservice - Creating and Broadcasting
 
