@@ -13,6 +13,8 @@
 * [NFT-Examples](sdk/complementary-examples.md)
 * [Guardian Client](sdk/guardian-client.md)
 * [Guardian Examples](sdk/guardian-examples.md)
+* [Nameservice](sdk/nameservice/README.md)
+  * [Development](sdk/nameservice/development.md)
 
 ## Base-API Endpoints <a id="nft-base-api"></a>
 
