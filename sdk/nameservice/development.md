@@ -10,6 +10,11 @@ description: Showing how to setup @protokol/nameservice development environment.
 * **yarn package manager**
 * **docker and docker-compose**
 
+{% hint style="info" %}
+For more information about setting up development environment go to   
+[https://ark.dev/docs/core/getting-started/development-setup/introduction](https://ark.dev/docs/core/getting-started/development-setup/introduction)
+{% endhint %}
+
 ### To run local development enviornment execute the following steps:
 
 #### 1. Clone nameservie reposiory

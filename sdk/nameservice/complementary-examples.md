@@ -17,6 +17,7 @@ We recommend the usage of Yarn, but you can choose any other package manager you
 ### [yarn](https://classic.yarnpkg.com/lang/en/)
 
 ```text
+yarn add @arkecosystem/crypto
 yarn add @protokol/nameservice-crypto
 yarn add @protokol/client
 ```
@@ -24,6 +25,7 @@ yarn add @protokol/client
 ### [pnpm](https://pnpm.js.org/)
 
 ```text
+pnpm @arkecosystem/crypto
 pnpm @protokol/nameservice-crypto
 pnpm @protokol/client
 ```
@@ -31,6 +33,7 @@ pnpm @protokol/client
 ### [npm](https://www.npmjs.com/)
 
 ```text
+npm @arkecosystem/crypto
 npm @protokol/nameservice-crypto
 npm @protokol/client
 ```
