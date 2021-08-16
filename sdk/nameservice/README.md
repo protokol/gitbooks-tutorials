@@ -12,5 +12,9 @@ Scenarios Showing Transaction Creation And Broadcasting are on the following lin
 
 {% page-ref page="complementary-examples.md" %}
 
+Api endpoints
+
+{% page-ref page="api-endpoints.md" %}
+
 
 
