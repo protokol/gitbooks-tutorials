@@ -16,6 +16,7 @@
 * [Nameservice](sdk/nameservice/README.md)
   * [Development](sdk/nameservice/development.md)
   * [Complementary Examples](sdk/nameservice/complementary-examples.md)
+  * [Api Endpoints](sdk/nameservice/api-endpoints.md)
 
 ## Base-API Endpoints <a id="nft-base-api"></a>
 
