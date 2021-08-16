@@ -4,7 +4,9 @@ description: Scenarios Showing Transaction Creation And Broadcasting Best Practi
 
 # Complementary Examples
 
+You can find runnale example in the following link
 
+{% embed url="https://github.com/protokol/nameservice/tree/develop/packages/nameservice-examples" %}
 
 ### Prerequisites
 
