@@ -64,7 +64,7 @@ yarn changelog
 ### Insomnia
 
 {% hint style="info" %}
-Import insomnia file from `nameservice/insomnia`
+Import insomnia file from `nameservice/insomnia/nameserivce-api.json`
 {% endhint %}
 
 ![](../../.gitbook/assets/screenshot-2021-08-16-at-14.51.00.png)
