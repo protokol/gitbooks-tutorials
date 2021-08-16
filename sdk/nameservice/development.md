@@ -61,5 +61,13 @@ yarn version:patch
 yarn changelog
 ```
 
+### Insomnia
+
+{% hint style="info" %}
+Import insomnia file from `nameservice/insomnia`
+{% endhint %}
+
+![](../../.gitbook/assets/screenshot-2021-08-16-at-14.51.00.png)
+
 
 
