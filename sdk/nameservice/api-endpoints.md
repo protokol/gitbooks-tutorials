@@ -24,7 +24,7 @@ Defualt nameservice prefix is `/api/nameservice`
 
 
 
-## GET - configurations
+## GET - configurations <a id="configs"></a>
 
 ### Endpoint
 
