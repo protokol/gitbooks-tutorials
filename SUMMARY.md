@@ -17,6 +17,8 @@
   * [Development](sdk/nameservice/development.md)
   * [Complementary Examples](sdk/nameservice/complementary-examples.md)
   * [Api Endpoints](sdk/nameservice/api-endpoints.md)
+* [Voting](sdk/voting/README.md)
+  * [Development](sdk/voting/development.md)
 
 ## Base-API Endpoints <a id="nft-base-api"></a>
 
