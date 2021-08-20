@@ -27,17 +27,17 @@ yarn add @protokol/client
 ### [pnpm](https://pnpm.js.org/)
 
 ```text
-pnpm @arkecosystem/crypto
-pnpm @protokol/nameservice-crypto
-pnpm @protokol/client
+pnpm add @arkecosystem/crypto
+pnpm add @protokol/nameservice-crypto
+pnpm add @protokol/client
 ```
 
 ### [npm](https://www.npmjs.com/)
 
 ```text
-npm @arkecosystem/crypto
-npm @protokol/nameservice-crypto
-npm @protokol/client
+npm install @arkecosystem/crypto
+npm install @protokol/nameservice-crypto
+npm install @protokol/client
 ```
 
 ## How To Create And Broadcast Nameservice Transactions
