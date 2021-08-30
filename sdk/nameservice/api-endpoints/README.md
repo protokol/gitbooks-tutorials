@@ -2,19 +2,19 @@
 description: List of nameservice api endpoints.
 ---
 
-# Api Endpoints
+# API Endpoints
 
 {% hint style="info" %}
 Defualt nameservice prefix is `/api/nameservice`
 {% endhint %}
 
-## List of configurations endpoints
+## List Of Configurations Endpoints
 
 | Endpoints | Description | Type |
 | :--- | :--- | :--- |
 | [/configurations](configurations.md) | Returns configurations for nameserivce plugins | GET |
 
-## List of nameservice endpoints
+## List Of Nameservice Endpoints
 
 | Endpoints | Description | Type |
 | :--- | :--- | :--- |

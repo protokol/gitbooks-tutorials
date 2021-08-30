@@ -16,7 +16,7 @@
 * [Nameservice](sdk/nameservice/README.md)
   * [Development](sdk/nameservice/development.md)
   * [Complementary Examples](sdk/nameservice/complementary-examples.md)
-  * [Api Endpoints](sdk/nameservice/api-endpoints/README.md)
+  * [API Endpoints](sdk/nameservice/api-endpoints/README.md)
     * [Configurations](sdk/nameservice/api-endpoints/configurations.md)
     * [Nameservice](sdk/nameservice/api-endpoints/nameservice.md)
 * [Voting](sdk/voting/README.md)
