@@ -5,7 +5,7 @@ description: List of nameservice api endpoints.
 # API Endpoints
 
 {% hint style="info" %}
-Defualt nameservice prefix is `/api/nameservice`
+Default nameservice prefix is `/api/nameservice`
 {% endhint %}
 
 ## List Of Configurations Endpoints
