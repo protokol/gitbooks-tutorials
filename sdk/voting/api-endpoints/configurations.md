@@ -4,11 +4,11 @@ description: Voting Configurations Endpoints.
 
 # Configurations
 
-### Configurations
+### /configurations
 
-{% api-method method="get" host="http://localhost:4003/api/voting/configurations" path="" %}
+{% api-method method="get" host="http://localhost:4003/api/voting/configurations" path=" " %}
 {% api-method-summary %}
-/configurations
+
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -49,6 +49,8 @@ Returns configurations for voting core plugins.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+#### Curl Example
 
 ```text
 curl http://localhost:4003/api/voting/configurations
