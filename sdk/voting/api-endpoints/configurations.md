@@ -50,3 +50,7 @@ Returns configurations for voting core plugins.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+```text
+curl http://localhost:4003/api/voting/configurations
+```
+
