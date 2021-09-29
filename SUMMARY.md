@@ -11,8 +11,6 @@
 
 * [NFT Client](sdk/nft-client.md)
 * [NFT-Examples](sdk/complementary-examples.md)
-* [Guardian Client](sdk/guardian-client.md)
-* [Guardian Examples](sdk/guardian-examples.md)
 * [Guardian](sdk/guardian/README.md)
   * [Development](sdk/guardian/development.md)
   * [Complementary Examples](sdk/guardian/complementary-examples.md)
@@ -49,10 +47,4 @@
 * [Bids](nft-exchange-api/bids.md)
 * [Trades](nft-exchange-api/trades.md)
 * [Configurations](nft-exchange-api/configurations.md)
-
-## GUARDIAN-API ENDPOINTS
-
-* [Configurations](guardian-api-endpoints/configurations.md)
-* [Groups](guardian-api-endpoints/groups.md)
-* [Users](guardian-api-endpoints/users.md)
 

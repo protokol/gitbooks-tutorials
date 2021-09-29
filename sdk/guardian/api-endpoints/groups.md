@@ -280,6 +280,8 @@ The name of the group
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Examples
+
 {% tabs %}
 {% tab title="Curl" %}
 ```text
