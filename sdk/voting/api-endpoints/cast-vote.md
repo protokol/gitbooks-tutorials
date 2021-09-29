@@ -1,18 +1,18 @@
 ---
-description: Voting Create Proposal API Endpoints.
+description: Voting Cast Vote API Endpoints.
 ---
 
-# Create Proposal
+# Cast Vote
 
-### /create/proposal/transactions
+### /cast/vote/transactions
 
-{% api-method method="get" host="http://localhost:4003/api/create/proposal/transactions" path=" " %}
+{% api-method method="get" host="http://localhost:4003/api/cast/vote/transactions" path=" " %}
 {% api-method-summary %}
 
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns all Create Proposal Transactions
+Returns all Cast Vote Transactions
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -52,38 +52,34 @@ Transforms to raw response
     "totalCount": 4,
     "next": null,
     "previous": null,
-    "self": "/voting/create/proposal/transactions?transform=true&page=1&limit=100",
-    "first": "/voting/create/proposal/transactions?transform=true&page=1&limit=100",
-    "last": "/voting/create/proposal/transactions?transform=true&page=1&limit=100"
+    "self": "/voting/cast/vote/transactions?transform=true&page=1&limit=100",
+    "first": "/voting/cast/vote/transactions?transform=true&page=1&limit=100",
+    "last": "/voting/cast/vote/transactions?transform=true&page=1&limit=100"
   },
   "data": [
     {
-      "id": "8ba1411eb769c3ba7d04b7e353d5c78240705597ee254100164ee77b9999234b",
+      "id": "4ce88923c7d961fc29dd6a5111979cb2767df947bf9f3b0f791a841a21d675de",
       "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "duration": {
-        "blockHeight": 123456
-      },
-      "content": "qwertz",
+      "proposalId": "c8f3fff0df73f1125d15a467b4f9401a7967e2915c93612737b7761cde7ada29",
+      "decision": "yes",
       "timestamp": {
-        "epoch": 136819696,
-        "unix": 1626920896,
-        "human": "2021-07-22T02:28:16.000Z"
+        "epoch": 136819968,
+        "unix": 1626921168,
+        "human": "2021-07-22T02:32:48.000Z"
       }
     },
     {
-      "id": "c8f3fff0df73f1125d15a467b4f9401a7967e2915c93612737b7761cde7ada29",
-      "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-      "duration": {
-        "blockHeight": 123456
-      },
-      "content": "qwertz",
+      "id": "4498ecbc765e38f289761f1d04a9dfb2e062d87239d8e5af55c77e4c6e842b53",
+      "senderPublicKey": "02def27da9336e7fbf63131b8d7e5c9f45b296235db035f1f4242c507398f0f21d",
+      "proposalId": "fe8419bda6525ef0074e733dbd3e8b671267c6c8d51b025fd7ae0812947cec30",
+      "decision": "no",
       "timestamp": {
-        "epoch": 136819704,
-        "unix": 1626920904,
-        "human": "2021-07-22T02:28:24.000Z"
+        "epoch": 142719936,
+        "unix": 1632821136,
+        "human": "2021-09-28T09:25:36.000Z"
       }
     },
-    ...
+   ...
   ]
 }
 ```
@@ -95,20 +91,20 @@ Transforms to raw response
 #### Curl Example
 
 ```bash
-curl http://localhost:4003/api/create/proposal/transactions
+curl http://localhost:4003/api/cast/vote/transactions
 ```
 
 ### 
 
-### /create/proposal/transactions/:id
+### /cast/vote/transactions/:id
 
-{% api-method method="get" host="http://localhost:4003/api/create/proposal/transactions/:id" path=" " %}
+{% api-method method="get" host="http://localhost:4003/api/cast/vote/transactions/:id" path=" " %}
 {% api-method-summary %}
 
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns Create Proposal Transaction by id.
+Returns Cast Vote Transaction by id.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -135,16 +131,14 @@ Transforms to raw response
 ```javascript
 {
   "data": {
-    "id": "fe8419bda6525ef0074e733dbd3e8b671267c6c8d51b025fd7ae0812947cec30",
+    "id": "4ce88923c7d961fc29dd6a5111979cb2767df947bf9f3b0f791a841a21d675de",
     "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-    "duration": {
-      "blockHeight": 123456
-    },
-    "content": "QmPfdpTRbhGVZZWKZDzNT5T4NB6C7fFo5wM9Xe8qmLCXWt",
+    "proposalId": "c8f3fff0df73f1125d15a467b4f9401a7967e2915c93612737b7761cde7ada29",
+    "decision": "yes",
     "timestamp": {
-      "epoch": 142719560,
-      "unix": 1632820760,
-      "human": "2021-09-28T09:19:20.000Z"
+      "epoch": 136819968,
+      "unix": 1626921168,
+      "human": "2021-07-22T02:32:48.000Z"
     }
   }
 }
@@ -185,27 +179,27 @@ Transforms to raw response
 #### Curl Example
 
 ```bash
-curl http://localhost:4003/api/create/proposal/transactions/fe8419bda6525ef0074e733dbd3e8b671267c6c8d51b025fd7ae0812947cec30
+curl http://localhost:4003/api/cast/vote/transactions/4ce88923c7d961fc29dd6a5111979cb2767df947bf9f3b0f791a841a21d675de
 ```
 
 
 
-### /create/proposal/:id/wallet
+### /cast/vote/:id/wallet
 
-{% api-method method="get" host="http://localhost:4003/api/create/proposal/:id/wallet " path=" " %}
+{% api-method method="get" host="http://localhost:4003/api/cast/vote/:id/wallet " path=" " %}
 {% api-method-summary %}
 
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns wallet by Create Proposal transaction id
+Returns wallet by Cast Vote transaction id
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-Create Proposal transaction id
+Cast Vote transaction id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -221,8 +215,8 @@ Create Proposal transaction id
   "data": {
     "address": "ANBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo",
     "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
-    "nonce": "36",
-    "balance": "244863000000000",
+    "nonce": "37",
+    "balance": "244813000000000",
     "proposals": {
       "8ba1411eb769c3ba7d04b7e353d5c78240705597ee254100164ee77b9999234b": {
         "proposal": {
@@ -263,8 +257,13 @@ Create Proposal transaction id
           },
           "content": "QmPfdpTRbhGVZZWKZDzNT5T4NB6C7fFo5wM9Xe8qmLCXWt"
         },
-        "agree": [],
-        "disagree": []
+        "agree": [
+          "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+          "038082dad560a22ea003022015e3136b21ef1ffd9f2fd50049026cbe8e2258ca17"
+        ],
+        "disagree": [
+          "02def27da9336e7fbf63131b8d7e5c9f45b296235db035f1f4242c507398f0f21d"
+        ]
       }
     }
   }
@@ -306,6 +305,6 @@ Create Proposal transaction id
 #### Curl Example
 
 ```bash
-curl http://localhost:4003/api/create/proposal/fe8419bda6525ef0074e733dbd3e8b671267c6c8d51b025fd7ae0812947cec30/wallet
+curl http://localhost:4003/api/cast/vote/4ce88923c7d961fc29dd6a5111979cb2767df947bf9f3b0f791a841a21d675de/wallet
 ```
 
