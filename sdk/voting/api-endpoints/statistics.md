@@ -49,6 +49,34 @@ Create Proposal Id
 }
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "statusCode": 404,
+  "error": "Not Found",
+  "message": "Voting Proposal not found!"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "statusCode": 422,
+  "error": "Unprocessable Entity",
+  "message": "\"id\" length must be 64 characters long"
+}
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
