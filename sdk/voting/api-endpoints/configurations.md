@@ -24,7 +24,7 @@ Returns configurations for voting core plugins.
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "data": {
     "api": {

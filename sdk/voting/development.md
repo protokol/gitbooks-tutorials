@@ -64,7 +64,7 @@ yarn changelog
 ### Insomnia
 
 {% hint style="info" %}
-Import insomnia file from `voting/insomnia/voting-api.json`
+Import insomnia file from[`voting/insomnia/voting-api.json`](https://insomnia.rest/run/?label=voting-api&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fprotokol%2Fvoting%2Fdevelop%2Finsomnia%2Fvoting-api.json)\`\`
 {% endhint %}
 
 ![](../../.gitbook/assets/screenshot-2021-09-29-at-10.15.45.png)
