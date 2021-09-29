@@ -1,12 +1,12 @@
 ---
-description: Guardian Groups Endpoints.
+description: Guardian Users Endpoints
 ---
 
-# Groups
+# Users
 
-## Groups
+## Users
 
-{% api-method method="get" host="https://explorer.protokol.sh/api/guardian/groups  " path=" " %}
+{% api-method method="get" host="https://explorer.protokol.sh/api/guardian/users  " path=" " %}
 {% api-method-summary %}
 /groups
 {% endapi-method-summary %}
@@ -26,25 +26,8 @@ The number of a page that will be returned
 The number of resources per page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderBy" type="string" required=false %}
-Type by which it should order resources.  
-Example: orderBy=name:asc
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="name" type="string" required=false %}
-Value by which it should search for resources \(allows wildcard %\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="priority" type="integer" required=false %}
-Value by which should search for resources
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="active" type="boolean" required=false %}
-Value by which should search for resources
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="default" type="boolean" required=false %}
-Value by which should search for resources
+{% api-method-parameter name="publickey" type="string" required=false %}
+Value by which it searches for resources \(allows wildcard %\)
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -118,28 +101,28 @@ Value by which should search for resources
 {% tabs %}
 {% tab title="Curl" %}
 ```text
-curl https://explorer.protokol.sh/api/guardian/groups
+curl https://explorer.protokol.sh/api/guardian/users
 ```
 {% endtab %}
 
 {% tab title="Typescript" %}
 ```typescript
-const response = await connection.guardianApi("groups").index();
+const response = await connection.guardianApi("users").index();
 
->>> Promise<ApiResponseWithPagination<Group>>
+>>> Promise<ApiResponseWithPagination<User>>
 ```
 {% endtab %}
 {% endtabs %}
 
-## Group By Name
+## User By Publickey
 
-{% api-method method="get" host="https://explorer.protokol.sh/api/guardian/groups/:name  " path=" " %}
+{% api-method method="get" host="https://explorer.protokol.sh/api/guardian/users/:id " path=" " %}
 {% api-method-summary %}
-/groups/:name
+/users/:id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns Group by name
+Returns User by publickey
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -160,22 +143,17 @@ The name of the group
 ```javascript
 {
   "data": {
-    "name": "Test Guardian Permission Group",
-    "priority": 1,
-    "active": true,
-    "default": false,
-    "allow": [
-      {
-        "transactionType": 1,
-        "transactionTypeGroup": 1
-      }
+    "publicKey": "03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc",
+    "groups": [
+      "Test Guardian Permission Group"
     ],
-    "deny": [
+    "allow": [
       {
         "transactionType": 2,
         "transactionTypeGroup": 1
       }
-    ]
+    ],
+    "deny": []
   }
 }
 ```
@@ -190,7 +168,21 @@ The name of the group
 {
   "statusCode": 404,
   "error": "Not Found",
-  "message": "Group not found"
+  "message": "User not found"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "statusCode": 422,
+  "error": "Unprocessable Entity",
+  "message": "\"id\" length must be 66 characters long"
 }
 ```
 {% endapi-method-response-example %}
@@ -203,28 +195,28 @@ The name of the group
 {% tabs %}
 {% tab title="Curl" %}
 ```text
-curl https://explorer.protokol.sh/api/guardian/groups/Test%20Guardian%20Permission%20Group
+curl https://explorer.protokol.sh/api/guardian/users/03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc
 ```
 {% endtab %}
 
 {% tab title="Typescript" %}
 ```typescript
-const response = await connection.guardianApi("groups").get("VALID_GROUP_NAME");
+const response = await connection.guardianApi("users").get("PUBLIC_KEY");
 
->>> Promise<ApiResponse<Group>>
+>>> Promise<ApiResponse<User>>
 ```
 {% endtab %}
 {% endtabs %}
 
-## Users By Group Name
+## User Groups
 
-{% api-method method="get" host="https://explorer.protokol.sh/api/guardian/groups/:name/users  " path=" " %}
+{% api-method method="get" host="https://explorer.protokol.sh/api/guardian/users/:id/groups  " path=" " %}
 {% api-method-summary %}
-/groups/:name/users
+/users/:id/groups
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns users of specific group by name
+Returns groups of specific user by publickey
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -246,17 +238,22 @@ The name of the group
 {
   "data": [
     {
-      "publicKey": "03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc",
-      "groups": [
-        "Test Guardian Permission Group"
-      ],
+      "name": "Test Guardian Permission Group",
+      "priority": 1,
+      "active": true,
+      "default": false,
       "allow": [
+        {
+          "transactionType": 1,
+          "transactionTypeGroup": 1
+        }
+      ],
+      "deny": [
         {
           "transactionType": 2,
           "transactionTypeGroup": 1
         }
-      ],
-      "deny": []
+      ]
     }
   ]
 }
@@ -272,7 +269,21 @@ The name of the group
 {
   "statusCode": 404,
   "error": "Not Found",
-  "message": "Group not found"
+  "message": "User not found"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "statusCode": 422,
+  "error": "Unprocessable Entity",
+  "message": "\"id\" length must be 66 characters long"
 }
 ```
 {% endapi-method-response-example %}
@@ -283,15 +294,15 @@ The name of the group
 {% tabs %}
 {% tab title="Curl" %}
 ```text
-curl https://explorer.protokol.sh/api/guardian/groups/Test%20group%201/users
+curl https://explorer.protokol.sh/api/guardian/users/03c11f2a1fc02c88cd9b8db5272cba390bdb9ce3e1d58355de1b7a24c673e06ebc/groups
 ```
 {% endtab %}
 
 {% tab title="Typescript" %}
 ```typescript
-const response = await connection.guardianApi("groups").users("VALID_GROUP_NAME");
+const response = await connection.guardianApi("users").userGroups("PUBLIC_KEY");
 
->>> Promise<ApiResponse<User>>
+>>> Promise<ApiResponse<UserGroups>>
 ```
 {% endtab %}
 {% endtabs %}

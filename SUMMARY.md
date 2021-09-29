@@ -19,6 +19,7 @@
   * [API Endpoints](sdk/guardian/api-endpoints/README.md)
     * [Configurations](sdk/guardian/api-endpoints/configurations.md)
     * [Groups](sdk/guardian/api-endpoints/groups.md)
+    * [Users](sdk/guardian/api-endpoints/users.md)
 * [Nameservice](sdk/nameservice/README.md)
   * [Development](sdk/nameservice/development.md)
   * [Complementary Examples](sdk/nameservice/complementary-examples.md)
