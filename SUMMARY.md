@@ -24,6 +24,7 @@
   * [Complementary Examples](sdk/voting/complementary-examples.md)
   * [API Endpoints](sdk/voting/api-endpoints/README.md)
     * [Configurations](sdk/voting/api-endpoints/configurations.md)
+    * [Create Proposal](sdk/voting/api-endpoints/create-proposal.md)
 
 ## Base-API Endpoints <a id="nft-base-api"></a>
 
