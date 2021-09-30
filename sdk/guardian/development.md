@@ -41,3 +41,31 @@ _**From repository root folder:**_
 yarn full:testnet
 ```
 
+### Version Bumping
+
+#### Prerelease
+
+```bash
+yarn version:beta
+```
+
+#### Patch
+
+```bash
+yarn version:patch
+```
+
+### Changelog
+
+```bash
+yarn changelog
+```
+
+### Insomnia
+
+{% hint style="info" %}
+Import insomnia file from [`guardian/insomnia/guardian-api.json`](https://insomnia.rest/run/?label=guardian-api&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fprotokol%2Fguardian%2Fdevelop%2Finsomnia%2Fguardian-api.json)\`\`
+{% endhint %}
+
+![](../../.gitbook/assets/slika.png)
+
