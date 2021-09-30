@@ -8,7 +8,7 @@ description: Guardian Users Endpoints
 
 {% api-method method="get" host="https://explorer.protokol.sh/api/guardian/users  " path=" " %}
 {% api-method-summary %}
-/groups
+/users
 {% endapi-method-summary %}
 
 {% api-method-description %}

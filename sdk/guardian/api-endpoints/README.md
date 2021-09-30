@@ -26,9 +26,9 @@ Default nameservice prefix is `/api/guardian`
 
 | Endpoints | Description | Type |
 | :--- | :--- | :--- |
-| /users | Returns all Users | GET |
-| /users/:id | Returns User by Publickey | GET |
-| /users/:id/groups | Returns All Groups of User by Publickey | GET |
+| [/users](users.md#users-1) | Returns all Users | GET |
+| [/users/:id](users.md#users-id) | Returns User by Publickey | GET |
+| [/users/:id/groups](users.md#users-id-groups) | Returns All Groups of User by Publickey | GET |
 
 
 
