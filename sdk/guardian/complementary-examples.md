@@ -6,7 +6,7 @@ description: Scenarios Showing Transaction Creation And Broadcasting Best Practi
 
 You can find runnable example in the following link
 
-
+{% embed url="https://github.com/protokol/guardian/tree/develop/packages/guardian-examples" %}
 
 ### Prerequisites
 

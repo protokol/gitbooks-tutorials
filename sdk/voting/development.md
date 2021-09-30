@@ -17,7 +17,7 @@ For more information about setting up development environment go to
 
 ### To run local development enviornment execute the following steps:
 
-#### 1. Clone nameservie reposiory
+#### 1. Clone voting repository
 
 ```bash
 git clone https://github.com/protokol/voting.git
