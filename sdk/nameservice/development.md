@@ -17,7 +17,7 @@ For more information about setting up development environment go to
 
 ### To run local development enviornment execute the following steps:
 
-#### 1. Clone nameservie reposiory
+#### 1. Clone nameservice reposiory
 
 ```bash
 git clone https://github.com/protokol/nameservice.git
