@@ -16,11 +16,7 @@ AND
 
 Runnable implementation of all the examples listed can be found here:
 
-
-
-
-
-
+{% embed url="https://github.com/protokol/nft/tree/develop/packages/nft-examples" %}
 
 ### Prerequisites
 
