@@ -43,3 +43,23 @@ _**From repository root folder:**_
 yarn full:testnet
 ```
 
+### Version Bumping
+
+#### Prerelease
+
+```bash
+yarn version:beta
+```
+
+#### Patch
+
+```bash
+yarn version:patch
+```
+
+### Changelog
+
+```bash
+yarn changelog
+```
+
