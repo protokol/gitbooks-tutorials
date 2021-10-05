@@ -12,8 +12,6 @@ AND
 
 {% page-ref page="exchange.md" %}
 
-
-
 Runnable implementation of all the examples listed can be found here:
 
 {% embed url="https://github.com/protokol/nft/tree/develop/packages/nft-examples" %}
@@ -21,6 +19,10 @@ Runnable implementation of all the examples listed can be found here:
 ### Prerequisites
 
 Before we get started we need to make sure that all of the required dependencies are installed.
+
+{% hint style="warning" %}
+We recommend the usage of Yarn, but you can choose any other package manager you want!
+{% endhint %}
 
 ### [yarn](https://classic.yarnpkg.com/lang/en/)
 

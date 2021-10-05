@@ -23,6 +23,8 @@ For more information about setting up development environment go to
 git clone https://github.com/protokol/nameservice.git
 
 cd nameservice
+
+yarn && yarn build
 ```
 
 #### 2. Run Postgres database

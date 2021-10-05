@@ -22,7 +22,9 @@ For more information about setting up development environment go to
 ```bash
 git clone https://github.com/protokol/guardian.git
 
-cd nameservice
+cd guardian
+
+yarn && yarn build
 ```
 
 #### 2. Run Postgres database

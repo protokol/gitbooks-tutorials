@@ -22,7 +22,9 @@ For more information about setting up development environment go to
 ```bash
 git clone https://github.com/protokol/voting.git
 
-cd nameservice
+cd voting
+
+yarn && yarn build
 ```
 
 #### 2. Run Postgres database
