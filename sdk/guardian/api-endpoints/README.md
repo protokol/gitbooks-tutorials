@@ -58,8 +58,6 @@ pnpm add @protokol/client
 npm install @protokol/client
 ```
 
-
-
 ### Initialization
 
 ```typescript
