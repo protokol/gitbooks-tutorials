@@ -19,6 +19,7 @@
     * [Burns](sdk/nft/api-endpoints/burns.md)
     * [Collections](sdk/nft/api-endpoints/collections.md)
     * [Transfers](sdk/nft/api-endpoints/transfers.md)
+    * [Base Configurations](sdk/nft/api-endpoints/base-configurations.md)
 * [NFT Client](sdk/nft-client.md)
 * [NFT-Examples](sdk/complementary-examples.md)
 * [Guardian](sdk/guardian/README.md)

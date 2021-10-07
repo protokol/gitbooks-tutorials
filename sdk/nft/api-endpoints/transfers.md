@@ -182,3 +182,21 @@ Returns modified or raw data
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Examples
+
+{% tabs %}
+{% tab title="Curl" %}
+```text
+curl https://explorer.protokol.sh/api/nft/transfers/5a5fe2fb9c5b1102b2d6266d41b6184676bd42c2b648c82e13264a562252072b
+```
+{% endtab %}
+
+{% tab title="Typescript" %}
+```typescript
+const response = connection.NFTBaseApi("transfers").get("VALID_ID");
+
+>>> Promise<ApiResponse<TransfersResource>>
+```
+{% endtab %}
+{% endtabs %}
+
