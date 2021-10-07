@@ -14,11 +14,11 @@ Default prefix for NFT Base is `/api/nft`
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/assets​ | ReturnS all assets | GET |
-| ​/assets/:id​ | Returns asset by id | GET |
-| ​/assets/:id/wallets​ | Returns the wallet owning an asset | GET |
-| ​/assets/wallet/:id​ | Returns the assets that wallet owns | GET |
-| ​/assets/search​ | Search assets | POST |
+| [​/assets​](assets.md#all-assets) | Returns all assets | GET |
+| [​/assets/:id​](assets.md#asset-by-id) | Returns asset by id | GET |
+| [​/assets/:id/wallets​](assets.md#wallet-owning-asset) | Returns the wallet owning an asset | GET |
+| [​/assets/wallet/:id​](assets.md#wallet-assets) | Returns the assets that wallet owns | GET |
+| [​/assets/search​](assets.md#search-by-asset) | Search assets | POST |
 | /assets/claim | Claims an asset | POST |
 
 ### List of Burn Endpoints

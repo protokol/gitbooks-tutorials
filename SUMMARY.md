@@ -16,6 +16,7 @@
     * [Exchange](sdk/nft/complementary-examples/exchange.md)
   * [API Endpoints](sdk/nft/api-endpoints/README.md)
     * [Assets](sdk/nft/api-endpoints/assets.md)
+    * [Collections](sdk/nft/api-endpoints/collections.md)
 * [NFT Client](sdk/nft-client.md)
 * [NFT-Examples](sdk/complementary-examples.md)
 * [Guardian](sdk/guardian/README.md)
