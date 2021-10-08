@@ -7,7 +7,7 @@
 * [How To Create Digital Assets](tutorials/crypto-examples.md)
 * [How To Trade Digital Assets](tutorials/how-to-trade-digital-assets.md)
 
-## SDK-USAGE <a id="sdk"></a>
+## ARK CORE MODULES <a id="sdk"></a>
 
 * [NFT](sdk/nft/README.md)
   * [Development](sdk/nft/development.md)
@@ -24,8 +24,6 @@
     * [Bids](sdk/nft/api-endpoints/bids.md)
     * [Trades](sdk/nft/api-endpoints/trades.md)
     * [Exchange Configurations](sdk/nft/api-endpoints/exchange-configurations.md)
-* [NFT Client](sdk/nft-client.md)
-* [NFT-Examples](sdk/complementary-examples.md)
 * [Guardian](sdk/guardian/README.md)
   * [Development](sdk/guardian/development.md)
   * [Complementary Examples](sdk/guardian/complementary-examples.md)
@@ -48,18 +46,9 @@
     * [Cast Vote](sdk/voting/api-endpoints/cast-vote.md)
     * [Statistics](sdk/voting/api-endpoints/statistics.md)
 
-## Base-API Endpoints <a id="nft-base-api"></a>
+## Protokol Templates
 
-* [Collections](nft-base-api/collections.md)
-* [Assets](nft-base-api/assets.md)
-* [Transfers](nft-base-api/transfers.md)
-* [Burns](nft-base-api/burns.md)
-* [Configurations](nft-base-api/configurations.md)
-
-## Exchange-API Endpoints <a id="nft-exchange-api"></a>
-
-* [Auctions](nft-exchange-api/auctions.md)
-* [Bids](nft-exchange-api/bids.md)
-* [Trades](nft-exchange-api/trades.md)
-* [Configurations](nft-exchange-api/configurations.md)
+* [Core Starter Kit](protokol-templates/core-starter-kit.md)
+* [Solidity Typescript Hardhat](protokol-templates/solidity-typescript-hardhat.md)
+* [Nestjs](protokol-templates/nestjs.md)
 

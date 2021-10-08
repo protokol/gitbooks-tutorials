@@ -42,10 +42,6 @@ Check our REST API Documentation in relation to trade or digital asset creation 
 
 All of the above functionality is  implemented in our client SDKs. For more information check the following links:
 
-{% page-ref page="sdk/nft-client.md" %}
-
-{% page-ref page="sdk/complementary-examples.md" %}
-
 
 
 
