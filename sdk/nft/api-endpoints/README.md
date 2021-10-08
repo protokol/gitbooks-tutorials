@@ -25,32 +25,32 @@ Default prefix for NFT Base is `/api/nft`
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/burns​ | Returns all burns | GET |
-| ​/burns/:id​ | Returns burn by id | GET |
+| [​/burns​](burns.md#all-burns) | Returns all burns | GET |
+| [​/burns/:id​](burns.md#burn-by-id) | Returns burn by id | GET |
 
 ### List of Collection Endpoints
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/collections​ | Returns all collections | GET |
-| ​/collections/:id​ | Returns collection by id | GET |
-| ​/collections/:id/schema​ | Returns the schema of a collection | GET |
-| ​/collections/:id/wallets​ | Returns the wallet owning a collection | GET |
-| ​/collections/search​ | Search collections | POST |
-| ​/collections/:id/assets​ | Returns the assets of a collection | GET |
+| [​/collections​](collections.md#all-collections) | Returns all collections | GET |
+| [​/collections/:id​](collections.md#collection-by-id) | Returns collection by id | GET |
+| [​/collections/:id/schema​](collections.md#collection-schema) | Returns the schema of a collection | GET |
+| [​/collections/:id/wallets​](collections.md#collections-wallet) | Returns the wallet owning a collection | GET |
+| [​/collections/search​](collections.md#search-collection) | Search collections | POST |
+| [​/collections/:id/assets​](collections.md#collection-assets) | Returns the assets of a collection | GET |
 
 ### List of **Configuration** Endpoints
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/configurations​ | Returns all configurations | GET |
+| [​/configurations​](base-configurations.md#configurations) | Returns all configurations | GET |
 
 ### List of Transfer Endpoints
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/transfers​ | Returns all transfers | GET |
-| ​/transfers/:id​ | Returns transfer by id | GET |
+| [​/transfers​](transfers.md#all-transfers) | Returns all transfers | GET |
+| [​/transfers/:id​](transfers.md#transfer-by-id) | Returns transfer by id | GET |
 
 ## NFT Exchange API Endpoints
 
@@ -62,35 +62,69 @@ Default prefix for NFT Exchange is `/api/nft/exchange`
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/auctions​ | Returns all active auctions | GET |
-| ​/auctions/:id​ | Returns auction by id | GET |
-| ​/auctions/:id/wallets​ | Returns the wallet owning an auction | GET |
-| ​/auctions/search​ | Search auctions | POST |
-| ​/auctions/canceled​ | Returns all canceled auctions | GET |
-| ​/auctions/canceled/:id​ | Returns canceled auction by :id | GET |
+| [​/auctions​](auctions.md#all-auctions) | Returns all active auctions | GET |
+| [​/auctions/:id​](auctions.md#auction-by-id) | Returns auction by id | GET |
+| [​/auctions/:id/wallets​](auctions.md#auctions-wallet) | Returns the wallet owning an auction | GET |
+| [​/auctions/search​](auctions.md#search-auctions) | Search auctions | POST |
+| [​/auctions/canceled​](auctions.md#canceled-auctions) | Returns all canceled auctions | GET |
+| [​/auctions/canceled/:id​](auctions.md#canceled-auctions-by-id) | Returns canceled auction by :id | GET |
 
 ### List of Bid Endpoints
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/bids​ | Returns all bids | GET |
-| ​/bids/:id​ | Returns bid by id | GET |
-| ​/bids/:id/wallets​ | Returns the wallet owning a bid | GET |
-| ​/bids/search​ | Search bids | POST |
-| ​/bids/canceled​ | Returns all canceled bids | GET |
-| ​/bids/canceled/:id​ | Returns canceled bids by id | GET |
+| [​/bids​](bids.md#all-bids) | Returns all bids | GET |
+| [​/bids/:id​](bids.md#bids-by-id) | Returns bid by id | GET |
+| [​/bids/:id/wallets​](bids.md#bids-wallet) | Returns the wallet owning a bid | GET |
+| [​/bids/search​](bids.md#search-bids) | Search bids | POST |
+| [​/bids/canceled​](bids.md#canceled-bids) | Returns all canceled bids | GET |
+| [​/bids/canceled/:id​](bids.md#canceled-bids-by-id) | Returns canceled bids by id | GET |
 
 ### List of **Configuration** Endpoints
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/configurations​ | Returns all configurations | GET |
+| [​/configurations​](exchange-configurations.md#configurations) | Returns all configurations | GET |
 
 ### List of Trade Endpoints
 
 | Endpoint | Description | Type |
 | :--- | :--- | :--- |
-| ​/trades​ | Returns all trades | GET |
-| ​/trades/:id​ | Returns trade by id | GET |
-| ​/trades/search​ | Search trades | POST |
+| [​/trades​](trades.md#all-trades) | Returns all trades | GET |
+| [​/trades/:id​](trades.md#trade-by-id) | Returns trade by id | GET |
+| [​/trades/search​](trades.md#search-trades) | Search trades | POST |
+
+## NFT Client
+
+{% hint style="info" %}
+A Light Typescript Client Supporting NFT REST API
+{% endhint %}
+
+### Installation
+
+#### [yarn](https://classic.yarnpkg.com/lang/en/)
+
+```text
+yarn add @protokol/client
+```
+
+#### [pnpm](https://pnpm.js.org/)
+
+```text
+pnpm add @protokol/client
+```
+
+#### [npm](https://www.npmjs.com/)
+
+```text
+npm install @protokol/client
+```
+
+### Initialization
+
+```typescript
+import { ProtokolConnection } from "@protokol/client";
+
+const connection = new ProtokolConnection("https://explorer.protokol.sh/api");
+```
 
